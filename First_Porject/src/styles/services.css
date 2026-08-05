@@ -1,0 +1,165 @@
+/* ===========================
+   SERVICES SECTION
+=========================== */
+
+
+.services{
+
+    padding:100px 0;
+
+}
+
+
+
+.services-intro{
+
+    max-width:700px;
+
+}
+
+
+/* Cards wrapper */
+
+.services-wrap{
+
+    overflow:hidden;
+
+}
+
+
+
+/* Cards container */
+
+.list{
+
+    display:flex;
+
+    gap:30px;
+
+    overflow-x:auto;
+
+    padding:40px 5px;
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+.list::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+
+
+/* Individual card */
+
+.list li{
+
+    min-width:320px;
+
+    min-height:420px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    box-shadow:
+
+    0 20px 40px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+
+
+.list li:hover{
+
+    transform:translateY(-15px);
+
+}
+
+
+
+/* Card heading */
+
+.list h3{
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+/* Card paragraph */
+
+.list p{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+
+
+/* Card button */
+
+.link-btn{
+
+    background:white;
+
+    color:#111;
+
+    border:1px solid #111;
+
+}
+
+
+
+.link-btn:hover{
+
+    background:#111;
+
+    color:white;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+
+.list li{
+
+    min-width:280px;
+
+    padding:30px;
+
+}
+
+
+
+.list h3{
+
+    font-size:25px;
+
+}
+
+
+}

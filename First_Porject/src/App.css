@@ -1,0 +1,39 @@
+/* ===========================
+   APP LEVEL STYLES
+=========================== */
+body {
+    background: #EFEAE3;
+    color: #1D1D1D;
+}
+
+#root{
+
+    width:100%;
+
+    min-height:100vh;
+
+}
+
+
+/* Main app wrapper */
+
+.app{
+
+    width:100%;
+
+    overflow:hidden;
+
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #111;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #444;
+}
