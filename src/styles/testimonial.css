@@ -1,0 +1,74 @@
+/* ===========================
+   TESTIMONIAL SECTION
+=========================== */
+
+
+.testimonial{
+
+    padding:100px 20px;
+
+    text-align:center;
+
+    background:#eee8df;
+
+}
+
+
+
+/* Heading */
+
+.testimonial h2{
+
+    margin-bottom:40px;
+
+}
+
+
+
+/* Quote */
+
+.testimonial p{
+
+    max-width:750px;
+
+    margin:auto;
+
+    font-family:'Playfair Display',serif;
+
+    font-size:28px;
+
+    line-height:1.6;
+
+    color:#333;
+
+}
+
+
+
+/* Client name */
+
+.testimonial h3{
+
+    margin-top:30px;
+
+    font-size:22px;
+
+    color:#8b7355;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+
+.testimonial p{
+
+    font-size:22px;
+
+}
+
+
+}
