@@ -1,15 +1,16 @@
 import "../styles/about.css";
-
+import Testimonial from "../components/testimonial.jsx";
+import Values from '../components/value.jsx'
+ 
 function About() {
   return (
     <>
+  
       <section className="intro">
-        <h1>Boutique Branding &amp; Website Design Studio</h1>
+        <h1>MEET THE BRAND STRATEGIST BEHIND JAKS DIGITAL</h1>
 
         <p>
-          We partner with wellness and wedding professionals, personal brands,
-          and service-based businesses to elevate how they show up online
-          through refined, high-impact design.
+          Thoughtful brand strategy and website design to help you show up with clarity, confidence, and a digital presence that truly reflects who you are.
         </p>
 
         <p>
@@ -40,7 +41,14 @@ function About() {
           </p>
         </div>
 
+       
+
         <div className="portrait">Studio / founder photo</div>
+      </section>
+
+
+      <section className="myidea">
+        <Testimonial/>
       </section>
 
       <section className="values">
@@ -61,7 +69,7 @@ function About() {
               isn't done yet.
             </p>
           </div>
-
+           
           <div className="value-card">
             <h3>Trust over trend</h3>
             <p>
@@ -179,6 +187,8 @@ function About() {
           See our full process
         </a>
       </section>
+
+      <Values/>
     </>
   );
 }

@@ -1,23 +1,59 @@
-import "../styles/testimonial.css";
+import React, { useState } from "react";
+import "../styles/Testimonial.css";
 
-function Testimonial() {
+const testimonials = [
+  {
+    title: "AN ABSOLUTE PLEASURE TO WORK WITH",
+    text:
+      "Jackie was an absolute pleasure to work with. She took care of my brand design in a sufficient and timely manner. She was a great communicator and very reliable.",
+    author: "Gia, Bronzed by Gi",
+  },
 
-    return (
+  {
+    title: "HIGHLY RECOMMENDED",
+    text:
+      "The website exceeded my expectations. Everything was delivered on time and communication was amazing throughout the project.",
+    author: "John Smith",
+  },
 
-        <section className="testimonial">
+  {
+    title: "VERY PROFESSIONAL",
+    text:
+      "Working together was a wonderful experience. Every detail was carefully designed and the final product looked incredible.",
+    author: "Sarah Williams",
+  },
+];
 
-            <h2>Client Love</h2>
+export default function Testimonial() {
+  const [index, setIndex] = useState(0);
 
-            <p>
-                "JAKS DIGITAL transformed our ideas into a beautiful, user-friendly website that our customers love."
-            </p>
+  const previous = () => {
+    setIndex((index - 1 + testimonials.length) % testimonials.length);
+  };
 
-            <h3>— Happy Client</h3>
+  const next = () => {
+    setIndex((index + 1) % testimonials.length);
+  };
 
-        </section>
+  return (
+    <section className="testimonial-section">
 
-    );
+      <button className="arrow left" onClick={previous}>
+        &#8592;
+      </button>
 
+      <div className="testimonial-card">
+        <h1>"{testimonials[index].title}"</h1>
+
+        <p>{testimonials[index].text}</p>
+
+        <h3>- {testimonials[index].author}</h3>
+      </div>
+
+      <button className="arrow right" onClick={next}>
+        &#8594;
+      </button>
+
+    </section>
+  );
 }
-
-export default Testimonial;

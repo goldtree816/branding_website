@@ -1,0 +1,27 @@
+.feature-card {
+  background: white;
+  border: 1px solid #222;
+  padding: 60px 40px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.feature-card h2 {
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+.feature-card p {
+  font-size: 18px;
+  line-height: 1.8;
+}
