@@ -1,146 +1,156 @@
+import ProjectCard from "./projectcard";
+import FeaturedProject from "./featuredproject";
 import "../styles/portfolio.css";
+
+
+import fashionImg from "../assets/fashion.png";
+import wellnessImg from "../assets/wellness.png";
+import photographyImg from "../assets/photography.png";
+import weddingImg from "../assets/wedding.png";
+import coffeeImg from "../assets/coffee.png";
+import fitnessImg from "../assets/fitness.png";
+import travelImg from "../assets/travel.png";
+import dentalImg from "../assets/dental.png";
+import startupImg from "../assets/startup.png";
+import skincareImg from "../assets/skincare.png";
 
 function Portfolio() {
   return (
     <>
-      <section className="intro">
-        <span className="eyebrow">Our work</span>
+      {/* Hero Section */}
+      <section className="portfolio-hero">
+        <span className="eyebrow">Portfolio</span>
 
-        <h1>Selected Works</h1>
+        <h1>
+          Strategic Brand & Website Design
+          <br />
+          for Service-Based Businesses
+          <br />
+          Ready to Grow With Intention
+        </h1>
 
         <p>
-          A collection of brand identities and websites built for wellness
-          practitioners, wedding professionals, and independent brands ready to
-          show up with confidence online.
+          We create thoughtful brands and modern websites that help businesses
+          connect with the right audience, build trust, and grow with
+          confidence.
         </p>
 
+        <div className="hero-buttons">
+          <button className="primary-btn">View Our Work</button>
+          <button className="secondary-btn">Book a Discovery Call</button>
+        </div>
+      </section>
+
+      {/* Featured Project */}
+      <FeaturedProject />
+
+      {/* Intro */}
+      <section className="intro">
+        <span className="eyebrow">Selected Works</span>
+
+        <h2>Recent Client Projects</h2>
+
         <p>
-          Every project below started the same way our client relationships do
-          &mdash; with a business that had a strong story but no visual language
-          to match it.
+          Every project starts with understanding the client's vision before
+          crafting a unique identity and digital experience.
         </p>
       </section>
 
+      {/* Filters */}
       <section className="filters">
-        <button className="filter active">All work</button>
-        <button className="filter">Brand identity</button>
-        <button className="filter">Website design</button>
+        <button className="filter active">All Work</button>
+        <button className="filter">Brand Identity</button>
+        <button className="filter">Website Design</button>
         <button className="filter">Packaging</button>
       </section>
 
-      <section className="grid">
-        <article className="card">
-          <div className="thumb"></div>
+     {/* Portfolio Grid */}
+<section className="grid">
 
-          <div className="card-body">
-            <h3>Restaurant &amp; Bar</h3>
+<ProjectCard
+  image={fashionImg}
+  title="Boutique Fashion Label"
+  tag="Packaging + Website Design"
+  description="Premium branding and a stylish online store designed for luxury fashion."
+/>
 
-            <p className="tag">Brand identity + digital menu</p>
 
-            <p className="desc">
-              A full identity refresh for a neighborhood restaurant &mdash; new
-              mark, menu system, and a digital ordering experience that matches
-              the warmth of the room.
-            </p>
-          </div>
-        </article>
+<ProjectCard
+  image={wellnessImg}
+  title="Luxury Wellness Brand"
+  tag="Brand Identity + Website"
+  description="A calm editorial brand with an elegant booking-ready website."
+/>
 
-        <article className="card">
-          <div className="thumb"></div>
 
-          <div className="card-body">
-            <h3>Boutique Fashion Label</h3>
+<ProjectCard
+  image={photographyImg}
+  title="Photography Studio"
+  tag="Portfolio Website + SEO"
+  description="A modern photography portfolio focused on attracting premium clients."
+/>
 
-            <p className="tag">Packaging + website design</p>
 
-            <p className="desc">
-              Packaging and an online storefront built to feel as considered as
-              the garments themselves, from unboxing through checkout.
-            </p>
-          </div>
-        </article>
+<ProjectCard
+  image={weddingImg}
+  title="Wedding Planning Studio"
+  tag="Brand Identity + Website"
+  description="Elegant branding and an inquiry-focused website for luxury weddings."
+/>
 
-        <article className="card">
-          <div className="thumb"></div>
 
-          <div className="card-body">
-            <h3>Luxury Wellness Brand</h3>
+<ProjectCard
+  image={skincareImg}
+  title="Independent Skincare Line"
+  tag="Packaging + Brand Identity"
+  description="A premium skincare identity designed to stand out online."
+/>
 
-            <p className="tag">Brand identity + website design</p>
 
-            <p className="desc">
-              A calm, editorial identity for a wellness studio expanding from
-              one location to a multi-city presence, with a booking-ready site
-              to match.
-            </p>
-          </div>
-        </article>
+<ProjectCard
+  image={coffeeImg}
+  title="Artisan Coffee House"
+  tag="Brand Identity + Website"
+  description="A warm and welcoming brand identity with online ordering experience."
+/>
 
-        <article className="card">
-          <div className="thumb"></div>
 
-          <div className="card-body">
-            <h3>Photography Studio</h3>
+<ProjectCard
+  image={fitnessImg}
+  title="Elite Fitness Club"
+  tag="Brand Identity + Website"
+  description="A bold visual identity and membership website for a premium fitness studio."
+/>
 
-            <p className="tag">Portfolio website + SEO</p>
 
-            <p className="desc">
-              A portfolio site built to let the photography lead, with an SEO
-              foundation that brings in inquiries long after launch.
-            </p>
-          </div>
-        </article>
+<ProjectCard
+  image={startupImg}
+  title="NovaTech Solutions"
+  tag="UI/UX + SaaS Website"
+  description="A sleek SaaS website built with a clean user experience."
+/>
 
-        <article className="card">
-          <div className="thumb"></div>
-
-          <div className="card-body">
-            <h3>Wedding Planning Studio</h3>
-
-            <p className="tag">Brand identity + website design</p>
-
-            <p className="desc">
-              An elevated identity and inquiry-first website for a planner
-              booking premium weddings across the region.
-            </p>
-          </div>
-        </article>
-
-        <article className="card">
-          <div className="thumb"></div>
-
-          <div className="card-body">
-            <h3>Independent Skincare Line</h3>
-
-            <p className="tag">Packaging + brand identity</p>
-
-            <p className="desc">
-              Shelf-ready packaging and a brand system built to hold its own
-              alongside established names in the category.
-            </p>
-          </div>
-        </article>
-      </section>
-
+</section>
+      {/* Statistics */}
       <section className="stats">
         <div className="stat">
           <div className="n">40+</div>
-          <div className="l">Projects delivered</div>
+          <div className="l">Projects Delivered</div>
         </div>
 
         <div className="stat">
           <div className="n">12</div>
-          <div className="l">Industries served</div>
+          <div className="l">Industries Served</div>
         </div>
 
         <div className="stat">
-          <div className="n">4-6</div>
-          <div className="l">Week average timeline</div>
+          <div className="n">4–6</div>
+          <div className="l">Weeks Average Timeline</div>
         </div>
 
         <div className="stat">
           <div className="n">98%</div>
-          <div className="l">Clients who refer us</div>
+          <div className="l">Client Referral Rate</div>
         </div>
       </section>
     </>

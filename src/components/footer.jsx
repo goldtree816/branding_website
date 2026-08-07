@@ -1,25 +1,29 @@
-import "../styles/footer.css";
+import "../styles/client.css";
 
-function Footer() {
+function Clients() {
 
     return (
 
-        <footer>
+        <section className="clients">
 
-            <h2>JAKS DIGITAL</h2>
+            <p>SUPPORTING CLIENTS FEATURED</p>
 
-            <p>
-                Brand Design • Website Design • Digital Experiences
-            </p>
+            <ul className="names">
 
-            <p>
-                © 2026 JAKS DIGITAL
-            </p>
+                <li>Entrepreneur</li>
 
-        </footer>
+                <li>VOGUE</li>
+
+                <li>STYLE ME PRETTY</li>
+
+                <li>The New York Times</li>
+
+            </ul>
+
+        </section>
 
     );
 
 }
 
-export default Footer;
+export default Clients;
