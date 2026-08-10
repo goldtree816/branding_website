@@ -5,6 +5,10 @@ body {
     background: #EFEAE3;
     color: #1D1D1D;
 }
+p{
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
 
 #root{
 

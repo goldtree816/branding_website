@@ -10,6 +10,7 @@ import Portfolio from './components/portfolio.jsx'
 import Client from './components/client.jsx'
 import Testimonial from './components/testimonial.jsx'
 import Home from './pages/home.jsx'
+import logo from './assets/intro.webp'
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 
 function Layout() {
@@ -42,5 +43,3 @@ function App() {
 }
 
 export default App;
-//awdsadwawdvahdwad
-//aihkjwgdiubwaadhdwad
