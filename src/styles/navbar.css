@@ -3,16 +3,12 @@
 =========================== */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
 
-header{
-
-    position:sticky;
-    top:0;
-    z-index:1000;
-
-    background:rgba(250,248,245,0.85);
-
-    padding:25px 50px;
-
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(250,248,245,0.85);
+    padding: 8px 0;
 }
 .logo a {
   text-decoration: none;
@@ -44,16 +40,9 @@ nav{
 
 /* Logo */
 
-.logo h1{
-
-    font-family:'Playfair Display',serif;
-
-    font-size:18px;
-
-    letter-spacing:3px;
-
-    color:#111;
-
+.logo h1 {
+    margin: 0;
+    line-height: 1;
 }
 
 .nav-links a {
