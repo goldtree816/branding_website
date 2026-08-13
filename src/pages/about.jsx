@@ -10,9 +10,9 @@
       <>
     
         <section className="intro">
-          <h1>MEET THE BRAND STRATEGIST BEHIND JAKS DIGITAL</h1>
+          <h1 className="head">MEET THE BRAND STRATEGIST BEHIND JAKS DIGITAL</h1>
 
-          <p>
+          <p className="head">
             Thoughtful brand strategy and website design to help you show up with clarity, confidence, and a digital presence that truly reflects who you are.
           </p>
 

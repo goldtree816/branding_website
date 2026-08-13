@@ -70,12 +70,7 @@
 }
 
 /* Everything inside .intro needs to sit above the overlay */
-.intro h1,
-.intro p,
-.intro .intro-cta {
-  position: relative;
-  z-index: 1;
-}
+
 
 .intro h1 {
   font-family: 'Playfair Display', serif;
@@ -88,14 +83,16 @@
   max-width: 900px;
   margin-bottom: 28px;
   text-shadow: 0 2px 16px rgba(0, 0, 0, 0.25);
+  transform: translateX(25px);
 }
 
 .intro p {
   max-width: 620px;
   font-size: 19px;
-  color: #f9f9f9;
+  color: #f9f9f9 !important;
   margin-bottom: 34px;
   line-height: 1.5;
+  transform: translateX(25px);
 }
 
 /* Button + the horizontal lines flanking it */
@@ -128,6 +125,8 @@
   cursor: pointer;
   white-space: nowrap;
   transition: background 0.2s ease, color 0.2s ease;
+  transform: translateX(25px);
+  
 }
 
 .intro button:hover {
