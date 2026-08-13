@@ -1,13 +1,13 @@
-/* ===========================
-   APP LEVEL STYLES
-=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap');
+
 body {
     background: #EFEAE3;
     color: #1D1D1D;
 }
 p{
+    font-family: 'PT Serif', 'Georgia', serif;
     font-size: 18px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-weight: 400;
 }
 
 #root{

@@ -65,7 +65,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(20, 17, 13, 0.42);
+  background: rgba(43, 34, 34, 0.42);
   z-index: 0;
 }
 
@@ -93,7 +93,7 @@
 .intro p {
   max-width: 620px;
   font-size: 19px;
-  color: #f1efe9;
+  color: #f9f9f9;
   margin-bottom: 34px;
   line-height: 1.5;
 }
@@ -112,7 +112,7 @@
   content: "";
   flex: 1;
   height: 1px;
-  background: rgba(244, 241, 234, 0.55);
+  background: rgba(244, 244, 244, 0.55);
 }
 
 .intro button {
