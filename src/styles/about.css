@@ -40,10 +40,121 @@
   }
  
   section{padding:70px 60px;}
-  .intro{background:var(--cream-2);padding:60px 60px 70px;}
-  .intro h1{font-size:34px;margin-bottom:22px;}
-  .intro p{max-width:900px;font-size:18px;color:var(--ink-2);margin-bottom:14px;}
- 
+  /* Add this to about.css (or a separate hero.css) — uses the same
+   --cream / --ink variables from your existing stylesheet */
+
+.intro {
+  position: relative;
+  min-height: 620px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 40px 70px;
+  overflow: hidden;
+
+  /* Swap this for your own image path */
+  background-image: url('../assets/intro.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Dark overlay so the white text stays readable over any photo */
+.intro::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(43, 34, 34, 0.42);
+  z-index: 0;
+}
+
+/* Everything inside .intro needs to sit above the overlay */
+.intro h1,
+.intro p,
+.intro .intro-cta {
+  position: relative;
+  z-index: 1;
+}
+
+.intro h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  text-transform: uppercase;
+  max-width: 900px;
+  margin-bottom: 28px;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.25);
+}
+
+.intro p {
+  max-width: 620px;
+  font-size: 19px;
+  color: #f9f9f9;
+  margin-bottom: 34px;
+  line-height: 1.5;
+}
+
+/* Button + the horizontal lines flanking it */
+.intro-cta {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.intro-cta::before,
+.intro-cta::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(244, 244, 244, 0.55);
+}
+
+.intro button {
+  background: var(--cream);
+  color: var(--ink);
+  border: none;
+  padding: 18px 40px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.intro button:hover {
+  background: var(--red);
+  color: var(--cream);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .intro {
+    min-height: 480px;
+    padding: 48px 24px 56px;
+  }
+  .intro h1 {
+    font-size: 32px;
+  }
+  .intro p {
+    font-size: 16px;
+  }
+  .intro-cta {
+    gap: 16px;
+  }
+  .intro button {
+    padding: 14px 26px;
+    font-size: 12px;
+  }
+}
   .eyebrow{
     font-family:'Playfair Display',serif;font-weight:600;font-size:13px;
     letter-spacing:0.14em;text-transform:uppercase;color:var(--red);
@@ -51,16 +162,71 @@
   }
  
   /* STORY */
-  .story{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
-  .story-copy h2{font-size:30px;margin-bottom:20px;}
-  .story-copy p{font-size:17px;color:var(--ink-2);margin-bottom:16px;max-width:520px;}
-  .portrait{
-    background:var(--ink);height:360px;border-radius:2px;
-    display:flex;align-items:center;justify-content:center;
-    color:var(--cream);font-family:'Playfair Display',serif;
-    font-size:15px;letter-spacing:0.06em;text-align:center;opacity:0.85;
-  }
- 
+ .serve {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+
+    width: 100%;
+    max-width: 1400px;
+    margin: 80px auto;
+    padding:  40px;
+}
+
+.img1 {
+    flex: 1;
+}
+
+.img1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.serve-copy {
+    flex: 1;
+}
+
+.serve-copy h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.serve1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse; /* Swaps left and right */
+
+    gap: 50px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 80px auto;
+    padding: 0 40px;
+}
+
+.img2 {
+    flex: 1;
+}
+
+.img2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.serve-copy1 {
+    flex: 1;
+}
+
+.serve-copy1 h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
   /* VALUES */
   .values{background:var(--cream-2);}
   .values h2{font-size:30px;margin-bottom:8px;}

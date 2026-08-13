@@ -7,8 +7,7 @@
   import design from "../assets/design.png";
   import ongoing from "../assets/ongoing.png";
   import jaks from "../assets/jaks.png";
-  import Card from "../components/card.jsx";
-  import Values from "../components/values.jsx";
+  import Testimonial from "../components/testimonial.jsx";
 
 
   function Services() {
@@ -133,7 +132,8 @@
                       <button>MORE ABOUT STUDIO SUPPORT</button>
                   </div>
                   </section>
-              
+                  <Testimonial/>
+              <br></br>
 
               <div className="container">
 
@@ -145,8 +145,6 @@
                       that fits your goals.
                   </p>
 
-                  
-                <Values/>
 
                 <section className="serve">
                       <div className="img1">

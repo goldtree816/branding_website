@@ -1,6 +1,6 @@
 import "../styles/card.css";
 
-function Card({ icon, title, description , button }) {
+function Card({ icon, title, description }) {
   return (
     <div className="feature-card">
       <div className="icon">{icon}</div>
@@ -8,7 +8,6 @@ function Card({ icon, title, description , button }) {
       <h2>{title}</h2>
 
       <p>{description}</p>
-      <button>{button}</button>
     </div>
   );
 }
