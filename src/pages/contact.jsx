@@ -1,4 +1,5 @@
 import "../styles/contact.css";
+import Form from '../components/form.jsx'
 
 function Contact() {
 
@@ -6,24 +7,25 @@ function Contact() {
 
         <section id="contact" className="contact">
 
-            <h2>Ready To Build Your Brand?</h2>
+            <div className="content">
+          <h1>GET IN TOUCH</h1>
+          <h2><i>The next level of your business starts here</i></h2>
+        </div>
+    
 
-            <p>
-                Let's create a digital presence that feels
-                as professional as the work you provide.
-            </p>
+      <div>
+        <h1>PROJECT INQUIRY FORM</h1>
+        <p>
+          I CAN'T WAIT TO HEAR ABOUT YOUR BUSINESS GOALS AND THE VISION FOR
+          YOUR PROJECT.
+        </p>
+        <p>Upon submission, you will be able to book your free discovery call directly on my calendar.</p>
+      </div>
+    
+    <Form/>
+     </section>
 
-            <button>
-                START YOUR PROJECT
-            </button><br></br><br></br><br></br><br></br>
-                <h3>Contact</h3>
-            <p><a href="mailto:hellojaks@gmail.com">hellojaks@gmail.com</a></p>
-            <p><a>+1(545)123-7456</a></p>
-            <p><a href="https://github.com/swornim11">Github</a></p>
-            <p><a href="https://www.instagram.com/_swornim_maharjan_/?hl=en">Instagram</a></p>
-
-
-        </section>
+    
 
     );
 

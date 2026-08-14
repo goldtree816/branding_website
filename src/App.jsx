@@ -10,6 +10,7 @@ import Portfolio from './pages/portfolio.jsx'
 import Client from './components/client.jsx'
 import Testimonial from './components/testimonial.jsx'
 import Home from './pages/home.jsx'
+import Form from './components/form.jsx'
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 
 function Layout() {
