@@ -1,7 +1,11 @@
+<<<<<<< HEAD:src/pages/contact.jsx
 import "../styles/contact.css";
 import Form from '../components/form.jsx'
+=======
+import "../styles/resources.css";
+>>>>>>> a20535127bd1c1f9c7325551943b6b3ff28cd43b:src/pages/resources.jsx
 
-function Contact() {
+function Resources() {
 
     return (
 
@@ -31,4 +35,4 @@ function Contact() {
 
 }
 
-export default Contact;
+export default Resources;

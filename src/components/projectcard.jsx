@@ -1,6 +1,6 @@
 import "../styles/projectcard.css";
 
-function ProjectCard({image, title, tag, description}) {
+function ProjectCard({image, title, description, read}) {
 
 return (
 
@@ -14,21 +14,15 @@ alt={title}
 
 <div className="card-body">
 
-<h3>{title}</h3>
-
-<p className="tag">
-{tag}
-</p>
+<p>{title}</p>
 
 
-<p className="desc">
+<h2 className="desc">
 {description}
-</p>
+</h2>
 
 
-<a href="#" className="case-study">
-View Case Study →
-</a>
+<a href="#" className="case-study">Read More</a>
 
 
 </div>
