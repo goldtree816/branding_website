@@ -1,6 +1,6 @@
-import "../styles/contact.css";
+import "../styles/resources.css";
 
-function Contact() {
+function Resources() {
 
     return (
 
@@ -29,4 +29,4 @@ function Contact() {
 
 }
 
-export default Contact;
+export default Resources;

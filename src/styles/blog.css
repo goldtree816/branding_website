@@ -1,0 +1,59 @@
+.cat-accordion {
+  max-width: 260px;
+  font-family: inherit;
+}
+
+.cat-accordion summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  background: #e7e5e9;
+  border-radius: 4px;
+  padding: 14px 18px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1a1a2e;
+  cursor: pointer;
+}
+
+.cat-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.cat-accordion summary:hover {
+  background: #ddd9df;
+}
+
+.cat-chevron {
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+.cat-accordion[open] summary .cat-chevron {
+  transform: rotate(180deg);
+}
+
+.cat-accordion[open] summary {
+  border-radius: 4px 4px 0 0;
+}
+
+.cat-list {
+  display: flex;
+  flex-direction: column;
+  background: #e7e5e9;
+  border-radius: 0 0 4px 4px;
+  padding: 8px 18px 16px;
+}
+
+.cat-list a {
+  padding: 6px 0;
+  color: #1a1a2e;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.cat-list a:hover {
+  text-decoration: underline;
+}

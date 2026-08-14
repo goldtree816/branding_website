@@ -4,8 +4,8 @@ import Hero from './pages/hero.jsx'
 import Footer from './components/footer.jsx'
 import Services from './pages/services.jsx'
 import About from './pages/about.jsx'
-import Contact from './pages/contact.jsx'
-import Process from './pages/process.jsx'
+import Resources from './pages/resources.jsx'
+import Blog from './pages/blog.jsx'
 import Portfolio from './pages/portfolio.jsx'
 import Client from './components/client.jsx'
 import Testimonial from './components/testimonial.jsx'
@@ -30,8 +30,8 @@ const router = createBrowserRouter([
       { path: "/services", element: <Services /> },
       { path: "/portfolio", element: <Portfolio /> },
       { path: "/about", element: <About /> },
-      { path: "/process", element: <Process /> },
-      { path: "/contact", element: <Contact /> },
+      { path: "/blog", element: <Blog /> },
+      { path: "/resources", element: <Resources /> },
       { path: "/srs_digital", element: <Home />},
     ],
   },
