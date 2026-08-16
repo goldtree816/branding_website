@@ -1,4 +1,5 @@
-import "../styles/featuredproject.css";
+import { useRef } from "react";
+import "../styles/portfolio-showcase.css";
 
 import fashionImg from "../assets/fashion.png";
 import wellnessImg from "../assets/wellness.png";
@@ -21,152 +22,143 @@ import balancedlivingCO from "../assets/balancedlivingCO.png";
 import majestichealing from "../assets/majestichealing.png";
 
 
-function FeaturedProjects() {
+function PortfolioShowcase() {
+
+  const trackRef = useRef(null);
+
 
   const projects = [
-
     {
       image: fashionImg,
       name: "Boutique Fashion Label",
     },
-
     {
       image: wellnessImg,
       name: "Luxury Wellness Brand",
     },
-
     {
       image: photographyImg,
       name: "Photography Studio",
     },
-
     {
       image: weddingImg,
       name: "Wedding Planning Studio",
     },
-
     {
       image: coffeeImg,
       name: "Artisan Coffee House",
     },
-
     {
       image: fitnessImg,
       name: "Elite Fitness Club",
     },
-
     {
       image: travelImg,
       name: "Travel Experience",
     },
-
     {
       image: dentalImg,
       name: "Modern Dental Studio",
     },
-
     {
       image: startupImg,
       name: "NovaTech Solutions",
     },
-
     {
       image: skincareImg,
       name: "Independent Skincare Line",
     },
-
     {
       image: myhomeDesigned,
       name: "My Home Designed",
     },
-
     {
       image: nofoevents,
       name: "NOFO Events",
     },
-
     {
       image: birthwell,
       name: "Birthwell",
     },
-
     {
       image: ascend,
       name: "Ascend Aesthetics",
     },
-
     {
       image: interior,
       name: "Interior Design",
     },
-
     {
       image: uncontained,
       name: "Uncontained",
     },
-
     {
       image: balancedlivingCO,
       name: "Balanced Living Co.",
     },
-
     {
       image: majestichealing,
       name: "Majestic Healing",
     },
-
   ];
+
+
+  const scrollRight = () => {
+
+    if (trackRef.current) {
+
+      trackRef.current.scrollBy({
+        left: 330,
+        behavior: "smooth",
+      });
+
+    }
+
+  };
 
 
   return (
 
-    <section className="featured-projects">
+    <section className="portfolio-showcase">
 
-      {/* SECTION TITLE */}
-
-      <div className="featured-projects-heading">
-
-        <span>FEATURED PROJECTS</span>
-
-      </div>
-
-
-      {/* PROJECT GRID */}
-
-      <div className="featured-projects-grid">
+      <div
+        className="portfolio-showcase-track"
+        ref={trackRef}
+      >
 
         {projects.map((project, index) => (
 
-          <article
-            className="featured-project-card"
+          <div
+            className="portfolio-showcase-item"
             key={index}
           >
 
-            <div className="featured-project-image">
+            <img
+              src={project.image}
+              alt={project.name}
+            />
 
-              <img
-                src={project.image}
-                alt={project.name}
-              />
-
-            </div>
-
-
-            <h2>
-              {project.name}
-            </h2>
-
-          </article>
+          </div>
 
         ))}
 
       </div>
 
+
+      {/* SIDE SCROLL ARROW */}
+
+      <button
+        className="showcase-scroll-arrow"
+        onClick={scrollRight}
+        aria-label="Scroll projects"
+      >
+        →
+      </button>
+
     </section>
 
   );
-
 }
 
 
-export default FeaturedProjects;
+export default PortfolioShowcase;

@@ -1,42 +1,51 @@
 import "../styles/projectcard.css";
 
-function ProjectCard({image, title, tag, description}) {
+function ProjectCard({
+  image,
+  title,
+  category,
+  description,
+  number,
+}) {
+  return (
+    <article className="portfolio-card">
 
-return (
+      <div className="portfolio-card-image">
 
-<article className="card">
+        <img src={image} alt={title} />
 
-<img 
-className="thumb"
-src={image}
-alt={title}
-/>
+        <span className="project-number">
+          {number}
+        </span>
 
-<div className="card-body">
+        <div className="project-arrow">
+          ↗
+        </div>
 
-<h3>{title}</h3>
-
-<p className="tag">
-{tag}
-</p>
-
-
-<p className="desc">
-{description}
-</p>
-
-
-<a href="#" className="case-study">
-View Case Study →
-</a>
+      </div>
 
 
-</div>
+      <div className="portfolio-card-content">
 
-</article>
+        <div>
 
-)
+          <h3>{title}</h3>
 
+          <p className="project-category">
+            {category}
+          </p>
+
+        </div>
+
+
+        <p className="project-description">
+          {description}
+        </p>
+
+      </div>
+
+    </article>
+  );
 }
 
 export default ProjectCard;
