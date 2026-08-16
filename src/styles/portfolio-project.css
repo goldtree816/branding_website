@@ -1,0 +1,254 @@
+/* =====================================================
+   FEATURED PROJECTS
+===================================================== */
+
+.featured-projects {
+
+  width: 100%;
+
+  padding: 85px 5vw 120px;
+
+  background: #f7f5f0;
+
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.featured-projects-heading {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 35px;
+
+  margin-bottom: 75px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 27px;
+
+  font-weight: 500;
+
+  letter-spacing: -0.5px;
+
+  text-transform: uppercase;
+
+}
+
+
+/* LEFT LINE */
+
+.featured-projects-heading::before {
+
+  content: "";
+
+  flex: 1;
+
+  height: 1px;
+
+  background: #2b2925;
+
+}
+
+
+/* RIGHT LINE */
+
+.featured-projects-heading::after {
+
+  content: "";
+
+  flex: 1;
+
+  height: 1px;
+
+  background: #2b2925;
+
+}
+
+
+/* =====================================================
+   THREE COLUMN GRID
+===================================================== */
+
+.featured-projects-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  column-gap: 30px;
+
+  row-gap: 70px;
+
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.featured-project-card {
+
+  width: 100%;
+
+}
+
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.featured-project-image {
+
+  width: 100%;
+
+  height: 470px;
+
+  overflow: hidden;
+
+  background: #ebe8e1;
+
+}
+
+
+.featured-project-image img {
+
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.8s
+    cubic-bezier(.2, .65, .3, 1);
+
+}
+
+
+.featured-project-card:hover
+.featured-project-image img {
+
+  transform: scale(1.035);
+
+}
+
+
+/* =====================================================
+   PROJECT NAME
+===================================================== */
+
+.featured-project-card h2 {
+
+  margin: 15px 0 0;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 25px;
+
+  font-weight: 500;
+
+  line-height: 1;
+
+  letter-spacing: -0.5px;
+
+  text-align: center;
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .featured-projects {
+
+    padding: 70px 5vw 90px;
+
+  }
+
+
+  .featured-projects-heading {
+
+    margin-bottom: 55px;
+
+    font-size: 24px;
+
+  }
+
+
+  .featured-projects-grid {
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 50px 20px;
+
+  }
+
+
+  .featured-project-image {
+
+    height: 430px;
+
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .featured-projects {
+
+    padding: 60px 5vw 80px;
+
+  }
+
+
+  .featured-projects-heading {
+
+    gap: 15px;
+
+    margin-bottom: 45px;
+
+    font-size: 21px;
+
+  }
+
+
+  .featured-projects-grid {
+
+    grid-template-columns: 1fr;
+
+    row-gap: 50px;
+
+  }
+
+
+  .featured-project-image {
+
+    height: 450px;
+
+  }
+
+
+  .featured-project-card h2 {
+
+    font-size: 24px;
+
+  }
+
+}
