@@ -90,6 +90,16 @@ const resources = () => {
             
       </section>
 
+
+      <section className='lines'>
+        <div className='line-1'>
+          <p>Please note some of these tools contain affiliate links where I may receive a small commission when you purchase through them at no extra cost to you!</p>
+          </div>
+     <div className='line-2'>
+          <h1>Free Brand & Website Design Resources</h1>
+        </div>
+      </section>
+
        <section>
       <div className="free-container">
 
