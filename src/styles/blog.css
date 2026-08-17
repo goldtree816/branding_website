@@ -287,6 +287,15 @@
   box-sizing: border-box;
 }
 
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 320px);
+    justify-content: center;
+    align-items: start;
+    gap: 50px 30px;
+    padding: 0 20px;
+}
 .free-container {
     width: 100%;
     display: flex;

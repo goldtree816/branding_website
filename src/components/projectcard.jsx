@@ -4,20 +4,20 @@ function ProjectCard({image, title, description, read}) {
 
 return (
 
-<article className="card">
+<article className="cardp">
 
 <img 
-className="thumb"
+className="thumbp"
 src={image}
 alt={title}
 />
 
-<div className="card-body">
+<div className="cardp-body">
 
 <p>{title}</p>
 
 
-<h2 className="desc">
+<h2 className="descp">
 {description}
 </h2>
 
