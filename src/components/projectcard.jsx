@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/projectcard.css";
 
 function ProjectCard({image, title, description, read}) {
@@ -6,11 +7,13 @@ return (
 
 <article className="cardp">
 
+<Link to="/blog1">
 <img 
 className="thumbp"
 src={image}
 alt={title}
 />
+</Link>
 
 <div className="cardp-body">
 

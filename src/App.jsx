@@ -11,6 +11,7 @@ import Client from './components/client.jsx'
 import Testimonial from './components/testimonial.jsx'
 import Home from './pages/home.jsx'
 import Form from './components/form.jsx'
+import Blog1 from './components/blog1.jsx'
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 
 function Layout() {
@@ -34,6 +35,7 @@ const router = createBrowserRouter([
       { path: "/blog", element: <Blog /> },
       { path: "/resources", element: <Resources /> },
       { path: "/srs_digital", element: <Home />},
+      { path: "/blog1", element: <Blog1 />}
     ],
   },
 ]);
