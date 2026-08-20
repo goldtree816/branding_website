@@ -8,6 +8,7 @@
   import ongoing from "../assets/ongoing.png";
   import jaks from "../assets/jaks.png";
   import Testimonial from "../components/testimonial.jsx";
+  import { Link } from "react-router-dom";
 
 
   function Services() {
@@ -56,7 +57,8 @@
                       <p>If you’re looking for sunglasses that combine effortless elegance with everyday comfort, Goldtree Sunglasses are designed for you. We bring together refined design, premium materials, and a sophisticated aesthetic to help you make a confident statement wherever you go.</p><br></br>
                       <p>From classic frames to modern silhouettes, each pair is thoughtfully designed to complement your personal style while providing reliable protection and comfort. Goldtree Sunglasses add a polished finishing touch to every look, making them a perfect blend of fashion, function, and confidence.</p>
                       <br></br><p>Starting at $120+</p><br></br>
-                      <button>ABOUT BRAND IDENTITY SERVICES</button>
+                      <Link to="/service_sunglass"><button>ABOUT SUNGLASSES</button></Link>
+                      
                   </div>
                   </section>
 
@@ -71,7 +73,7 @@
                       <p>If you’re searching for a bag that feels as sophisticated as it is practical, Goldtree Ladies Bags are made for you. Designed to complement your everyday lifestyle, our bags combine elegant details, premium finishes, and functional spaces so you can carry everything you need with confidence.</p><br></br>
                       <p>From carefully selected materials and refined gold accents to spacious interiors and versatile designs, every bag is thoughtfully created to bring together fashion and functionality. Goldtree Ladies Bags are made to elevate your everyday outfits while becoming a timeless part of your wardrobe.</p>
                       <br></br><p>Starting at $180+</p><br></br>
-                      <button>EXPLORE WEBSITE DESIGN</button>
+                      <Link to="/service_ladiesbag"><button>ABOUT LADIES BAG</button></Link>
                   </div>
                   </section>
 
@@ -85,7 +87,7 @@
                       <p>If you’re tired of choosing between great sound and beautiful design, Goldtree Earbuds bring both together. Designed for modern lifestyles, they deliver an immersive listening experience while offering a sleek, lightweight design that fits naturally into your everyday routine.</p><br></br>
                       <p>From clear audio and reliable wireless connectivity to long-lasting battery life and comfortable fit, every detail is designed with convenience in mind. Goldtree Earbuds combine technology, comfort, and sophisticated design to keep you connected to the sounds that matter most.</p>
                       <br></br><p>Starting at $80+</p><br></br>
-                      <button>ELEVATE YOUR EMAIL MARKETING</button>
+                      <Link to="/service_earbud"><button>ABOUT EARBUD</button></Link>
                   </div>
                   </section>
 
@@ -100,7 +102,7 @@
                       <p>If you’re looking for pure, naturally sourced honey that brings sweetness and quality to your everyday life, Goldtree Honey is made for you. Carefully selected and presented with a commitment to natural goodness, our honey delivers a rich flavor and authentic experience straight from nature.</p><br></br>
                       <p>From its golden color and naturally sweet taste to its carefully crafted packaging, Goldtree Honey brings together purity, quality, and elegance. Whether enjoyed in your morning routine, added to your favorite recipes, or simply savored by the spoonful, it’s nature’s sweetest gold.</p><br></br>
                       <br></br><p>Starting at $15+</p><br></br>
-                      <button>EXPLORE FULL-SERVICE PACKAGE</button>
+                      <Link to="/service_honey"><button>ABOUT HONEY</button></Link>
                   </div>
                   </section>
 
