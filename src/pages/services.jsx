@@ -1,9 +1,9 @@
   import "../styles/services.css";
-  import brand from "../assets/brand.png";
-  import bespoke from "../assets/bespoke.png";
-  import flodesk from "../assets/flodesk.png";
+  import sunglass from "../assets/sunglass.png";
+  import ladiesbag from "../assets/ladiesbag.png";
+  import earbud from "../assets/earbud.png";
   import stop from "../assets/stop.png";
-  import brandweb from "../assets/brandweb.png";
+  import honey from "../assets/honey.png";
   import design from "../assets/design.png";
   import ongoing from "../assets/ongoing.png";
   import jaks from "../assets/jaks.png";
@@ -48,58 +48,58 @@
 
               <section className="serve1">
                   <div className="img2">
-        <img src={brand} alt="brand" />
+        <img src={sunglass} alt="brand" />
       </div>
                   <div className="serve1-copy">
-                      <h1>Brand Identity Design Services</h1>
-                      <p><b>For businesses ready to move beyond DIY for a polished presence</b></p><br></br>
-                      <p>If you’re outgrowing your DIY roots and craving a brand that finally feels aligned, polished, and professional, this service is for you. We help you transition from inconsistent visuals and second-guessing to a cohesive brand identity that builds trust and elevates your market position, confidence, and credibility.</p><br></br>
-                      <p>From logo design to color palettes and typography, we create a thoughtfully designed brand system that sets the tone for your next chapter, reinforces your expertise, and ensures your business shows up with consistency and credibility across every touchpoint.</p>
-                      <br></br><p>Starting at $2000+</p><br></br>
+                      <h1>Goldtree Sunglassess</h1>
+                      <p><b>For those who want timeless style with a touch of luxury</b></p><br></br>
+                      <p>If you’re looking for sunglasses that combine effortless elegance with everyday comfort, Goldtree Sunglasses are designed for you. We bring together refined design, premium materials, and a sophisticated aesthetic to help you make a confident statement wherever you go.</p><br></br>
+                      <p>From classic frames to modern silhouettes, each pair is thoughtfully designed to complement your personal style while providing reliable protection and comfort. Goldtree Sunglasses add a polished finishing touch to every look, making them a perfect blend of fashion, function, and confidence.</p>
+                      <br></br><p>Starting at $120+</p><br></br>
                       <button>ABOUT BRAND IDENTITY SERVICES</button>
                   </div>
                   </section>
 
                   <section className="serve">
                       <div className="img1">
-        <img src={bespoke} alt="bespoke" />
+        <img src={ladiesbag} alt="bespoke" />
       </div>
                       
                       <div className="serve-copy">
-                      <h1><b>Bespoke Website Design</b></h1>
-                      <p>For established businesses ready to lead at a higher level</p><br></br>
-                      <p>If your current website no longer reflects who you are—or where your business is headed—this is more than a refresh. It’s a strategic upgrade.  Our custom, multi-page Squarespace websites are designed for entrepreneurs who are ready to show up with confidence, clarity, and authority.</p><br></br>
-                      <p>From elevated aesthetics to seamless functionality, every element is intentionally crafted to position your brand at a higher level, attract premium clients, and support long-term growth—behind the scenes and beyond launch day.</p>
-                      <br></br><p>Starting at $2500+</p><br></br>
+                      <h1>Goldtree Ladies Bag</h1>
+                      <p><b>For women who want elegance, functionality, and timeless style</b></p><br></br>
+                      <p>If you’re searching for a bag that feels as sophisticated as it is practical, Goldtree Ladies Bags are made for you. Designed to complement your everyday lifestyle, our bags combine elegant details, premium finishes, and functional spaces so you can carry everything you need with confidence.</p><br></br>
+                      <p>From carefully selected materials and refined gold accents to spacious interiors and versatile designs, every bag is thoughtfully created to bring together fashion and functionality. Goldtree Ladies Bags are made to elevate your everyday outfits while becoming a timeless part of your wardrobe.</p>
+                      <br></br><p>Starting at $180+</p><br></br>
                       <button>EXPLORE WEBSITE DESIGN</button>
                   </div>
                   </section>
 
                   <section className="serve1">
                       <div className="img2">
-        <img src={flodesk} alt="flodesk" />
+        <img src={earbud} alt="flodesk" />
       </div>
                       <div className="serve1-copy">
-                      <h1><b>Flodesk Email Marketing</b></h1>
-                      <p>For businesses ready to build connection beyond social media</p><br></br>
-                      <p>This service is designed for entrepreneurs who are ready to leverage email marketing with intention and ease. Whether you’re launching a list or refining an existing one, we guide you through a focused, two-week process to set up your Flodesk account, welcome workflows, and lead magnet design.</p><br></br>
-                      <p>The result is an automated email system that feels aligned, thoughtful, and easy to maintain, so nurturing your audience becomes a natural extension of your brand, not another task on your list.</p>
-                      <br></br><p>Starting at $950</p><br></br>
+                      <h1>Goldtree Earbuds</h1>
+                      <p><b>For those who want premium sound without compromising on style</b></p><br></br>
+                      <p>If you’re tired of choosing between great sound and beautiful design, Goldtree Earbuds bring both together. Designed for modern lifestyles, they deliver an immersive listening experience while offering a sleek, lightweight design that fits naturally into your everyday routine.</p><br></br>
+                      <p>From clear audio and reliable wireless connectivity to long-lasting battery life and comfortable fit, every detail is designed with convenience in mind. Goldtree Earbuds combine technology, comfort, and sophisticated design to keep you connected to the sounds that matter most.</p>
+                      <br></br><p>Starting at $80+</p><br></br>
                       <button>ELEVATE YOUR EMAIL MARKETING</button>
                   </div>
                   </section>
 
                   <section className="serve">
                       <div className="img1">
-        <img src={brandweb} alt="brand" />
+        <img src={honey} alt="brand" />
       </div>
                       
                       <div className="serve-copy">
-                      <h1><b>Brand. Website. Copy. Email Marketing. Done Together.</b></h1>
-                      <h1 className="sign">Synchronized Success</h1>
-                      <p><b>For established service-based businesses ready to invest in a complete, cohesive digital presence</b></p><br></br>
-                      <p>Your brand identity, website, SEO copywriting, and email marketing, built together by one designer, with one strategy, from start to finish. No juggling vendors. No wondering if it all fits together. Just a complete, cohesive digital presence that's ready to grow with you. Three tiers from $8,250.</p><br></br>
-                      
+                      <h1>Goldtree Honey</h1>
+                      <p><b>For those who value natural goodness with a touch of premium quality</b></p><br></br>
+                      <p>If you’re looking for pure, naturally sourced honey that brings sweetness and quality to your everyday life, Goldtree Honey is made for you. Carefully selected and presented with a commitment to natural goodness, our honey delivers a rich flavor and authentic experience straight from nature.</p><br></br>
+                      <p>From its golden color and naturally sweet taste to its carefully crafted packaging, Goldtree Honey brings together purity, quality, and elegance. Whether enjoyed in your morning routine, added to your favorite recipes, or simply savored by the spoonful, it’s nature’s sweetest gold.</p><br></br>
+                      <br></br><p>Starting at $15+</p><br></br>
                       <button>EXPLORE FULL-SERVICE PACKAGE</button>
                   </div>
                   </section>
@@ -109,7 +109,7 @@
         <img src={design} alt="flodesk" />
       </div>
                       <div className="serve1-copy">
-                      <h1><b>Design DAY Intensives</b></h1>
+                      <h1>Design DAY Intensives</h1>
                       <p><b>For focused projects and a cleared design to-do list</b></p><br></br>
                       <p>Design intensives offer dedicated, high-impact design support within a 1–2 week timeframe, perfect for tackling specific web or design needs without committing to a longer engagement. This collaborative, focused process allows us to move quickly while maintaining the same level of care and intention.</p><br></br>
                       <p>The result is polished, professional design that helps you move forward with confidence, clarity, and momentum.</p>
@@ -133,7 +133,7 @@
                   </div>
                   </section>
                   <Testimonial/>
-              <br></br>
+              <br></br> 
 
               <div className="container">
 
@@ -143,7 +143,8 @@
                       Whether you need one piece done right or the whole
                       thing built from the ground up, there is a solution
                       that fits your goals.
-                  </p>
+                  </p>  
+                  <div class="line"></div>
 
 
                 <section className="serve">

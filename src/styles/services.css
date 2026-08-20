@@ -162,13 +162,6 @@
     font-size: 3rem;
     margin-bottom: 20px;
 }
-.sign {
-    font-family: "Brush Script MT", "Segoe Script", cursive;
-    font-size: 70px;
-    font-weight: 400;
-    font-style: italic;
-    text-align: center;
-}
 /* Mobile */
 
 @media(max-width:600px){
@@ -217,7 +210,7 @@ h1{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:28px 0;
+    padding:10px 0;
     border-top:1px solid #111;
     cursor:pointer;
     transition:0.3s;
