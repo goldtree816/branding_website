@@ -4,7 +4,7 @@ import Free_Down from "../components/free";
 import b1 from "../assets/b_sunglasses.png";
 import b2 from "../assets/b_ladiesbag.png";
 import b3 from "../assets/b_earbud.png";
-import b4 from "../assets/b4.png";
+import b4 from "../assets/b_honey.png";
 import b5 from "../assets/b5.png";
 import b6 from "../assets/b6.png";
 import b7 from "../assets/b7.png";

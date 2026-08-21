@@ -5,7 +5,7 @@
   import stop from "../assets/stop.png";
   import honey from "../assets/honey.png";
   import design from "../assets/design.png";
-  import ongoing from "../assets/ongoing.png";
+  import goldtree from "../assets/goldtree_4.png";
   import jaks from "../assets/jaks.png";
   import Testimonial from "../components/testimonial.jsx";
   import { Link } from "react-router-dom";
@@ -122,7 +122,7 @@
 
                   <section className="serve">
                       <div className="img1">
-        <img src={ongoing} alt="brand" />
+        <img src={goldtree} alt="brand" />
       </div>
                       
                       <div className="serve-copy">
