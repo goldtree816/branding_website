@@ -1,66 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Ballet&display=swap');
-.services{
 
-    padding:100px 0;
 
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #fff;
 }
 
 
-.services-intro{
+/* =========================================================
+   SERVICES
+   ========================================================= */
 
-    max-width:700px;
-
+.services {
+    width: 100%;
+    padding: 100px 0;
 }
+
+.services-intro {
+    width: 100%;
+    max-width: 700px;
+}
+
+
+/* =========================================================
+   GENERAL LINE
+   ========================================================= */
+
 .line {
     width: 100%;
-    height: 2px;
+    height: 1px;
     background-color: #000;
     margin: 20px 0;
 }
 
 
-/* Cards wrapper */
+/* =========================================================
+   INFO
+   ========================================================= */
 
-.services-wrap{
-
-    overflow:hidden;
-
-}
-
-
-.info{
+.info {
+    width: 100%;
     text-align: center;
 }
 
-.info h2{
-
-    font-size:clamp(42px,5vw,68px);
-
-    line-height:1.1;
-
-    letter-spacing:-1px;
-
-    margin:25px 0;
-
-    color:#1c1b19;
-
+.info h2 {
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin: 25px 0;
+    color: #1c1b19;
 }
 
 
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
 
-/* Description */
-
-.hero-content p:not(.small-title):not(.greeting){
-
-    max-width:600px;
-
-    font-size:19px;
-
-    color:#6b665e;
-
-    line-height:1.8;
-
+.hero-content p:not(.small-title):not(.greeting) {
+    width: 100%;
+    max-width: 600px;
+    font-size: 19px;
+    color: #6b665e;
+    line-height: 1.8;
 }
+
+
+/* =========================================================
+   WEB SECTION
+   ========================================================= */
+
 .web {
     width: 100%;
     text-align: center;
@@ -72,196 +95,907 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     padding: 35px 20px;
-    box-sizing: border-box;
 }
 
 .web-content h1 {
     width: 100%;
     margin: 0;
+
     font-size: 60px;
-    flex-direction: column;
+    line-height: 1;
     text-align: center;
+
     transform: translateX(12px);
 }
 
 .web-content p {
     width: 100%;
     margin: 0;
+
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 2px;
+
     text-transform: uppercase;
     text-align: center;
 }
 
- 
-    
+
+/* =========================================================
+   SERVICE SECTION 1
+   IMAGE LEFT — TEXT RIGHT
+   ========================================================= */
 
 .serve {
+    width: 100%;
+    max-width: 1400px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     gap: 50px;
 
-    width: 100%;
-    max-width: 1400px;
     margin: 80px auto;
     padding: 0 40px;
 }
 
+
+/* Image */
+
 .img1 {
+    width: 50%;
     flex: 1;
 }
 
 .img1 img {
     width: 100%;
     height: auto;
+
     display: block;
+
     object-fit: cover;
 }
-.serve-copy h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
+
+
+/* Text */
 
 .serve-copy {
+    width: 50%;
     flex: 1;
 }
 
+.serve-copy h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+
+    margin: 0 0 20px;
+}
+
+
+/* =========================================================
+   SERVICE SECTION 2
+   TEXT LEFT — IMAGE RIGHT
+   ========================================================= */
 
 .serve1 {
+    width: 100%;
+    max-width: 1400px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row-reverse; /* Swaps left and right */
+
+    flex-direction: row-reverse;
 
     gap: 50px;
-    width: 100%;
-    max-width: 1400px;
+
     margin: 80px auto;
     padding: 0 40px;
 }
 
+
+/* Image */
+
 .img2 {
+    width: 50%;
     flex: 1;
+
+    display: block;
+    overflow: hidden;
 }
 
 .img2 img {
     width: 100%;
     height: auto;
+
     display: block;
+
     object-fit: cover;
 }
 
+
+/* Text */
+
 .serve1-copy {
+    width: 50%;
     flex: 1;
 }
 
 .serve1-copy h1 {
     font-size: 3rem;
-    margin-bottom: 20px;
-}
-/* Mobile */
+    line-height: 1.1;
 
-@media(max-width:600px){
-
-
-.list li{
-
-    min-width:280px;
-
-    padding:30px;
-
+    margin: 0 0 20px;
 }
 
 
+/* =========================================================
+   BRAND DASHBOARD
+   IMAGE LEFT — TEXT RIGHT
+   ========================================================= */
 
-.list h3{
+.dash {
+    width: 100%;
+    max-width: 1200px;
 
-    font-size:25px;
+    display: grid;
+    grid-template-columns: 500px 1fr;
 
+    align-items: start;
+
+    gap: 70px;
+
+    margin: 70px auto;
+    padding: 0 30px;
 }
 
 
+/* Dashboard image */
+
+.img_d {
+    width: 500px;
+    height: 650px;
+
+    overflow: hidden;
 }
 
-/* questions */
-.faq{
-    width:100%;
-    padding:80px 0;
+.img_d img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
 }
 
-.container{
-    width:70%;
-    margin:auto;
+
+/* Dashboard text */
+
+.dash-copy {
+    width: 100%;
+    padding: 0;
 }
 
-h1{
-    font-family:'Cormorant Garamond',serif;
-    font-size:36px;
-    font-weight:500;
-    text-transform:uppercase;
-    margin-bottom:45px;
-    line-height:1.1;
+.dash-copy h1 {
+    font-size: 3.5rem;
+    line-height: 1.05;
+    font-weight: 400;
+
+    margin: 0 0 30px;
 }
 
-.faq-item{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:10px 0;
-    border-top:1px solid #111;
-    cursor:pointer;
-    transition:0.3s;
+.dash-copy .line {
+    width: 100%;
+    height: 1px;
+
+    background: #222;
+
+    margin: 0 0 35px;
 }
 
-.faq-item:last-child{
-    border-bottom:1px solid #111;
+.dash-copy p {
+    width: 100%;
+    max-width: 600px;
+
+    font-size: 1.05rem;
+    line-height: 1.7;
+
+    margin: 0 0 35px;
 }
 
-.faq-item span:first-child{
-    width:90%;
-    font-size:13px;
-    font-weight:600;
-    letter-spacing:3px;
-    text-transform:uppercase;
-    line-height:1.6;
+.dash-copy button {
+    padding: 14px 28px;
+
+    background: #111;
+    color: #fff;
+
+    border: none;
+
+    cursor: pointer;
 }
 
-.icon{
-    font-size:34px;
-    font-weight:300;
-    transition:0.3s;
+
+/* =========================================================
+   LIST / CARDS
+   ========================================================= */
+
+.services-wrap {
+    width: 100%;
+    overflow: hidden;
 }
 
-.faq-item:hover{
-    padding-left:10px;
+.list {
+    width: 100%;
 }
 
-.faq-item:hover .icon{
-    transform:rotate(90deg);
+.list li {
+    min-width: 280px;
+    padding: 30px;
 }
 
-/* Responsive */
-
-@media(max-width:768px){
-
-.container{
-    width:90%;
+.list h3 {
+    font-size: 25px;
+    line-height: 1.2;
 }
 
-h1{
-    font-size:36px;
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+
+.faq {
+    width: 100%;
+    padding: 80px 0;
 }
 
-.faq-item span:first-child{
-    font-size:12px;
-    letter-spacing:2px;
+.container {
+    width: 70%;
+    max-width: 1200px;
+
+    margin: auto;
 }
 
-.icon{
-    font-size:28px;
+
+/* Only FAQ h1
+   instead of affecting every h1 on the page */
+
+.faq h1 {
+    font-size: 36px;
+    font-weight: 500;
+
+    text-transform: uppercase;
+
+    margin: 0 0 45px;
+
+    line-height: 1.1;
 }
 
+
+.faq-item {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 0;
+
+    border-top: 1px solid #111;
+
+    cursor: pointer;
+
+    transition: 0.3s;
 }
+
+.faq-item:last-child {
+    border-bottom: 1px solid #111;
+}
+
+.faq-item span:first-child {
+    width: 90%;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    line-height: 1.6;
+}
+
+.icon {
+    font-size: 34px;
+    font-weight: 300;
+
+    transition: 0.3s;
+}
+
+.faq-item:hover {
+    padding-left: 10px;
+}
+
+.faq-item:hover .icon {
+    transform: rotate(90deg);
+}
+
+
+/* =========================================================
+   TABLET
+   769px — 1024px
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+    /* Services */
+
+    .services {
+        padding: 80px 30px;
+    }
+
+
+    /* Web */
+
+    .web-content h1 {
+        font-size: 52px;
+        transform: none;
+    }
+
+
+    /* Service sections */
+
+    .serve,
+    .serve1 {
+        padding: 0 30px;
+        gap: 35px;
+    }
+
+    .serve-copy h1,
+    .serve1-copy h1 {
+        font-size: 2.5rem;
+    }
+
+
+    /* Dashboard */
+
+    .dash {
+        grid-template-columns: 42% 1fr;
+        gap: 45px;
+
+        padding: 0 30px;
+    }
+
+    .img_d {
+        width: 100%;
+        height: 560px;
+    }
+
+    .dash-copy h1 {
+        font-size: 3rem;
+    }
+
+    .dash-copy p {
+        font-size: 1rem;
+    }
+
+
+    /* FAQ */
+
+    .container {
+        width: 85%;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   768px AND BELOW
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* =====================================================
+       GLOBAL
+       ===================================================== */
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* =====================================================
+       SERVICES
+       ===================================================== */
+
+    .services {
+        width: 100%;
+        padding: 45px 20px;
+
+        text-align: center;
+    }
+
+    .services-intro {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       INFO
+       ===================================================== */
+
+    .info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info h2 {
+        font-size: 32px;
+        line-height: 1.05;
+
+        letter-spacing: 0;
+
+        margin: 15px 0;
+
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       GENERAL TEXT
+       ===================================================== */
+
+    .hero-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-content p:not(.small-title):not(.greeting) {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0 auto;
+
+        font-size: 14px;
+        line-height: 1.6;
+
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       LINE
+       ===================================================== */
+
+    .line {
+        width: 100%;
+        height: 1px;
+
+        margin: 15px auto 22px;
+    }
+
+
+    /* =====================================================
+       WEB
+       ===================================================== */
+
+    .web {
+        width: 100%;
+        text-align: center;
+    }
+
+    .web-content {
+        width: 100%;
+
+        padding: 25px 20px;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .web-content h1 {
+        width: 100%;
+
+        margin: 0;
+
+        font-size: 36px;
+        line-height: 1;
+
+        text-align: center;
+
+        transform: none;
+    }
+
+    .web-content p {
+        width: 100%;
+
+        margin: 10px 0 0;
+
+        font-size: 9px;
+        line-height: 1.5;
+
+        letter-spacing: 1px;
+
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       SERVICE 1
+       IMAGE TOP
+       TEXT BELOW
+       ===================================================== */
+
+    .serve {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 45px auto;
+        padding: 0 20px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 25px;
+
+        text-align: center;
+    }
+
+    .img1 {
+        width: 100%;
+        max-width: 450px;
+
+        flex: none;
+
+        margin: 0 auto;
+    }
+
+    .img1 img {
+        width: 100%;
+        height: auto;
+
+        display: block;
+
+        object-fit: cover;
+    }
+
+    .serve-copy {
+        width: 100%;
+        max-width: 550px;
+
+        flex: none;
+
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .serve-copy h1 {
+        width: 100%;
+
+        font-size: 27px;
+        line-height: 1.1;
+
+        margin: 0 0 15px;
+
+        text-align: center;
+    }
+
+    .serve-copy p {
+        width: 100%;
+
+        margin: 0 auto;
+
+        font-size: 14px;
+        line-height: 1.6;
+
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       SERVICE 2
+       IMAGE TOP
+       TEXT BELOW
+       ===================================================== */
+
+    .serve1 {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 45px auto;
+        padding: 0 20px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 25px;
+
+        text-align: center;
+    }
+
+    .img2 {
+        display: block;
+
+        width: 100%;
+        max-width: 450px;
+
+        height: auto;
+        min-height: 1px;
+
+        flex: none;
+
+        margin: 0 auto;
+
+        overflow: hidden;
+    }
+
+    .img2 img {
+        display: block;
+
+        width: 100%;
+        height: auto;
+
+        min-height: 1px;
+
+        margin: 0 auto;
+
+        object-fit: cover;
+    }
+
+    .serve1-copy {
+        width: 100%;
+        max-width: 550px;
+
+        flex: none;
+
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .serve1-copy h1 {
+        width: 100%;
+
+        font-size: 27px;
+        line-height: 1.1;
+
+        margin: 0 0 15px;
+
+        text-align: center;
+    }
+
+    .serve1-copy p {
+        width: 100%;
+
+        margin: 0 auto;
+
+        font-size: 14px;
+        line-height: 1.6;
+
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       BRAND DASHBOARD
+       IMAGE TOP
+       TEXT BELOW
+       ===================================================== */
+
+    .dash {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 50px auto;
+        padding: 0 20px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 28px;
+
+        text-align: center;
+    }
+
+    .img_d {
+        width: 100%;
+        max-width: 450px;
+
+        height: auto;
+
+        aspect-ratio: 4 / 5;
+
+        margin: 0 auto;
+
+        overflow: hidden;
+    }
+
+    .img_d img {
+        width: 100%;
+        height: 100%;
+
+        display: block;
+
+        object-fit: cover;
+    }
+
+    .dash-copy {
+        width: 100%;
+        max-width: 550px;
+
+        padding: 0;
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .dash-copy h1 {
+        width: 100%;
+
+        font-size: 34px;
+        line-height: 1;
+
+        font-weight: 400;
+
+        margin: 0 0 20px;
+
+        text-align: center;
+    }
+
+    .dash-copy .line {
+        width: 100%;
+        max-width: 500px;
+
+        height: 1px;
+
+        margin: 0 auto 22px;
+    }
+
+    .dash-copy p {
+        width: 100%;
+        max-width: 550px;
+
+        margin: 0 auto 22px;
+
+        font-size: 14px;
+        line-height: 1.6;
+
+        text-align: center;
+    }
+
+    .dash-copy button {
+        display: block;
+
+        width: auto;
+
+        margin: 10px auto 0;
+
+        padding: 13px 25px;
+
+        font-size: 10px;
+        letter-spacing: 1px;
+
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       LIST
+       ===================================================== */
+
+    .list {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .list li {
+        width: 100%;
+        min-width: 0;
+
+        padding: 25px 20px;
+    }
+
+    .list h3 {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+
+
+    /* =====================================================
+       FAQ
+       ===================================================== */
+
+    .faq {
+        width: 100%;
+
+        padding: 50px 20px;
+
+        text-align: center;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 600px;
+
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .faq h1 {
+        width: 100%;
+
+        font-size: 28px;
+        line-height: 1.05;
+        font-weight: 500;
+
+        margin: 0 0 30px;
+
+        text-align: center;
+    }
+
+    .faq-item {
+        width: 100%;
+
+        display: flex;
+
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 10px;
+
+        padding: 15px 0;
+
+        text-align: center;
+    }
+
+    .faq-item span:first-child {
+        width: 90%;
+
+        font-size: 10px;
+        font-weight: 600;
+
+        letter-spacing: 1px;
+        line-height: 1.5;
+
+        text-align: center;
+    }
+
+    .icon {
+        font-size: 24px;
+
+        flex-shrink: 0;
+    }
+
+    .faq-item:hover {
+        padding-left: 0;
+    }
+
+    .faq-item:hover .icon {
+        transform: none;
+    }
+}
+

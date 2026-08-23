@@ -4,7 +4,7 @@
   import earbud from "../assets/earbud.png";
   import stop from "../assets/stop.png";
   import honey from "../assets/honey.png";
-  import design from "../assets/design.png";
+  import email from "../assets/email.png";
   import goldtree from "../assets/goldtree_4.png";
   import jaks from "../assets/jaks.png";
   import Testimonial from "../components/testimonial.jsx";
@@ -105,18 +105,16 @@
                       <Link to="/service_honey"><button>ABOUT HONEY</button></Link>
                   </div>
                   </section>
-
+<div class="line"></div>
                   <section className="serve1">
                       <div className="img2">
-        <img src={design} alt="flodesk" />
+        <img src={email} alt="flodesk" />
       </div>
                       <div className="serve1-copy">
-                      <h1>Design DAY Intensives</h1>
-                      <p><b>For focused projects and a cleared design to-do list</b></p><br></br>
-                      <p>Design intensives offer dedicated, high-impact design support within a 1–2 week timeframe, perfect for tackling specific web or design needs without committing to a longer engagement. This collaborative, focused process allows us to move quickly while maintaining the same level of care and intention.</p><br></br>
-                      <p>The result is polished, professional design that helps you move forward with confidence, clarity, and momentum.</p>
-                      <br></br><p>Starting at $475</p><br></br>
-                      <button>GET YOUR TO DO LIST DONE</button>
+                      <h1>Email Marketing</h1><br></br>
+                      <p><b>For building meaningful connections and driving consistent engagement</b></p><br></br>
+                      <p>Email marketing helps businesses connect directly with their audience through targeted, thoughtful, and engaging campaigns. From promotional emails to newsletters, each message is designed to strengthen relationships, increase awareness, and encourage action.</p><br></br>
+                      <p>The result is a more connected audience, stronger customer relationships, and a marketing channel that supports long-term growth and measurable results.</p>
                   </div>
                   </section>
 
@@ -135,7 +133,7 @@
                   </div>
                   </section>
                   <Testimonial/>
-              <br></br> 
+              <br></br> <br></br> <br></br>
 
               <div className="container">
 
@@ -147,23 +145,47 @@
                       that fits your goals.
                   </p>  
                   <div class="line"></div>
-
-
-                <section className="serve">
-                      <div className="img1">
-        <img src={jaks} alt="brand" />
-      </div>
-                      
-                      <div className="serve-copy">
-                      <h1>Meet Jaks—Your Brand Strategist & Creative Partner</h1>
-                      <div class="line"></div>
-                      <p>I’m Jaks, the founder of Jaks Digital and the lead designer behind every brand and website you see here. I combine strategy, storytelling, and intentional design to help service-based entrepreneurs step into their next chapter with clarity and confidence.</p><br></br>
-                      <p>When we work together, you gain a creative partner who understands your vision, anticipates your needs, and knows how to translate ideas into a brand experience that truly works.</p><br></br>
-                      <p>Let’s create something that reflects your brilliance—and supports your growth.</p><br></br>
-                      <button>MORE ABOUT JAKS</button>
                   </div>
-                  </section>
-              </div>
+
+
+
+                <section className="dash">
+
+    <div className="img_d">
+        <img src={jaks} alt="brand" />
+    </div>
+
+    <div className="dash-copy">
+
+        <h1>Meet Your Brand Dashboard</h1>
+
+        <div className="line"></div>
+
+        <p>
+            Your Brand Dashboard brings everything you need to plan, launch,
+            manage, and measure influencer campaigns in one streamlined space.
+            Create campaigns, set budgets, choose platforms like Instagram,
+            TikTok, and YouTube, and define the audience you want to reach.
+        </p>
+
+        <p>
+            From finding the right influencers and sending offers to approving
+            content and tracking campaign performance, every step stays
+            organized and easy to manage. Download detailed reports when
+            you’re ready to review results and make smarter decisions for
+            your next campaign.
+        </p>
+
+        <p>
+            One dashboard. Every campaign. Complete control.
+        </p>
+
+        <button>MORE ABOUT BRANDS</button>
+
+    </div>
+
+</section>
+              
               <section className="faq">
         <div className="container">
 
