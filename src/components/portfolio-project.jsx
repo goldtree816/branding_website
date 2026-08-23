@@ -1,4 +1,5 @@
 import "../styles/portfolio-project.css";
+import { Link } from "react-router-dom";
 
 import earbud from "../assets/b_earbud.png";
 import chasma from "../assets/b_sunglasses.png";
@@ -28,91 +29,109 @@ function PortfolioProjects() {
     {
       image: earbud,
       name: "Gold Tree Earbuds",
+      slug: "gold-tree-earbuds"
     },
 
     {
       image: chasma,
       name: "Gold Tree Sunglasses",
+      slug: "gold-tree-sunglasses"
     },
 
     {
       image: honey,
       name: "Gold Tree Honey",
+      slug: "gold-tree-honey"
     },
 
     {
       image: ladiesbag,
       name: "Gold Tree Bags",
+      slug: "gold-tree-bags"
     },
 
     {
       image: coffeeImg,
       name: "Gold Tree Coffee",
+      slug: "gold-tree-coffee"
     },
 
     {
       image: protein,
       name: "Gold Tree Whey Protein",
+      slug: "gold-tree-whey protein"
     },
 
     {
       image: skincare,
       name: "Gold Tree Skincare ",
+      slug: "gold-tree-skincare"
     },
 
     {
       image: tea,
       name: "Gold Tree Tea",
+      slug: "gold-tree-tea"
     },
 
     {
       image: headphone,
       name: "Gold Tree Headphone",
+      slug: "gold-tree-headphone"
     },
 
     {
       image: skincareImg,
       name: "Independent Skincare Line",
+      slug: "independent-skincare-line",
     },
 
     {
       image: myhomeDesigned,
       name: "My Home Designed",
+      slug: "my-home-designed",
     },
 
     {
       image: nofoevents,
       name: "NOFO Events",
+      slug: "nofo-events",
     },
 
     {
       image: birthwell,
       name: "Birthwell",
+      slug: "birthwell",
     },
 
     {
       image: ascend,
       name: "Ascend Aesthetics",
+      slug: "ascend-aesthetics",
     },
 
     {
       image: interior,
       name: "Interior Design",
+      slug: "interior-design",
     },
 
     {
       image: uncontained,
       name: "Uncontained",
+      slug: "uncontained",
     },
 
     {
       image: balancedlivingCO,
       name: "Balanced Living Co.",
+      slug: "balanced-living-co",
     },
 
     {
       image: majestichealing,
       name: "Majestic Healing",
+      slug: "majestic-healing",
     },
 
   ];
@@ -122,7 +141,9 @@ function PortfolioProjects() {
 
     <section className="featured-projects">
 
-      {/* SECTION TITLE */}
+      {/* 
+          SECTION TITLE
+       */}
 
       <div className="featured-projects-heading">
 
@@ -131,16 +152,21 @@ function PortfolioProjects() {
       </div>
 
 
-      {/* PROJECT GRID */}
+      {/* 
+          PROJECT GRID
+       */}
 
       <div className="featured-projects-grid">
 
-        {projects.map((project, index) => (
+        {projects.map((project) => (
 
-          <article
+          <Link
+            to={`/portfolio/${project.slug}`}
             className="featured-project-card"
-            key={index}
+            key={project.slug}
           >
+
+            {/* PROJECT IMAGE */}
 
             <div className="featured-project-image">
 
@@ -152,11 +178,13 @@ function PortfolioProjects() {
             </div>
 
 
+            {/* PROJECT NAME */}
+
             <h2>
               {project.name}
             </h2>
 
-          </article>
+          </Link>
 
         ))}
 

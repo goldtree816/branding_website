@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap');
 
 
-/* =====================================================
+/* 
    GLOBAL
-===================================================== */
+ */
 
 .portfolio-page {
-
   width: 100%;
-
   min-height: 100vh;
 
   margin: 0;
-
   padding: 0;
 
   background: #f7f5f0;
@@ -22,73 +19,62 @@
   font-family: "Montserrat", sans-serif;
 
   overflow-x: hidden;
-
 }
 
 
-/* =====================================================
+/* 
    HERO
-===================================================== */
+ */
 
 .portfolio-hero {
-
   position: relative;
 
   width: 100%;
-
   height: 580px;
 
   overflow: hidden;
-
 }
 
 
-/* =====================================================
+/* 
    HERO IMAGE
-===================================================== */
+ */
 
 .portfolio-hero-image {
-
   position: absolute;
 
   inset: 0;
 
   width: 100%;
-
   height: 100%;
 
   object-fit: cover;
 
   object-position: center center;
-
 }
 
 
-/* =====================================================
-   DARK OVERLAY
-===================================================== */
+/* 
+   HERO OVERLAY
+ */
 
 .portfolio-hero-overlay {
-
   position: absolute;
 
   inset: 0;
 
   background: rgba(30, 27, 23, 0.42);
-
 }
 
 
-/* =====================================================
+/* 
    HERO CONTENT
-===================================================== */
+ */
 
 .portfolio-hero-content {
-
   position: absolute;
 
   top: 50%;
-
   left: 50%;
 
   transform: translate(-50%, -50%);
@@ -98,15 +84,15 @@
   text-align: center;
 
   color: #ffffff;
-
 }
 
 
-/* =====================================================
+/* 
    HERO TITLE
-===================================================== */
+ */
 
 .portfolio-hero-content h1 {
+  transform: translateX(30px);
 
   margin: 0 0 45px;
 
@@ -119,16 +105,14 @@
   line-height: 0.9;
 
   letter-spacing: -3px;
-
 }
 
 
-/* =====================================================
+/* 
    HERO PARAGRAPHS
-===================================================== */
+ */
 
 .portfolio-hero-content p {
-
   max-width: 850px;
 
   margin: 0 auto 25px;
@@ -142,112 +126,311 @@
   line-height: 1.7;
 
   letter-spacing: 0.2px;
-
 }
 
-
-/* =====================================================
-   LAST PARAGRAPH
-===================================================== */
 
 .portfolio-hero-content p:last-child {
-
   margin-bottom: 0;
-
 }
 
 
-/* =====================================================
-   TABLET
-===================================================== */
+/* 
+   NEW PROJECTS COMING SOON
+ */
 
-@media (max-width: 900px) {
+.new-projects-section {
+  width: 100%;
+
+  padding: 120px 0 110px;
+
+  background: #f5f3ee;
+
+  overflow: hidden;
+}
+
+
+/* 
+   NEW PROJECT TITLE
+ */
+
+.new-projects-title {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 30px;
+
+  margin-bottom: 70px;
+
+  text-align: center;
+}
+
+
+.new-projects-title h2 {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(50px, 6vw, 90px);
+
+  font-weight: 400;
+
+  line-height: 0.95;
+
+  letter-spacing: -3px;
+
+  color: #1c1c1a;
+}
+
+
+/* 
+   FULL WIDTH GOLDTREE GALLERY
+ */
+
+.new-projects-gallery {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 6px;
+
+  padding: 0 6px;
+}
+
+
+/* 
+   GOLDTREE IMAGE CONTAINER
+ */
+
+.new-project-item {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 1 / 1;
+
+  overflow: hidden;
+
+  background: #111;
+}
+
+
+/* 
+   GOLDTREE IMAGE
+   FULL IMAGE — NO CROPPING
+ */
+
+.new-project-item img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  object-position: center center;
+
+  transition: transform 0.8s cubic-bezier(
+    0.22,
+    1,
+    0.36,
+    1
+  );
+}
+
+
+/* 
+   IMAGE HOVER
+ */
+
+.new-project-item:hover img {
+  transform: scale(1.02);
+}
+
+
+/* 
+   LARGE TABLET
+ */
+
+@media (max-width: 1100px) {
 
   .portfolio-hero {
-
-    height: 520px;
-
+    height: 540px;
   }
 
 
   .portfolio-hero-content {
-
     width: 88%;
-
   }
 
 
   .portfolio-hero-content h1 {
-
     margin-bottom: 35px;
 
-    font-size: 75px;
-
+    font-size: 80px;
   }
 
 
   .portfolio-hero-content p {
-
     font-size: 14px;
+  }
 
+
+  /* NEW PROJECT */
+
+  .new-projects-section {
+    padding: 100px 0 90px;
+  }
+
+
+  .new-projects-title {
+    margin-bottom: 55px;
   }
 
 }
 
 
-/* =====================================================
+/* 
+   TABLET
+ */
+
+@media (max-width: 900px) {
+
+  .new-projects-gallery {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 6px;
+
+    padding: 0 6px;
+  }
+
+}
+
+
+/* 
    MOBILE
-===================================================== */
+ */
 
 @media (max-width: 600px) {
 
+  /* HERO */
+
   .portfolio-hero {
-
     height: 600px;
-
   }
 
 
   .portfolio-hero-image {
-
     object-position: center center;
-
   }
 
 
   .portfolio-hero-overlay {
-
     background: rgba(30, 27, 23, 0.48);
-
   }
 
 
   .portfolio-hero-content {
-
     width: 88%;
-
   }
 
 
   .portfolio-hero-content h1 {
-
     margin-bottom: 30px;
 
     font-size: 58px;
 
     letter-spacing: -2px;
 
+    transform: translateX(0);
   }
 
 
   .portfolio-hero-content p {
-
     font-size: 12px;
 
     line-height: 1.7;
 
     margin-bottom: 20px;
-
   }
+
+
+  /* NEW PROJECT */
+
+  .new-projects-section {
+    padding: 75px 0 80px;
+  }
+
+
+  .new-projects-title {
+    padding: 0 20px;
+
+    margin-bottom: 40px;
+  }
+
+
+  .new-projects-title h2 {
+    font-size: 45px;
+
+    letter-spacing: -2px;
+  }
+
+
+  /* ONE FULL IMAGE PER ROW */
+
+  .new-projects-gallery {
+    grid-template-columns: 1fr;
+
+    gap: 5px;
+
+    padding: 0 5px;
+  }
+
+}
+
+
+/* 
+   VERY SMALL MOBILE
+ */
+
+@media (max-width: 400px) {
+
+  .portfolio-hero-content h1 {
+    font-size: 50px;
+  }
+
+
+  .new-projects-title h2 {
+    font-size: 40px;
+  }
+  .back-portfolio-btn {
+  display: inline-block;
+
+  margin-top: 30px;
+  padding: 14px 28px;
+
+  background: #3d2d24;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  border-radius: 30px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+
+  transition: all 0.3s ease;
+}
+
+.back-portfolio-btn:hover {
+  background: #6b4a3a;
+  transform: translateY(-2px);
+}
 
 }

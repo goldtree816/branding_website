@@ -1,3 +1,4 @@
+import ProjectDetails from '../pages/project-details.jsx'
 import Navbar from "../components/navbar.jsx";
 import Footer from "../components/footer.jsx";
 import Services from "../pages/services.jsx";
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/services", element: <Services /> },
       { path: "/portfolio", element: <Portfolio /> },
+       {
+          path: "/portfolio/:projectSlug",
+          element: <ProjectDetails />
+        },
+
       { path: "/about", element: <About /> },
       { path: "/blog", element: <Blog /> },
       { path: "/resources", element: <Resources /> },
