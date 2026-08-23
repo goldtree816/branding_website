@@ -1,14 +1,14 @@
 import "../styles/portfolio-project.css";
 
-import fashionImg from "../assets/fashion.png";
-import wellnessImg from "../assets/wellness.png";
-import photographyImg from "../assets/photography.png";
-import weddingImg from "../assets/wedding.png";
-import coffeeImg from "../assets/coffee.png";
-import fitnessImg from "../assets/fitness.png";
-import travelImg from "../assets/travel.png";
-import dentalImg from "../assets/dental.png";
-import startupImg from "../assets/startup.png";
+import earbud from "../assets/b_earbud.png";
+import chasma from "../assets/b_sunglasses.png";
+import honey from "../assets/b_honey.png";
+import ladiesbag from "../assets/b_ladiesbag.png";
+import coffeeImg from "../assets/g_coffee.png";
+import protein from "../assets/g_protein.png";
+import skincare from "../assets/g_skincare.png";
+import tea from "../assets/g_tea.png";
+import headphone from "../assets/g_headphone.png";
 import skincareImg from "../assets/skincare.png";
 
 import myhomeDesigned from "../assets/myhomeDesigned.png";
@@ -26,48 +26,48 @@ function PortfolioProjects() {
   const projects = [
 
     {
-      image: fashionImg,
-      name: "Boutique Fashion Label",
+      image: earbud,
+      name: "Gold Tree Earbuds",
     },
 
     {
-      image: wellnessImg,
-      name: "Luxury Wellness Brand",
+      image: chasma,
+      name: "Gold Tree Sunglasses",
     },
 
     {
-      image: photographyImg,
-      name: "Photography Studio",
+      image: honey,
+      name: "Gold Tree Honey",
     },
 
     {
-      image: weddingImg,
-      name: "Wedding Planning Studio",
+      image: ladiesbag,
+      name: "Gold Tree Bags",
     },
 
     {
       image: coffeeImg,
-      name: "Artisan Coffee House",
+      name: "Gold Tree Coffee",
     },
 
     {
-      image: fitnessImg,
-      name: "Elite Fitness Club",
+      image: protein,
+      name: "Gold Tree Whey Protein",
     },
 
     {
-      image: travelImg,
-      name: "Travel Experience",
+      image: skincare,
+      name: "Gold Tree Skincare ",
     },
 
     {
-      image: dentalImg,
-      name: "Modern Dental Studio",
+      image: tea,
+      name: "Gold Tree Tea",
     },
 
     {
-      image: startupImg,
-      name: "NovaTech Solutions",
+      image: headphone,
+      name: "Gold Tree Headphone",
     },
 
     {
@@ -126,7 +126,7 @@ function PortfolioProjects() {
 
       <div className="featured-projects-heading">
 
-        <span>FEATURED PROJECTS</span>
+        <span>FEATURED PRODUCTS</span>
 
       </div>
 
