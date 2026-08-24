@@ -1,0 +1,307 @@
+.project-details-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f7f5f0;
+  color: #1c1c1a;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+/* 
+   HERO
+ */
+
+.project-details-hero {
+  width: 100%;
+  padding: 100px 6vw 80px;
+}
+
+
+.project-details-heading {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+}
+
+
+.project-details-category {
+  margin: 0 0 20px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #8b3d2f;
+}
+
+
+.project-details-heading h1 {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(55px, 8vw, 110px);
+
+  font-weight: 400;
+
+  line-height: 0.95;
+
+  letter-spacing: -3px;
+}
+
+
+/* 
+   LARGE PROJECT IMAGE
+ */
+
+.project-details-image {
+  width: 100%;
+  max-width: 1500px;
+
+  margin: 0 auto;
+
+  overflow: hidden;
+}
+
+
+.project-details-image img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  max-height: 800px;
+
+  object-fit: cover;
+
+  transition: transform 0.6s ease;
+}
+
+
+.project-details-image:hover img {
+  transform: scale(1.015);
+}
+
+
+/* 
+   INFORMATION
+ */
+
+.project-details-info {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 80px 6vw 100px;
+
+  display: grid;
+
+  grid-template-columns: 1.5fr 1fr;
+
+  gap: 100px;
+}
+
+
+.project-details-label {
+  margin: 0 0 25px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  color: #8b3d2f;
+}
+
+
+.project-details-description h2 {
+  margin: 0 0 25px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(35px, 4vw, 55px);
+
+  font-weight: 400;
+
+  line-height: 1.05;
+}
+
+
+.project-details-description > p:last-child {
+  max-width: 700px;
+
+  margin: 0;
+
+  font-size: 16px;
+
+  line-height: 1.9;
+
+  color: #5c5c5c;
+}
+
+
+/* 
+   SERVICES
+ */
+
+.project-details-services {
+  padding-top: 5px;
+}
+
+
+.project-services-list {
+  display: flex;
+
+  flex-direction: column;
+
+  border-top: 1px solid #d8cfc3;
+}
+
+
+.project-services-list span {
+  padding: 18px 0;
+
+  border-bottom: 1px solid #d8cfc3;
+
+  font-size: 15px;
+
+  color: #3d342d;
+}
+
+
+/* 
+   BACK BUTTON
+ */
+
+.project-details-back {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  padding: 0 20px 100px;
+}
+
+
+.back-portfolio-btn {
+  display: inline-block;
+
+  padding: 15px 30px;
+
+  background: #3d2d24;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  border-radius: 30px;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  transition: all 0.3s ease;
+}
+
+
+.back-portfolio-btn:hover {
+  background: #6b4a3a;
+
+  transform: translateY(-2px);
+}
+
+
+/* 
+   NOT FOUND
+ */
+
+.project-details-content {
+  min-height: 70vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  padding: 60px 20px;
+}
+
+
+.project-details-content h1 {
+  max-width: 800px;
+
+  margin: 15px 0 30px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(45px, 7vw, 90px);
+
+  font-weight: 400;
+}
+
+
+/* 
+   TABLET
+ */
+
+@media (max-width: 900px) {
+
+  .project-details-hero {
+    padding: 80px 30px 60px;
+  }
+
+  .project-details-info {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+
+    padding: 60px 30px 80px;
+  }
+
+}
+
+
+/* 
+   MOBILE
+ */
+
+@media (max-width: 600px) {
+
+  .project-details-hero {
+    padding: 60px 20px 40px;
+  }
+
+  .project-details-heading {
+    margin-bottom: 35px;
+  }
+
+  .project-details-heading h1 {
+    font-size: 55px;
+
+    letter-spacing: -2px;
+  }
+
+  .project-details-info {
+    padding: 50px 20px 70px;
+  }
+
+  .project-details-description h2 {
+    font-size: 40px;
+  }
+
+  .project-details-back {
+    padding-bottom: 70px;
+  }
+
+}

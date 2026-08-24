@@ -59,7 +59,7 @@ function PortfolioProjects() {
     {
       image: protein,
       name: "Gold Tree Whey Protein",
-      slug: "gold-tree-whey protein"
+      slug: "gold-tree-whey-protein"
     },
 
     {
