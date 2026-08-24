@@ -10,16 +10,16 @@ import protein from "../assets/g_protein.png";
 import skincare from "../assets/g_skincare.png";
 import tea from "../assets/g_tea.png";
 import headphone from "../assets/g_headphone.png";
-import skincareImg from "../assets/skincare.png";
+import speaker from "../assets/g_speakers.png";
 
-import myhomeDesigned from "../assets/myhomeDesigned.png";
-import nofoevents from "../assets/nofoevents.png";
-import birthwell from "../assets/birthwell.png";
-import ascend from "../assets/ascend.png";
-import interior from "../assets/interior.png";
-import uncontained from "../assets/uncontained.png";
-import balancedlivingCO from "../assets/balancedlivingCO.png";
-import majestichealing from "../assets/majestichealing.png";
+import mouse from "../assets/g_mouse.png";
+import printer from "../assets/g_print.png";
+import fan from "../assets/g_fan.png";
+import lamp from "../assets/g_lamp.png";
+import pbank from "../assets/g_pbank.png";
+import charger from "../assets/g_charger.png";
+import router from "../assets/g_router.png";
+import beacon from "../assets/g_beacon.png";
 
 
 function PortfolioProjects() {
@@ -81,56 +81,56 @@ function PortfolioProjects() {
     },
 
     {
-      image: skincareImg,
-      name: "Independent Skincare Line",
+      image: speaker,
+      name: "Gold Tree Speaker",
       slug: "independent-skincare-line",
     },
 
     {
-      image: myhomeDesigned,
-      name: "My Home Designed",
+      image: mouse,
+      name: "Gold Tree Mouse",
       slug: "my-home-designed",
     },
 
     {
-      image: nofoevents,
-      name: "NOFO Events",
+      image: printer,
+      name: "Gold Tree Printer",
       slug: "nofo-events",
     },
 
     {
-      image: birthwell,
-      name: "Birthwell",
+      image: fan,
+      name: "Gold Tree Portable Fan",
       slug: "birthwell",
     },
 
     {
-      image: ascend,
-      name: "Ascend Aesthetics",
+      image: lamp,
+      name: "Gold Tree Lamp",
       slug: "ascend-aesthetics",
     },
 
     {
-      image: interior,
-      name: "Interior Design",
+      image: pbank,
+      name: "Gold Tree Power Bank",
       slug: "interior-design",
     },
 
     {
-      image: uncontained,
-      name: "Uncontained",
+      image: charger,
+      name: "Gold Tree Charger",
       slug: "uncontained",
     },
 
     {
-      image: balancedlivingCO,
-      name: "Balanced Living Co.",
+      image: router,
+      name: "Gold Tree Router",
       slug: "balanced-living-co",
     },
 
     {
-      image: majestichealing,
-      name: "Majestic Healing",
+      image: beacon,
+      name: "Gold Tree Beacon",
       slug: "majestic-healing",
     },
 
