@@ -421,581 +421,270 @@ body {
     transform: rotate(90deg);
 }
 
-
 /* =========================================================
-   TABLET
-   769px — 1024px
-   ========================================================= */
-
-@media (max-width: 1024px) {
-
-    /* Services */
-
-    .services {
-        padding: 80px 30px;
-    }
-
-
-    /* Web */
-
-    .web-content h1 {
-        font-size: 52px;
-        transform: none;
-    }
-
-
-    /* Service sections */
-
-    .serve,
-    .serve1 {
-        padding: 0 30px;
-        gap: 35px;
-    }
-
-    .serve-copy h1,
-    .serve1-copy h1 {
-        font-size: 2.5rem;
-    }
-
-
-    /* Dashboard */
-
-    .dash {
-        grid-template-columns: 42% 1fr;
-        gap: 45px;
-
-        padding: 0 30px;
-    }
-
-    .img_d {
-        width: 100%;
-        height: 560px;
-    }
-
-    .dash-copy h1 {
-        font-size: 3rem;
-    }
-
-    .dash-copy p {
-        font-size: 1rem;
-    }
-
-
-    /* FAQ */
-
-    .container {
-        width: 85%;
-    }
-}
-
-
-/* =========================================================
-   MOBILE
-   768px AND BELOW
-   ========================================================= */
+   MEDIA QUERIES
+========================================================= */
 
 @media (max-width: 768px) {
 
-    /* =====================================================
-       GLOBAL
-       ===================================================== */
+  /* ---------- INFO ---------- */
+  @media (max-width: 768px) {
 
-    html,
-    body {
+    .section {
         width: 100%;
-        overflow-x: hidden;
-    }
-
-
-    /* =====================================================
-       SERVICES
-       ===================================================== */
-
-    .services {
-        width: 100%;
-        padding: 45px 20px;
-
-        text-align: center;
-    }
-
-    .services-intro {
-        width: 100%;
-        max-width: 100%;
-
-        margin: 0 auto;
-
-        text-align: center;
-    }
-
-
-    /* =====================================================
-       INFO
-       ===================================================== */
-
-    .info {
-        width: 100%;
-        text-align: center;
-    }
-
-    .info h2 {
-        font-size: 32px;
-        line-height: 1.05;
-
-        letter-spacing: 0;
-
-        margin: 15px 0;
-
-        text-align: center;
-    }
-
-
-    /* =====================================================
-       GENERAL TEXT
-       ===================================================== */
-
-    .hero-content {
-        width: 100%;
-        text-align: center;
-    }
-
-    .hero-content p:not(.small-title):not(.greeting) {
-        width: 100%;
-        max-width: 100%;
-
-        margin: 0 auto;
-
-        font-size: 14px;
-        line-height: 1.6;
-
-        text-align: center;
-    }
-
-
-    /* =====================================================
-       LINE
-       ===================================================== */
-
-    .line {
-        width: 100%;
-        height: 1px;
-
-        margin: 15px auto 22px;
-    }
-
-
-    /* =====================================================
-       WEB
-       ===================================================== */
-
-    .web {
-        width: 100%;
-        text-align: center;
-    }
-
-    .web-content {
-        width: 100%;
-
-        padding: 25px 20px;
-
-        display: flex;
-        flex-direction: column;
-
-        justify-content: center;
-        align-items: center;
-
-        text-align: center;
-    }
-
-    .web-content h1 {
-        width: 100%;
-
+        max-width: none;
         margin: 0;
-
-        font-size: 36px;
-        line-height: 1;
-
-        text-align: center;
-
-        transform: none;
+        padding: 40px 15px;
+        box-sizing: border-box;
+        width: 100vw !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
     }
 
-    .web-content p {
+    .section .ser-content {
         width: 100%;
-
-        margin: 10px 0 0;
-
-        font-size: 9px;
-        line-height: 1.5;
-
-        letter-spacing: 1px;
-
-        text-align: center;
-    }
-
-
-    /* =====================================================
-       SERVICE 1
-       IMAGE TOP
-       TEXT BELOW
-       ===================================================== */
-
-    .serve {
-        width: 100%;
-        max-width: 100%;
-
-        margin: 45px auto;
-        padding: 0 20px;
-
-        display: flex;
-        flex-direction: column;
-
-        align-items: center;
-        justify-content: center;
-
-        gap: 25px;
-
-        text-align: center;
-    }
-
-    .img1 {
-        width: 100%;
-        max-width: 450px;
-
-        flex: none;
-
-        margin: 0 auto;
-    }
-
-    .img1 img {
-        width: 100%;
-        height: auto;
-
-        display: block;
-
-        object-fit: cover;
-    }
-
-    .serve-copy {
-        width: 100%;
-        max-width: 550px;
-
-        flex: none;
-
-        margin: 0 auto;
-
-        text-align: center;
-    }
-
-    .serve-copy h1 {
-        width: 100%;
-
-        font-size: 27px;
-        line-height: 1.1;
-
-        margin: 0 0 15px;
-
-        text-align: center;
-    }
-
-    .serve-copy p {
-        width: 100%;
-
-        margin: 0 auto;
-
-        font-size: 14px;
-        line-height: 1.6;
-
-        text-align: center;
-    }
-
-
-    /* =====================================================
-       SERVICE 2
-       IMAGE TOP
-       TEXT BELOW
-       ===================================================== */
-
-    .serve1 {
-        width: 100%;
-        max-width: 100%;
-
-        margin: 45px auto;
-        padding: 0 20px;
-
-        display: flex;
-        flex-direction: column;
-
-        align-items: center;
-        justify-content: center;
-
-        gap: 25px;
-
-        text-align: center;
-    }
-
-    .img2 {
-        display: block;
-
-        width: 100%;
-        max-width: 450px;
-
-        height: auto;
-        min-height: 1px;
-
-        flex: none;
-
-        margin: 0 auto;
-
-        overflow: hidden;
-    }
-
-    .img2 img {
-        display: block;
-
-        width: 100%;
-        height: auto;
-
-        min-height: 1px;
-
-        margin: 0 auto;
-
-        object-fit: cover;
-    }
-
-    .serve1-copy {
-        width: 100%;
-        max-width: 550px;
-
-        flex: none;
-
-        margin: 0 auto;
-
-        text-align: center;
-    }
-
-    .serve1-copy h1 {
-        width: 100%;
-
-        font-size: 27px;
-        line-height: 1.1;
-
-        margin: 0 0 15px;
-
-        text-align: center;
-    }
-
-    .serve1-copy p {
-        width: 100%;
-
-        margin: 0 auto;
-
-        font-size: 14px;
-        line-height: 1.6;
-
-        text-align: center;
-    }
-
-
-    /* =====================================================
-       BRAND DASHBOARD
-       IMAGE TOP
-       TEXT BELOW
-       ===================================================== */
-
-    .dash {
-        width: 100%;
-        max-width: 100%;
-
-        margin: 50px auto;
-        padding: 0 20px;
-
-        display: flex;
-        flex-direction: column;
-
-        align-items: center;
-        justify-content: center;
-
-        gap: 28px;
-
-        text-align: center;
-    }
-
-    .img_d {
-        width: 100%;
-        max-width: 450px;
-
-        height: auto;
-
-        aspect-ratio: 4 / 5;
-
-        margin: 0 auto;
-
-        overflow: hidden;
-    }
-
-    .img_d img {
-        width: 100%;
-        height: 100%;
-
-        display: block;
-
-        object-fit: cover;
-    }
-
-    .dash-copy {
-        width: 100%;
-        max-width: 550px;
-
+        max-width: none;
+        margin: 0;
         padding: 0;
-        margin: 0 auto;
-
-        text-align: center;
     }
 
-    .dash-copy h1 {
+    /* TEXT */
+    .section .ser-content h1,
+    .section .ser-content p {
         width: 100%;
-
-        font-size: 34px;
-        line-height: 1;
-
-        font-weight: 400;
-
-        margin: 0 0 20px;
-
-        text-align: center;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
     }
 
-    .dash-copy .line {
+    /* IMAGE 1 */
+    .section .img1 {
         width: 100%;
-        max-width: 500px;
-
-        height: 1px;
-
-        margin: 0 auto 22px;
-    }
-
-    .dash-copy p {
-        width: 100%;
-        max-width: 550px;
-
-        margin: 0 auto 22px;
-
-        font-size: 14px;
-        line-height: 1.6;
-
-        text-align: center;
-    }
-
-    .dash-copy button {
+        max-width: none;
+        height: auto;
         display: block;
-
-        width: auto;
-
-        margin: 10px auto 0;
-
-        padding: 13px 25px;
-
-        font-size: 10px;
-        letter-spacing: 1px;
-
-        text-align: center;
+        object-fit: cover;
+        margin: 0;
     }
 
-
-    /* =====================================================
-       LIST
-       ===================================================== */
-
-    .list {
+    /* IMAGE 2 */
+    .section .img2 {
         width: 100%;
-        max-width: 100%;
-    }
-
-    .list li {
-        width: 100%;
-        min-width: 0;
-
-        padding: 25px 20px;
-    }
-
-    .list h3 {
-        font-size: 22px;
-        line-height: 1.2;
-    }
-
-
-    /* =====================================================
-       FAQ
-       ===================================================== */
-
-    .faq {
-        width: 100%;
-
-        padding: 50px 20px;
-
-        text-align: center;
-    }
-
-    .container {
-        width: 100%;
-        max-width: 600px;
-
-        margin: 0 auto;
-
-        text-align: center;
-    }
-
-    .faq h1 {
-        width: 100%;
-
-        font-size: 28px;
-        line-height: 1.05;
-        font-weight: 500;
-
-        margin: 0 0 30px;
-
-        text-align: center;
-    }
-
-    .faq-item {
-        width: 100%;
-
-        display: flex;
-
-        justify-content: space-between;
-        align-items: center;
-
-        gap: 10px;
-
-        padding: 15px 0;
-
-        text-align: center;
-    }
-
-    .faq-item span:first-child {
-        width: 90%;
-
-        font-size: 10px;
-        font-weight: 600;
-
-        letter-spacing: 1px;
-        line-height: 1.5;
-
-        text-align: center;
-    }
-
-    .icon {
-        font-size: 24px;
-
-        flex-shrink: 0;
-    }
-
-    .faq-item:hover {
-        padding-left: 0;
-    }
-
-    .faq-item:hover .icon {
-        transform: none;
+        max-width: none;
+        height: auto;
+        display: block;
+        object-fit: cover;
+        margin: 0;
     }
 }
+  .info {
+    padding: 0 24px;
+    text-align: left;
+  }
 
+  .info h2 {
+    font-size: 28px;
+    text-align: left;
+    margin: 20px 0;
+  }
+
+  .info p {
+    text-align: left;
+    max-width: 100%;
+  }
+
+ 
+
+  /* ---------- WEB SECTION ---------- */
+  .web-content {
+    padding: 24px 20px;
+  }
+
+  .web-content h1 {
+    font-size: 32px;
+    transform: none;
+  }
+
+  .web-content p {
+    font-size: 12px;
+  }
+
+  /* ---------- BRAND DASHBOARD ---------- */
+  .dash,
+    .serve,
+    .serve1 {
+        width: 100% !important;
+        max-width: none !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+        gap: 0 !important;
+
+        box-sizing: border-box;
+    }
+
+    /* =========================
+       IMAGES
+       ========================= */
+
+    .img_d,
+    .img1,
+    .img2 {
+        width: 100% !important;
+        max-width: none !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        box-sizing: border-box;
+    }
+
+    .img_d img,
+    .img1 img,
+    .img2 img {
+        width: 100% !important;
+        max-width: none !important;
+        height: auto !important;
+
+        display: block !important;
+        object-fit: cover;
+    }
+
+    /* =========================
+       TEXT CONTENT
+       ========================= */
+
+    .dash-copy,
+    .serve-copy,
+    .serve1-copy {
+        width: 100% !important;
+        max-width: none !important;
+
+        margin: 0 !important;
+        padding: 24px !important;
+
+        box-sizing: border-box;
+
+        text-align: left !important;
+    }
+
+    /* =========================
+       HEADINGS
+       ========================= */
+
+    .dash-copy h1,
+    .serve-copy h1,
+    .serve1-copy h1 {
+        width: 100% !important;
+        max-width: none !important;
+
+        margin: 0 0 15px 0 !important;
+
+        font-size: 1.9rem;
+        text-align: left !important;
+    }
+
+    /* =========================
+       PARAGRAPHS
+       ========================= */
+
+    .dash-copy p,
+    .serve-copy p,
+    .serve1-copy p {
+        width: 100% !important;
+        max-width: none !important;
+
+        margin: 0 !important;
+
+        text-align: left !important;
+    }
+
+    /* =========================
+       BUTTON
+       ========================= */
+
+    .dash-copy button,
+    .serve-copy button,
+    .serve1-copy button {
+        width: 100%;
+    }
+
+  /* ---------- LIST / CARDS ---------- */
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list li {
+    width: 100%;
+    min-width: unset;
+    padding: 20px 24px;
+  }
+
+  /* ---------- CONTAINER (Ways to Work Together / FAQ) ---------- */
+  .container {
+    width: 100%;
+    padding: 0 24px;
+  }
+
+  .container h2 {
+    text-align: left;
+    font-size: 26px;
+  }
+
+  .container p {
+    text-align: left;
+  }
+
+  /* ---------- FAQ ---------- */
+  .faq {
+    padding: 50px 0;
+  }
+
+  .faq h1 {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .faq-item span:first-child {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+}
+
+@media (max-width: 480px) {
+    .section{
+        width: 95vw;
+    max-width: none;
+    margin: 0 auto;
+    }
+ .h1{
+    width: 95vw;
+    max-width: none;
+    margin: 0 auto;
+ }
+  .serve-copy h1,
+  .serve1-copy h1,
+  .dash-copy h1 {
+    font-size: 1.6rem;
+  }
+
+  .info h2 {
+    font-size: 24px;
+  }
+
+  .container h2 {
+    font-size: 22px;
+  }
+
+  .faq h1 {
+    font-size: 20px;
+  }
+
+}
