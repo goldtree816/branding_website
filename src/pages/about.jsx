@@ -26,12 +26,13 @@
         <img src={logo1} alt="brand" />
       </div>
           <div className="serve-copy">
-            <h1>Stop the Guesswork. Start Building a Brand with Clarity and Confidence.</h1>
+            <h1>INFLUENCER MARKETING</h1>
+            <p><b>Connecting Brands With the Right Voices</b></p>
             
-              <p><b>For the visionaries, the innovators, the entrepreneurs who weave passion into their profession — your journey begins here.</b> We know your business isn’t just a service, it’s a story. It’s a reflection of your expertise, your values, and where you’re headed next. And your brand deserves to tell that story with clarity, confidence, and intention.</p>
+              <p>We connect your brand with relevant influencers who have genuine influence and a strong connection with your target audience. Through carefully planned collaborations, authentic content, and strategic partnerships, we help your brand reach new audiences while building trust and credibility.</p>
               <br></br>
                 
-                <p>We specialize in web design and branding experiences that go far beyond the surface. Yes, they’ll turn heads. More importantly, they’ll build trust, create connection, and support real growth. Every detail is tailored to help you show up as the expert you are, attract the right clients, and move your business forward with ease.</p><br></br>
+                <p>Our influencer marketing approach focuses on finding the right creators, developing meaningful campaigns, and maximizing engagement. Whether it’s product promotion, brand awareness, or launching a new service, we turn influencer partnerships into impactful campaigns that deliver real value for your brand.</p><br></br>
                     
                     
                   </div>
@@ -42,13 +43,13 @@
         <img src={logo2} alt="brand" />
       </div>
                   <div className="serve-copy1">
-                    <h1>Email Marketing</h1>
+                    <h1>ADVERTISING DASHBOARD</h1>
                       
-                  <p><b>For building meaningful connections and driving consistent engagement</b></p><br></br>
+                  <p><b>Manage, Monitor & Optimize Your Campaigns</b></p><br></br>
 
-                  <p>Email marketing helps businesses connect directly with their audience through targeted, thoughtful, and engaging campaigns. From promotional emails to newsletters, each message is designed to strengthen relationships, increase awareness, and encourage action.</p><br></br>
+                  <p>An advertising dashboard gives businesses a clear overview of their digital advertising campaigns in one place. It can display important information such as ad reach, impressions, clicks, engagement, conversions, and overall campaign performance.</p><br></br>
 
-                  <p>The result is a more connected audience, stronger customer relationships, and a marketing channel that supports long-term growth and measurable results.</p><br></br>
+                  <p>With real-time insights and organized reports, businesses can understand what is working and where improvements are needed. This helps make better marketing decisions, optimize advertising budgets, and achieve stronger results from every campaign.</p><br></br>
                     
                    
                      
@@ -62,18 +63,17 @@
         <img src={logo3} alt="brand" />
       </div>
                   <div className="serve-copy">
-                    <h1>Ongoing Studio Support</h1>
+                    <h1>SOCIAL MEDIA MARKETING</h1>
+                    <p><b>Building Your Brand Beyond the Screen</b></p>
                       
-                  <p><b>For continued momentum and creative consistency</b></p>
-                  <br></br>
-                      
-                  <p>Monthly design, copy, and strategic support for established Jaks Digital clients who want to stay consistent, maintain momentum, and keep their brand evolving, without starting from scratch each time.</p><br></br>   
+                
+                  <p>We create social media strategies that help your brand stand out, connect with the right audience, and build lasting relationships. From engaging visuals and compelling content to targeted campaigns, we make sure your brand communicates consistently and effectively across every platform.</p><br></br>   
 
-                  <p>This ongoing service includes five dedicated hours per month of flexible creative support, designed to reduce your to-do list and support continued growth. Whether you need ongoing website updates or bringing new ideas to life, you have a trusted creative partner already in place to keep your brand aligned and moving forward.</p><br></br>
+                  <p>Our approach combines creativity with strategy to turn social media into a powerful tool for growth. We focus on increasing brand awareness, driving engagement, reaching potential customers, and creating a strong digital community around your business.</p><br></br>
 
                      
 
-                      <button>MORE ABOUT STUDIO REPORT</button>
+                      <button>MORE ABOUT MARKETING</button>
                   </div>
                   </section>
 
