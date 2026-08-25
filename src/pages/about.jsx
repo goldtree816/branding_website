@@ -2,9 +2,9 @@
   import Testimonial from "../components/testimonial.jsx";
   import Values from '../components/value.jsx'
   import logo from '../assets/intro.webp'
-  import logo1 from '../assets/pp.webp'
-  import logo2 from '../assets/pp1.webp'
-  import logo3 from '../assets/pp2.webp'
+  import logo1 from '../assets/stop.png'
+  import logo2 from '../assets/email.png'
+  import logo3 from '../assets/goldtree_4.png'
   function About() {
     return (
       <>
@@ -26,14 +26,14 @@
         <img src={logo1} alt="brand" />
       </div>
           <div className="serve-copy">
-            <h1>Hey! I’m Jaks</h1>
-            <h2>Your creative partner, Brand Strategist,  and lead Website Designer</h2>
-              <p>(And yes, Jaks or Jackie totally works.)</p>
-                <p>I’m the founder and lead designer behind Jaks Digital LLC, a Long Island, NY based studio helping passionate entrepreneurs build brands and websites that feel aligned, elevated, and genuinely reflective of who they are. I’m extremely 1:1 with my clients, so you’ll always feel like a VIP. </p><br></br>
-              <p>Back in 2018, I fell in love with the online business world and ditched my 9–5 for good. Since then, I’ve helped over 125 service-based businesses grow with strategic branding and custom Squarespace web design that tells their story and attracts the right people.</p><br></br>
+            <h1>Stop the Guesswork. Start Building a Brand with Clarity and Confidence.</h1>
+            
+              <p><b>For the visionaries, the innovators, the entrepreneurs who weave passion into their profession — your journey begins here.</b> We know your business isn’t just a service, it’s a story. It’s a reflection of your expertise, your values, and where you’re headed next. And your brand deserves to tell that story with clarity, confidence, and intention.</p>
+              <br></br>
+                
+                <p>We specialize in web design and branding experiences that go far beyond the surface. Yes, they’ll turn heads. More importantly, they’ll build trust, create connection, and support real growth. Every detail is tailored to help you show up as the expert you are, attract the right clients, and move your business forward with ease.</p><br></br>
                     
-                    <p>As your brand strategist and website expert, my job is simple: help you show up with confidence, clarity, and consistency—so your dream clients know exactly why you’re the one.</p> <br></br>
-                      <button>HOW CAN WE WORK TOGETHER</button>
+                    
                   </div>
                   </section>
 
@@ -42,14 +42,15 @@
         <img src={logo2} alt="brand" />
       </div>
                   <div className="serve-copy1">
-                    <h1>From Cubicle Life to Full Creative Freedom</h1>
+                    <h1>Email Marketing</h1>
                       
-                  <p>Entrepreneurship gives you the power to make your own rules—and as your brand and website expert, I’m here to help you discover what’s possible when you do.</p><br></br>
-                  <p>Fresh out of college, I found myself in the same routine so many creatives fall into: commuting, clocking in, working hard for little reward, and barely making it home in time for dinner. It felt like survival mode, and I couldn’t shake the question: Is this really it?</p><br></br>
+                  <p><b>For building meaningful connections and driving consistent engagement</b></p><br></br>
 
-                  <p>Then one day, a Facebook ad changed everything. The idea of working from anywhere clicked. Not for travel’s sake, but for the freedom. Freedom to work from my couch. A friend’s kitchen. 30,000 feet in the sky. By the pool. Wherever life happened to take me.</p><br></br>
+                  <p>Email marketing helps businesses connect directly with their audience through targeted, thoughtful, and engaging campaigns. From promotional emails to newsletters, each message is designed to strengthen relationships, increase awareness, and encourage action.</p><br></br>
+
+                  <p>The result is a more connected audience, stronger customer relationships, and a marketing channel that supports long-term growth and measurable results.</p><br></br>
                     
-                    <p>That’s when I walked away from the 9–5 grind and dove headfirst into learning how to turn my design skills into a full-time business. Since then, this journey has been about personal growth, creative independence, and helping other entrepreneurs design brands that support the lives they actually want too.</p><br></br>
+                   
                      
                   </div>
                   </section>
@@ -61,17 +62,18 @@
         <img src={logo3} alt="brand" />
       </div>
                   <div className="serve-copy">
-                    <h1>My Personal Approach to Brand Strategy & Squarespace Design</h1>
+                    <h1>Ongoing Studio Support</h1>
                       
-                  <p>What started as a leap toward freedom has grown into a career rooted in creative flow, meaningful client relationships, and work that feels genuinely fulfilling. When you work with me, you’re not passed off to a team or shuffled through a process. You have my full attention, every step of the way.</p><br></br>
+                  <p><b>For continued momentum and creative consistency</b></p>
+                  <br></br>
                       
-                  <p>I thrive on the challenges that come with building thoughtful brands and websites, and I’m deeply grateful for the flexibility to create, the trust my clients place in me, and the opportunity to help shape how their businesses show up in the world.</p><br></br>   
+                  <p>Monthly design, copy, and strategic support for established Jaks Digital clients who want to stay consistent, maintain momentum, and keep their brand evolving, without starting from scratch each time.</p><br></br>   
 
-                  <p>If you’re ready to partner with a creative who takes your late-night ideas and scribbled brainstorms and turns them into something refined, strategic, and meaningful, you’re in the right place.</p><br></br>
+                  <p>This ongoing service includes five dedicated hours per month of flexible creative support, designed to reduce your to-do list and support continued growth. Whether you need ongoing website updates or bringing new ideas to life, you have a trusted creative partner already in place to keep your brand aligned and moving forward.</p><br></br>
 
-                      <p><b>Let’s design a brand and website that moves you forward.</b></p><br></br>
+                     
 
-                      <button>DESIGN SERVICES</button>
+                      <button>MORE ABOUT STUDIO REPORT</button>
                   </div>
                   </section>
 
