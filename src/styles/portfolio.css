@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap');
 
 
-/* 
+/* =========================================================
    GLOBAL
- */
+========================================================= */
 
 .portfolio-page {
   width: 100%;
@@ -13,7 +13,6 @@
   padding: 0;
 
   background: #f7f5f0;
-
   color: #1c1c1a;
 
   font-family: "Montserrat", sans-serif;
@@ -22,9 +21,9 @@
 }
 
 
-/* 
+/* =========================================================
    HERO
- */
+========================================================= */
 
 .portfolio-hero {
   position: relative;
@@ -36,9 +35,9 @@
 }
 
 
-/* 
+/* =========================================================
    HERO IMAGE
- */
+========================================================= */
 
 .portfolio-hero-image {
   position: absolute;
@@ -49,14 +48,13 @@
   height: 100%;
 
   object-fit: cover;
-
   object-position: center center;
 }
 
 
-/* 
+/* =========================================================
    HERO OVERLAY
- */
+========================================================= */
 
 .portfolio-hero-overlay {
   position: absolute;
@@ -67,9 +65,9 @@
 }
 
 
-/* 
+/* =========================================================
    HERO CONTENT
- */
+========================================================= */
 
 .portfolio-hero-content {
   position: absolute;
@@ -87,9 +85,9 @@
 }
 
 
-/* 
+/* =========================================================
    HERO TITLE
- */
+========================================================= */
 
 .portfolio-hero-content h1 {
   transform: translateX(30px);
@@ -108,9 +106,9 @@
 }
 
 
-/* 
+/* =========================================================
    HERO PARAGRAPHS
- */
+========================================================= */
 
 .portfolio-hero-content p {
   max-width: 850px;
@@ -134,9 +132,9 @@
 }
 
 
-/* 
+/* =========================================================
    NEW PROJECTS COMING SOON
- */
+========================================================= */
 
 .new-projects-section {
   width: 100%;
@@ -149,9 +147,9 @@
 }
 
 
-/* 
+/* =========================================================
    NEW PROJECT TITLE
- */
+========================================================= */
 
 .new-projects-title {
   width: 100%;
@@ -186,9 +184,9 @@
 }
 
 
-/* 
+/* =========================================================
    FULL WIDTH GOLDTREE GALLERY
- */
+========================================================= */
 
 .new-projects-gallery {
   width: 100%;
@@ -203,9 +201,9 @@
 }
 
 
-/* 
+/* =========================================================
    GOLDTREE IMAGE CONTAINER
- */
+========================================================= */
 
 .new-project-item {
   position: relative;
@@ -220,10 +218,10 @@
 }
 
 
-/* 
+/* =========================================================
    GOLDTREE IMAGE
    FULL IMAGE — NO CROPPING
- */
+========================================================= */
 
 .new-project-item img {
   display: block;
@@ -244,18 +242,284 @@
 }
 
 
-/* 
+/* =========================================================
    IMAGE HOVER
- */
+========================================================= */
 
 .new-project-item:hover img {
   transform: scale(1.02);
 }
 
 
-/* 
+/* =========================================================
+   BACK TO PORTFOLIO BUTTON
+========================================================= */
+
+.back-portfolio-btn {
+  display: inline-block;
+
+  margin-top: 30px;
+
+  padding: 14px 28px;
+
+  background: #3d2d24;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  border-radius: 30px;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  transition: all 0.3s ease;
+}
+
+
+.back-portfolio-btn:hover {
+  background: #6b4a3a;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   FINAL CTA SECTION
+   JAKS DIGITAL STYLE
+========================================================= */
+
+.portfolio-cta {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 720px;
+
+  overflow: hidden;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   CTA BACKGROUND IMAGE
+========================================================= */
+
+.portfolio-cta-image {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center center;
+
+  z-index: 0;
+}
+
+
+/* =========================================================
+   CTA DARK OVERLAY
+========================================================= */
+
+.portfolio-cta-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(55, 50, 43, 0.58);
+
+  z-index: 1;
+}
+
+
+/* =========================================================
+   CTA CONTENT
+========================================================= */
+
+.portfolio-cta-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1200px, 90%);
+
+  margin: 0 auto;
+
+  padding: 100px 20px;
+
+  text-align: center;
+
+  color: #ffffff;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   CTA MAIN HEADING
+========================================================= */
+
+.portfolio-cta-content h2 {
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(42px, 4.2vw, 68px);
+
+  font-weight: 500;
+
+  line-height: 1.12;
+
+  letter-spacing: -1.5px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   CTA SCRIPT TEXT
+========================================================= */
+
+.portfolio-cta-script {
+  margin: 45px 0 55px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(42px, 5vw, 68px);
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  line-height: 1.1;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   CTA BUTTON CONTAINER
+========================================================= */
+
+.portfolio-cta-buttons {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 28px;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+========================================================= */
+
+.portfolio-cta-button {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 340px;
+
+  min-height: 70px;
+
+  padding: 20px 30px;
+
+  box-sizing: border-box;
+
+  background: #f3f0e8;
+
+  color: #171717;
+
+  text-decoration: none;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+
+  transition:
+    background 0.35s ease,
+    color 0.35s ease,
+    transform 0.35s ease;
+}
+
+
+/* =========================================================
+   CTA BUTTON HOVER
+========================================================= */
+
+.portfolio-cta-button:hover {
+  background: #ffffff;
+
+  color: #171717;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   CTA DECORATIVE HORIZONTAL LINES
+========================================================= */
+
+.portfolio-cta::before,
+.portfolio-cta::after {
+  content: "";
+
+  position: absolute;
+
+  top: 88%;
+
+  width: 34%;
+
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  z-index: 2;
+}
+
+
+.portfolio-cta::before {
+  left: 0;
+}
+
+
+.portfolio-cta::after {
+  right: 0;
+}
+
+
+/* =========================================================
    LARGE TABLET
- */
+========================================================= */
 
 @media (max-width: 1100px) {
 
@@ -281,8 +545,6 @@
   }
 
 
-  /* NEW PROJECT */
-
   .new-projects-section {
     padding: 100px 0 90px;
   }
@@ -295,9 +557,9 @@
 }
 
 
-/* 
+/* =========================================================
    TABLET
- */
+========================================================= */
 
 @media (max-width: 900px) {
 
@@ -309,16 +571,47 @@
     padding: 0 6px;
   }
 
+
+  /* CTA */
+
+  .portfolio-cta {
+    min-height: 650px;
+  }
+
+
+  .portfolio-cta-content {
+    padding: 90px 20px;
+  }
+
+
+  .portfolio-cta-content h2 {
+    font-size: 45px;
+  }
+
+
+  .portfolio-cta-script {
+    font-size: 48px;
+
+    margin: 40px 0 45px;
+  }
+
+
+  .portfolio-cta-button {
+    width: 320px;
+  }
+
 }
 
 
-/* 
+/* =========================================================
    MOBILE
- */
+========================================================= */
 
 @media (max-width: 600px) {
 
-  /* HERO */
+  /* -------------------------------------------------------
+     HERO
+  ------------------------------------------------------- */
 
   .portfolio-hero {
     height: 600px;
@@ -360,7 +653,9 @@
   }
 
 
-  /* NEW PROJECT */
+  /* -------------------------------------------------------
+     NEW PROJECTS
+  ------------------------------------------------------- */
 
   .new-projects-section {
     padding: 75px 0 80px;
@@ -391,12 +686,75 @@
     padding: 0 5px;
   }
 
+
+  /* -------------------------------------------------------
+     CTA
+  ------------------------------------------------------- */
+
+  .portfolio-cta {
+    min-height: 650px;
+  }
+
+
+  .portfolio-cta-image {
+    object-position: center center;
+  }
+
+
+  .portfolio-cta-content {
+    width: 94%;
+
+    padding: 75px 15px;
+  }
+
+
+  .portfolio-cta-content h2 {
+    font-size: 31px;
+
+    line-height: 1.15;
+
+    letter-spacing: -0.5px;
+  }
+
+
+  .portfolio-cta-script {
+    font-size: 38px;
+
+    margin: 35px 0 40px;
+  }
+
+
+  .portfolio-cta-buttons {
+    gap: 20px;
+
+    width: 100%;
+  }
+
+
+  .portfolio-cta-button {
+    width: 100%;
+
+    max-width: 320px;
+
+    min-height: 62px;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+  }
+
+
+  .portfolio-cta::before,
+  .portfolio-cta::after {
+    display: none;
+  }
+
 }
 
 
-/* 
+/* =========================================================
    VERY SMALL MOBILE
- */
+========================================================= */
 
 @media (max-width: 400px) {
 
@@ -408,29 +766,24 @@
   .new-projects-title h2 {
     font-size: 40px;
   }
-  .back-portfolio-btn {
-  display: inline-block;
 
-  margin-top: 30px;
-  padding: 14px 28px;
 
-  background: #3d2d24;
-  color: #ffffff;
+  .portfolio-cta-content h2 {
+    font-size: 28px;
+  }
 
-  text-decoration: none;
 
-  border-radius: 30px;
+  .portfolio-cta-script {
+    font-size: 34px;
+  }
 
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
-  font-weight: 500;
 
-  transition: all 0.3s ease;
-}
+  .portfolio-cta-button {
+    max-width: 280px;
 
-.back-portfolio-btn:hover {
-  background: #6b4a3a;
-  transform: translateY(-2px);
-}
+    min-height: 58px;
+
+    font-size: 11px;
+  }
 
 }
