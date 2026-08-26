@@ -61,6 +61,7 @@
   max-width: 560px;
 
   margin: 0 auto 28px;
+   transform: translateX(15px);
 
   font-family: Georgia, "Times New Roman", serif;
   font-size: 52px;
