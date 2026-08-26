@@ -6,6 +6,7 @@ import goldtreeHoney from "../assets/goldtree-honey.png";
 import goldtreeSunglasses from "../assets/goldtree-sunglasses.png";
 
 import portfolioHero from "../assets/portfolio-hero.png";
+import portfolioCta from "../assets/portfolio-cta.png";
 
 import PortfolioShowcase from "../components/portfolio-showcase.jsx";
 import PortfolioProjects from "../components/portfolio-project.jsx";
@@ -15,9 +16,9 @@ function Portfolio() {
   return (
     <main className="portfolio-page">
 
-      {/* 
+      {/* =====================================================
           HERO
-       */}
+      ===================================================== */}
 
       <section className="portfolio-hero">
 
@@ -49,27 +50,25 @@ function Portfolio() {
       </section>
 
 
-      {/* 
+      {/* =====================================================
           HORIZONTAL PROJECT SHOWCASE
-       */}
+      ===================================================== */}
 
       <PortfolioShowcase />
 
 
-      {/* 
+      {/* =====================================================
           FEATURED PROJECTS
-       */}
+      ===================================================== */}
 
       <PortfolioProjects />
 
 
-      {/* 
+      {/* =====================================================
           NEW PROJECTS COMING SOON
-       */}
+      ===================================================== */}
 
       <section className="new-projects-section">
-
-        {/* TITLE */}
 
         <div className="new-projects-title">
 
@@ -79,8 +78,6 @@ function Portfolio() {
 
         </div>
 
-
-        {/* GOLDTREE PROJECTS */}
 
         <div className="new-projects-gallery">
 
@@ -132,6 +129,78 @@ function Portfolio() {
           </div>
 
         </div>
+
+      </section>
+
+
+      {/* =====================================================
+          FINAL CALL TO ACTION
+          JAKS DIGITAL STYLE
+      ===================================================== */}
+
+      <section className="portfolio-cta">
+
+        {/* BACKGROUND IMAGE */}
+
+        <img
+          src={portfolioCta}
+          alt=""
+          className="portfolio-cta-image"
+        />
+
+        {/* DARK OVERLAY */}
+
+        <div className="portfolio-cta-overlay"></div>
+
+
+        {/* CONTENT */}
+
+        <div className="portfolio-cta-content">
+
+          <h2>
+            STEP INTO THE NEXT STAGE OF YOUR BUSINESS
+            <br />
+            WITH CONFIDENCE, POWER, AND
+            <br />
+            PROFESSIONALISM THROUGH INTENTIONAL
+            <br />
+            BRAND AND WEB DESIGN.
+          </h2>
+
+
+          <p className="portfolio-cta-script">
+            It’s time to own your future.
+          </p>
+
+
+          {/* BUTTONS */}
+
+          <div className="portfolio-cta-buttons">
+
+            <a
+              href="/services"
+              className="portfolio-cta-button"
+            >
+              DIY DESIGN SERVICES
+            </a>
+
+            <a
+              href="/contact"
+              className="portfolio-cta-button"
+            >
+              BOOK A DISCOVERY CALL
+            </a>
+
+          </div>
+
+        </div>
+
+
+        {/* DECORATIVE LINES */}
+
+        <div className="portfolio-cta-line portfolio-cta-line-left"></div>
+
+        <div className="portfolio-cta-line portfolio-cta-line-right"></div>
 
       </section>
 

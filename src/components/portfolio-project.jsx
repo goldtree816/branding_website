@@ -11,7 +11,6 @@ import skincare from "../assets/g_skincare.png";
 import tea from "../assets/g_tea.png";
 import headphone from "../assets/g_headphone.png";
 import speaker from "../assets/g_speakers.png";
-
 import mouse from "../assets/g_mouse.png";
 import printer from "../assets/g_print.png";
 import fan from "../assets/g_fan.png";
@@ -83,55 +82,55 @@ function PortfolioProjects() {
     {
       image: speaker,
       name: "Gold Tree Speaker",
-      slug: "independent-skincare-line",
+      slug: "gold-tree-speaker",
     },
 
     {
       image: mouse,
       name: "Gold Tree Mouse",
-      slug: "my-home-designed",
+      slug: "gold-tree-mouse",
     },
 
     {
       image: printer,
       name: "Gold Tree Printer",
-      slug: "nofo-events",
+      slug: "gold-tree-printer",
     },
 
     {
       image: fan,
       name: "Gold Tree Portable Fan",
-      slug: "birthwell",
+      slug: "gold-tree-portable-fan",
     },
 
     {
       image: lamp,
       name: "Gold Tree Lamp",
-      slug: "ascend-aesthetics",
+      slug: "gold-tree-lamp",
     },
 
     {
       image: pbank,
       name: "Gold Tree Power Bank",
-      slug: "interior-design",
+      slug: "gold-tree-power-bank",
     },
 
     {
       image: charger,
       name: "Gold Tree Charger",
-      slug: "uncontained",
+      slug: "gold-tree-charger",
     },
 
     {
       image: router,
       name: "Gold Tree Router",
-      slug: "balanced-living-co",
+      slug: "gold-tree-router",
     },
 
     {
       image: beacon,
       name: "Gold Tree Beacon",
-      slug: "majestic-healing",
+      slug: "gold-tree-beacon",
     },
 
   ];

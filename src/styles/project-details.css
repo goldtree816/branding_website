@@ -1,8 +1,14 @@
+/* 
+   PROJECT DETAILS PAGE
+ */
+
 .project-details-page {
   width: 100%;
   min-height: 100vh;
+
   background: #f7f5f0;
   color: #1c1c1a;
+
   font-family: "Montserrat", sans-serif;
 }
 
@@ -13,13 +19,20 @@
 
 .project-details-hero {
   width: 100%;
-  padding: 100px 6vw 80px;
+
+  padding: 100px 5vw 80px;
 }
 
 
+/* 
+   HEADING
+ */
+
 .project-details-heading {
-  max-width: 1200px;
-  margin: 0 auto 60px;
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto 55px;
 }
 
 
@@ -52,7 +65,7 @@
 
 
 /* 
-   LARGE PROJECT IMAGE
+   PROJECT IMAGE
  */
 
 .project-details-image {
@@ -62,6 +75,8 @@
   margin: 0 auto;
 
   overflow: hidden;
+
+  background: #eeeae2;
 }
 
 
@@ -71,21 +86,25 @@
   width: 100%;
   height: auto;
 
-  max-height: 800px;
+  /*
+     IMPORTANT:
+     Do NOT use fixed height here.
+     This keeps the complete project image visible.
+  */
 
-  object-fit: cover;
+  object-fit: contain;
 
   transition: transform 0.6s ease;
 }
 
 
 .project-details-image:hover img {
-  transform: scale(1.015);
+  transform: scale(1.01);
 }
 
 
 /* 
-   INFORMATION
+   INFORMATION SECTION
  */
 
 .project-details-info {
@@ -94,7 +113,7 @@
 
   margin: 0 auto;
 
-  padding: 80px 6vw 100px;
+  padding: 80px 5vw 100px;
 
   display: grid;
 
@@ -103,6 +122,10 @@
   gap: 100px;
 }
 
+
+/* 
+   LABEL
+ */
 
 .project-details-label {
   margin: 0 0 25px;
@@ -118,6 +141,10 @@
   color: #8b3d2f;
 }
 
+
+/* 
+   DESCRIPTION
+ */
 
 .project-details-description h2 {
   margin: 0 0 25px;
@@ -218,7 +245,7 @@
 
 
 /* 
-   NOT FOUND
+   PROJECT NOT FOUND
  */
 
 .project-details-content {
@@ -261,6 +288,7 @@
     padding: 80px 30px 60px;
   }
 
+
   .project-details-info {
     grid-template-columns: 1fr;
 
@@ -282,9 +310,11 @@
     padding: 60px 20px 40px;
   }
 
+
   .project-details-heading {
     margin-bottom: 35px;
   }
+
 
   .project-details-heading h1 {
     font-size: 55px;
@@ -292,16 +322,32 @@
     letter-spacing: -2px;
   }
 
+
   .project-details-info {
     padding: 50px 20px 70px;
   }
+
 
   .project-details-description h2 {
     font-size: 40px;
   }
 
+
   .project-details-back {
     padding-bottom: 70px;
+  }
+
+
+  .project-details-image {
+    width: 100%;
+  }
+
+
+  .project-details-image img {
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
   }
 
 }
