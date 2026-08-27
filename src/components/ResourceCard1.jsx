@@ -1,37 +1,37 @@
 import "../styles/ResourceCard1.css";
 
-function TryCard({image, title, description}) {
+function TryCard({ image, title, description }) {
+  return (
+    <article className="card1">
 
-return (
+      {/* IMAGE AREA */}
+      <div className="card1-image">
 
-<article className="card1">
-    
+        <img
+          className="thumb1"
+          src={image}
+          alt={title}
+        />
 
-<img 
-className="thumb1"
-src={image}
-alt={title}
-/>
+      </div>
 
-<div className="card1-body">
+      {/* CARD CONTENT */}
+      <div className="card1-body">
 
-<h2>{title}</h2>
+        <h2>{title}</h2>
 
+        <p className="desc1">
+          {description}
+        </p>
 
-<p className="desc1">
-{description}
-</p>
+        <button type="button">
+          TRY IT OUT
+        </button>
 
+      </div>
 
-<button>TRY IT OUT</button>
-
-
-</div>
-
-</article>
-
-)
-
+    </article>
+  );
 }
 
 export default TryCard;
