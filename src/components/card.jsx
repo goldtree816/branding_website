@@ -1,14 +1,11 @@
 import "../styles/card.css";
 
-function Card({  icon, title, description,  }) {
+function Card({image}) {
   return (
     <div className="feature-card">
-      <div className="icon">{icon}</div>
+
+      <img className="pic" src={image}/>
      
-      <h2>{title}</h2>
-
-      <p>{description}</p>
-
    
     </div>
   );

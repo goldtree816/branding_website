@@ -1,481 +1,556 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
 
-/* ===========================
-   ROOT VARIABLES
-=========================== */
+  /* ===========================
+    ROOT VARIABLES
+  =========================== */
 
-:root {
-  --cream: #f4f1ea;
-  --cream-2: #eeece3;
-  --ink: #1c1a16;
-  --ink-2: #332f28;
-  --red: #a3312c;
-  --line: #dcd8cc;
-  --muted: #6d6a5f;
-}
-
-/* ===========================
-   GLOBAL STYLES
-=========================== */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  width: 100%;
-  overflow-x: hidden;
-}
-
-body {
-  width: 100%;
-  overflow-x: hidden;
-  font-family: 'EB Garamond', serif;
-  background: var(--cream);
-  color: var(--ink);
-  line-height: 1.6;
-}
-
-h1,
-h2,
-h3 {
-  font-family: 'Playfair Display', serif;
-  letter-spacing: 0.02em;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-button {
-  font-family: inherit;
-}
-
-/* ===========================
-   GENERAL SECTION
-=========================== */
-
-section {
-  width: 100%;
-  padding: 70px 60px;
-}
-
-/* ===========================
-   INTRO / HERO SECTION
-=========================== */
-
-.intro {
-  position: relative;
-  width: 100%;
-  min-height: 620px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  text-align: center;
-
-  padding: 60px 40px 70px;
-
-  overflow: hidden;
-
-  background-image: url('../assets/intro.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.intro::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(43, 34, 34, 0.42);
-  z-index: 0;
-}
-
-.intro h1,
-.intro p,
-.intro button {
-  position: relative;
-  z-index: 1;
-}
-
-.intro h1 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  /* fluid type: replaces the old 52px / 44px / 34px / 28px breakpoint jumps */
-  font-size: clamp(1.75rem, 4.5vw + 1rem, 3.25rem);
-  line-height: 1.15;
-  letter-spacing: 0.01em;
-  color: #ffffff;
-  text-transform: uppercase;
-  max-width: 900px;
-  margin-bottom: 28px;
-  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.25);
-}
-
-.intro p {
-  max-width: 620px;
-  font-size: clamp(1rem, 0.6vw + 0.85rem, 1.2rem);
-  color: #f9f9f9;
-  margin-bottom: 34px;
-  line-height: 1.5;
-}
-
-.intro button {
-  background: var(--cream);
-  color: var(--ink);
-  border: none;
-  padding: 18px 40px;
-  min-height: 44px; /* accessible tap target on touch devices */
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  cursor: pointer;
-  white-space: nowrap;
-  transition: background 0.2s ease, color 0.2s ease;
-}
-
-.intro button:hover {
-  background: var(--red);
-  color: var(--cream);
-}
-
-/* ===========================
-   EYEBROW
-=========================== */
-
-.eyebrow {
-  display: block;
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  font-size: 13px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--red);
-  margin-bottom: 14px;
-}
-
-/* ===========================
-   SERVICE SECTIONS
-=========================== */
-
-.serve,
-.serve1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1400px;
-  gap: 45px;
-  margin: 80px auto;
-  padding: 40px;
-}
-
-.serve1 {
-  flex-direction: row-reverse;
-  gap: 50px;
-}
-
-.img1,
-.img2 {
-  flex: 1;
-  min-width: 0;
-  width: 100%;
-}
-
-.img1 img,
-.img2 img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.serve-copy,
-.serve-copy1 {
-  flex: 1;
-  min-width: 0;
-  width: 100%;
-}
-
-.serve-copy h1,
-.serve-copy1 h1 {
-  font-size: clamp(1.7rem, 2.2vw + 1rem, 3rem);
-  line-height: 1.15;
-  margin-bottom: 20px;
-}
-
-.serve-copy p,
-.serve-copy1 p {
-  line-height: 1.6;
-}
-
-/* ===========================
-   VALUES SECTION
-=========================== */
-
-.values {
-  background: var(--cream-2);
-}
-
-.values h2 {
-  font-size: clamp(1.5rem, 0.8vw + 1.2rem, 1.875rem);
-  margin-bottom: 8px;
-}
-
-.values .sub {
-  color: var(--muted);
-  font-size: clamp(0.9375rem, 0.3vw + 0.85rem, 1.0625rem);
-  margin-bottom: 40px;
-  max-width: 640px;
-}
-
-.value-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 36px;
-}
-
-.value-card {
-  border-top: 2px solid var(--ink);
-  padding-top: 16px;
-}
-
-.value-card h3 {
-  font-size: 19px;
-  margin-bottom: 10px;
-}
-
-.value-card p {
-  font-size: 15px;
-  color: var(--muted);
-}
-
-/* ===========================
-   PROCESS SECTION
-=========================== */
-
-.process {
-  background: #6d6a5f;
-}
-
-.process h2 {
-  font-size: clamp(1.5rem, 0.8vw + 1.2rem, 1.875rem);
-  margin-bottom: 8px;
-  color: var(--cream);
-}
-
-.process .sub {
-  color: #bab6a8;
-  font-size: clamp(0.9375rem, 0.3vw + 0.85rem, 1.0625rem);
-  margin-bottom: 44px;
-  max-width: 600px;
-}
-
-.steps {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-}
-
-.step .num {
-  font-family: 'Playfair Display', serif;
-  font-size: 15px;
-  color: var(--red);
-  margin-bottom: 12px;
-  letter-spacing: 0.1em;
-}
-
-.step h3 {
-  font-size: 19px;
-  margin-bottom: 8px;
-  color: var(--cream);
-  font-weight: 600;
-}
-
-.step p {
-  font-size: 14.5px;
-  color: #b9b6a9;
-}
-
-.process-link {
-  display: inline-block;
-  margin-top: 44px;
-  font-size: 14px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  color: var(--cream);
-  border-bottom: 1px solid var(--red);
-  padding-bottom: 4px;
-}
-
-/* =
-   MEDIA QUERIES
-   Only layout-changing properties live here now — typography
-   is handled by clamp() above, so these blocks are much
-   shorter and each breakpoint only overrides what's new
-   relative to the one above it (no repeated declarations).
-=*/
-
-/* ---------- TABLET (≤1024px) ---------- */
-@media (max-width: 1024px) {
-  section {
-    padding: 60px 40px;
+  :root {
+    --cream: #f4f1ea;
+    --cream-2: #eeece3;
+    --ink: #1c1a16;
+    --ink-2: #332f28;
+    --red: #a3312c;
+    --line: #dcd8cc;
+    --muted: #6d6a5f;
   }
 
-  .intro {
-    min-height: 560px;
-    padding: 50px 30px;
-  }
+  /* ===========================
+    GLOBAL STYLES
+  =========================== */
 
-  .serve,
-  .serve1 {
-    gap: 35px;
-    margin: 60px auto;
-    padding: 30px;
-  }
-
-  .value-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .steps {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 40px;
-  }
-}
-
-/* MOBILE (≤768px)  */
-@media (max-width: 768px) {
-  section {
-    padding: 50px 24px;
-  }
-
-  /* Hero */
-  .intro {
-    min-height: 500px;
-    padding: 45px 24px;
-  }
-
-  .intro button {
-    padding: 15px 28px;
-    font-size: 12px;
-    letter-spacing: 0.14em;
-  }
-
-  /* Service sections stack, image on top, text below and centered
-     (this is the piece that was missing — matches the design reference) */
-  .serve,
-  .serve1 {
-    flex-direction: column;
-    max-width: none;
-    gap: 30px;
-    margin: 45px 0;
+  * {
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
   }
 
-  .serve-copy,
-  .serve-copy1 {
+  html {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'EB Garamond', serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.02em;
+    
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button {
+    font-family: inherit;
+  }
+
+  /* ===========================
+    GENERAL SECTION
+  =========================== */
+
+  section {
+    width: 100%;
+    padding: 70px 60px;
+    
+  }
+
+  /* ===========================
+    INTRO / HERO SECTION
+  =========================== */
+
+  .intro {
+    position: relative;
+    width: 100%;
+    min-height: 620px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 40px 70px;
+
+    overflow: hidden;
+
+    background-image: url('../assets/intro.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+    /* Dark overlay */
+    .intro::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+
+      background: rgba(43, 34, 34, 0.42);
+
+      z-index: 0;
+    }
+
+  /* Keep content above overlay */
+  .intro h1,
+  .intro p,
+  .intro button {
+    position: relative;
+    z-index: 1;
+  }
+
+
+  /* ===========================
+    HERO HEADING
+  =========================== */
+
+  .intro h1 {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto 28px;
+    padding: 0;
+
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+
+    font-size: clamp(
+      1.75rem,
+      4.5vw + 1rem,
+      3.25rem
+    );
+
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+
+    color: #ffffff;
+
+    text-transform: uppercase;
+
+    text-align: center;
+
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.25);
+  }
+
+
+  /* ===========================
+    HERO PARAGRAPH
+  =========================== */
+
+  .intro p {
+    width: 100%;
+    max-width: 620px;
+
+    margin: 0 auto 34px;
+    padding: 0;
+
+    font-size: clamp(
+      1rem,
+      0.6vw + 0.85rem,
+      1.2rem
+    );
+
+    line-height: 1.5;
+
+    color: #f9f9f9;
+
     text-align: center;
   }
 
-  .serve-copy p,
-  .serve-copy1 p {
-    font-size: 16px;
-    line-height: 1.55;
+
+  /* ===========================
+    HERO BUTTON
+  =========================== */
+
+  .intro button {
+    background: var(--cream);
+    color: var(--ink);
+
+    border: none;
+
+    padding: 18px 40px;
+
+    min-height: 44px;
+
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 14px;
+
+    letter-spacing: 0.18em;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    transition:
+      background 0.2s ease,
+      color 0.2s ease;
   }
 
-  /* Values */
+  .intro button:hover {
+    background: var(--red);
+    color: var(--cream);
+  }
+  /* ===========================
+    EYEBROW
+  =========================== */
+
+  .eyebrow {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 14px;
+  }
+
+  /* ===========================
+    SERVICE SECTIONS
+  =========================== */
+
+  .serve,
+  .serve1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1400px;
+    gap: 45px;
+    margin: 80px auto;
+    padding: 40px;
+  }
+
+  .serve1 {
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+
+  .img1,
+  .img2 {
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .img1 img,
+  .img2 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .serve-copy5,
+  .serve-copy6 {
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .serve-copy5 h1,
+  .serve-copy6 h1 {
+    font-size: clamp(1.7rem, 2.2vw + 1rem, 3rem);
+    line-height: 1.15;
+    margin-bottom: 20px;
+  }
+
+  .serve-copy5 p,
+  .serve-copy6 p {
+    line-height: 1.6;
+  }
+
+  /* ===========================
+    VALUES SECTION
+  =========================== */
+
   .values {
-    padding: 50px 24px;
+    background: var(--cream-2);
+  }
+
+  .values h2 {
+    font-size: clamp(1.5rem, 0.8vw + 1.2rem, 1.875rem);
+    margin-bottom: 8px;
+  }
+
+  .values .sub {
+    color: var(--muted);
+    font-size: clamp(0.9375rem, 0.3vw + 0.85rem, 1.0625rem);
+    margin-bottom: 40px;
+    max-width: 640px;
   }
 
   .value-grid {
-    grid-template-columns: 1fr;
-    gap: 28px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 36px;
   }
 
-  /* Process */
+  .value-card {
+    border-top: 2px solid var(--ink);
+    padding-top: 16px;
+  }
+
+  .value-card h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+
+  .value-card p {
+    font-size: 15px;
+    color: var(--muted);
+  }
+
+  /* ===========================
+    PROCESS SECTION
+  =========================== */
+
   .process {
-    padding: 55px 24px;
+    background: #6d6a5f;
+  }
+
+  .process h2 {
+    font-size: clamp(1.5rem, 0.8vw + 1.2rem, 1.875rem);
+    margin-bottom: 8px;
+    color: var(--cream);
+  }
+
+  .process .sub {
+    color: #bab6a8;
+    font-size: clamp(0.9375rem, 0.3vw + 0.85rem, 1.0625rem);
+    margin-bottom: 44px;
+    max-width: 600px;
   }
 
   .steps {
-    grid-template-columns: 1fr;
-    gap: 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  .step .num {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    color: var(--red);
+    margin-bottom: 12px;
+    letter-spacing: 0.1em;
   }
 
   .step h3 {
-    font-size: 18px;
+    font-size: 19px;
+    margin-bottom: 8px;
+    color: var(--cream);
+    font-weight: 600;
   }
 
   .step p {
-    font-size: 15px;
-  }
-}
-
-/* SMALL MOBILE (≤480px)  */
-@media (max-width: 480px) {
-  section {
-    padding: 40px 18px;
-  }
-
-  .intro {
-    min-height: 460px;
-    padding: 40px 18px;
-  }
-
-  .intro button {
-    padding: 14px 22px;
-    font-size: 11px;
-  }
- 
- .serve .img1 {
-  display: block;
-  margin: 35px auto;
-}
-
-  
-  .serve1 {
-    margin: 35px 0;
-    gap: 24px;
-  }
-
-  .serve .serve-copy h1{
-    text-align: center;
-    margin-left: 45px;
-  }
-
-  .serve-copy1 h1 {
-    text-align: center;
-    margin-left: 65px;
-  }
-
-  .serve-copy p,
-  .serve-copy1 p {
-    font-size: 15px;
-  }
-
-  .values,
-  .process {
-    padding: 40px 18px;
-  }
-
-  .step p {
-    font-size: 14px;
+    font-size: 14.5px;
+    color: #b9b6a9;
   }
 
   .process-link {
-    font-size: 13px;
-    margin-top: 30px;
+    display: inline-block;
+    margin-top: 44px;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: var(--cream);
+    border-bottom: 1px solid var(--red);
+    padding-bottom: 4px;
   }
-}
+
+  /* =
+    MEDIA QUERIES
+    Only layout-changing properties live here now — typography
+    is handled by clamp() above, so these blocks are much
+    shorter and each breakpoint only overrides what's new
+    relative to the one above it (no repeated declarations).
+  =*/
+
+  /* ---------- TABLET (≤1024px) ---------- */
+  @media (max-width: 1024px) {
+    section {
+      padding: 60px 40px;
+    }
+
+    .intro {
+      min-height: 560px;
+      padding: 50px 30px;
+    }
+    
+    
+    .serve,
+    .serve1 {
+      gap: 35px;
+      margin: 60px auto;
+      padding: 30px;
+    }
+    
+    .serve-copy5 h1,.serve-copy6 h1{
+      font-size:  1.5rem;
+    }
+
+
+    .value-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .steps {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 40px;
+    }
+  }
+
+  /* MOBILE (≤768px)  */
+  @media (max-width: 768px) {
+    section {
+      padding: 50px 24px;
+    }
+
+    /* Hero */
+    .intro {
+      min-height: 500px;
+      padding: 45px 24px;
+    }
+
+    .intro button {
+      padding: 15px 28px;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+    }
+
+    /* Service sections stack, image on top, text below and centered
+      (this is the piece that was missing — matches the design reference) */
+    .serve,
+    .serve1 {
+      flex-direction: column;
+      max-width: none;
+      gap: 30px;
+      margin: 45px 0;
+      padding: 0;
+    }
+
+  .serve-copy5 h1,
+  .serve-copy6 h1 {
+    text-align: center;
+    margin-left: 0;
+  }
+   
+    .serve-copy5,
+    .serve-copy6 {
+      text-align: center;
+    }
+
+    .serve-copy5 p,
+    .serve-copy6 p {
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    /* Values */
+    .values {
+      padding: 50px 24px;
+    }
+
+    .value-grid {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    /* Process */
+    .process {
+      padding: 55px 24px;
+    }
+
+    .steps {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    .step h3 {
+      font-size: 18px;
+    }
+
+    .step p {
+      font-size: 15px;
+    }
+  }
+
+  /* SMALL MOBILE (≤480px)  */
+  @media (max-width: 480px) {
+    section {
+      padding: 40px 18px;
+    }
+    
+  
+    .intro {
+      min-height: 460px;
+      padding: 40px 18px;
+    }
+
+    .intro button {
+      padding: 14px 22px;
+      font-size: 11px;
+    }
+  
+  .serve .img1,
+  .serve1 .img2 {
+    display: block;
+    margin: 35px auto;
+  }
+
+    
+    .serve1 {
+      margin: 35px 0;
+      gap: 24px;
+    }
+    
+  
+  .serve-copy5 h1,
+  .serve-copy6 h1 {
+    font-size: 1.3rem; /* smaller, fits on one line */
+  }
+
+
+    .serve-copy5 h1,
+   .serve-copy6 h1 {
+    text-align: center;
+    margin-left: 0;
+  }
+
+    .serve-copy5 p,
+    .serve-copy6 p {
+      font-size: 16px;
+    }
+
+    .values,
+    .process {
+      padding: 40px 18px;
+    }
+
+    .step p {
+      font-size: 16px;
+    }
+
+    .process-link {
+      font-size: 13px;
+      margin-top: 30px;
+    }
+  }

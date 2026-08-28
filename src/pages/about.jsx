@@ -10,7 +10,7 @@
       <>
     
         <section className="intro">
-          <h1 className="head">MEET THE BRAND STRATEGIST BEHIND JAKS DIGITAL</h1>
+          <h1>MEET THE BRAND STRATEGIST BEHIND JAKS DIGITAL</h1>
 
           <p className="head">
             Thoughtful brand strategy and website design to help you show up with clarity, confidence, and a digital presence that truly reflects who you are.
@@ -25,7 +25,7 @@
                   <div className="img1">
         <img src={logo1} alt="brand" />
       </div>
-          <div className="serve-copy">
+          <div className="serve-copy5">
             <h1>INFLUENCER MARKETING</h1>
             <p><b>Connecting Brands With the Right Voices</b></p>
             
@@ -42,7 +42,7 @@
                   <div className="img2">
         <img src={logo2} alt="brand" />
       </div>
-                  <div className="serve-copy1">
+                  <div className="serve-copy6">
                     <h1>ADVERTISING DASHBOARD</h1>
                       
                   <p><b>Manage, Monitor & Optimize Your Campaigns</b></p><br></br>
@@ -62,7 +62,7 @@
                   <div className="img1">
         <img src={logo3} alt="brand" />
       </div>
-                  <div className="serve-copy">
+                  <div className="serve-copy5">
                     <h1>SOCIAL MEDIA MARKETING</h1>
                     <p><b>Building Your Brand Beyond the Screen</b></p>
                       

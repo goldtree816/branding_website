@@ -1,5 +1,9 @@
 import Card from "./card.jsx";
 import "../styles/value.css";
+import headphone from '../assets/g_headphone.png'
+import protein from '../assets/g_protein.png'
+import speaker from '../assets/g_speakers.png'
+
 
 
 function Values() {
@@ -7,21 +11,15 @@ function Values() {
     <section className="features">
 
       <Card
-        icon="✳"
-        title="FREEDOM"
-        description="Jaks Digital was born out of a deep craving for freedom—and now, I help other entrepreneurs claim that for themselves."
+        image={headphone}
+        />
+
+      <Card
+       image={protein}
       />
 
       <Card
-        icon="☀"
-        title="COMMUNITY"
-        description="Design is a collaborative process, and you'll never feel like just another client."
-      />
-
-      <Card
-        icon="⇓"
-        title="ALIGNMENT"
-        description="Your brand should feel like a natural extension of you and reflect your values."
+       image={speaker}
       />
 
     </section>
