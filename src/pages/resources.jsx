@@ -11,96 +11,96 @@ import free2 from "../assets/free2.png";
 import free3 from "../assets/free3.png";
 
 // GOLDTREE BUSINESS RESOURCE IMAGES
-import earbud from "../assets/b_earbud.png";
-import chasma from "../assets/b_sunglasses.png";
-import honey from "../assets/b_honey.png";
-import ladiesbag from "../assets/b_ladiesbag.png";
-import coffeeImg from "../assets/g_coffee.png";
-import protein from "../assets/g_protein.png";
-import skincare from "../assets/g_skincare.png";
-import tea from "../assets/g_tea.png";
-import headphone from "../assets/g_headphone.png";
-import speaker from "../assets/g_speakers.png";
-import mouse from "../assets/g_mouse.png";
+import BPD from "../assets/Brand And Product design.png";
+import BVI from "../assets/Business Visual Identity.png";
+import PB from "../assets/PRODUCT BRANDING.png";
+import BLB from "../assets/Business And Lifestyle Branding.png";
+import CC from "../assets/Content Creation.png";
+import BG from "../assets/Business Growth.png";
+import BS from "../assets/Brand Strategy.png";
+import MR from "../assets/Marketing Resources.png";
+import CR from "../assets/Creative Resources.png";
+import AM from "../assets/Audio And Media.png";
+import DBT from "../assets/Digital Business Tool.png";
 
 
-// =========================================================
+// 
 // BUSINESS RESOURCE DATA
-// =========================================================
+// 
 
 const businessResources = [
   {
-    image: earbud,
+    image: BPD,
     title: "BRAND & PRODUCT DESIGN",
     description:
       "Build a strong and recognizable visual identity for your business with thoughtful branding, product presentation, and professional design resources.",
   },
 
   {
-    image: chasma,
+    image: BVI,
     title: "BUSINESS VISUAL IDENTITY",
     description:
       "Create a consistent visual style across your website, social media, marketing materials, and other important business touchpoints.",
   },
 
   {
-    image: honey,
+    image: PB,
     title: "PRODUCT BRANDING",
     description:
       "Learn how strong product presentation, packaging, photography, and branding can help your products stand out and create a memorable customer experience.",
   },
 
   {
-    image: ladiesbag,
+    image: BLB,
     title: "BUSINESS & LIFESTYLE BRANDING",
     description:
       "Helpful inspiration and resources for creating a polished lifestyle brand that communicates your personality, values, and products clearly.",
   },
 
   {
-    image: coffeeImg,
+    image: CC,
     title: "CONTENT CREATION",
     description:
       "Create engaging content for your business and learn how to present your products and services professionally across different platforms.",
   },
 
   {
-    image: protein,
+    image: BG,
     title: "BUSINESS GROWTH",
     description:
       "Explore useful ideas and resources for improving your business presence, attracting customers, and creating a stronger foundation for growth.",
   },
 
   {
-    image: skincare,
+    image: BS,
     title: "BRAND STRATEGY",
     description:
       "Understand the important elements of a successful brand and create a clear strategy that makes your business easier for customers to recognize.",
   },
 
   {
-    image: tea,
+    image: MR,
     title: "MARKETING RESOURCES",
     description:
       "Discover practical resources and ideas that can help you promote your business, connect with your audience, and build a stronger online presence.",
   },
 
   {
-    image: headphone,
+    image: CR,
     title: "CREATIVE RESOURCES",
     description:
       "Explore creative resources designed to help you present your brand, products, and services with a professional visual style.",
   },
 
   {
-    image: speaker,
+    image: AM,
     title: "AUDIO & MEDIA",
     description:
       "Discover useful creative ideas and resources for presenting your business and creating engaging visual and media content.",
   },
 
   {
-    image: mouse,
+    image: DBT,
     title: "DIGITAL BUSINESS TOOLS",
     description:
       "Explore practical digital resources that can help you organize, manage, present, and grow your business more effectively.",
@@ -108,17 +108,17 @@ const businessResources = [
 ];
 
 
-// =========================================================
+// 
 // RESOURCES COMPONENT
-// =========================================================
+// 
 
 const Resources = () => {
   return (
     <>
 
-      {/* =====================================================
+      {/* 
           HERO SECTION
-      ===================================================== */}
+       */}
 
       <section className="R-intro">
 
@@ -145,9 +145,9 @@ const Resources = () => {
       </section>
 
 
-      {/* =====================================================
+      {/* 
           BUSINESS RESOURCE CARDS
-      ===================================================== */}
+       */}
 
       <section className="business-resources-section">
 
@@ -167,9 +167,9 @@ const Resources = () => {
       </section>
 
 
-      {/* =====================================================
+      {/* 
           FREE RESOURCES HEADING
-      ===================================================== */}
+       */}
 
       <section className="lines">
 
@@ -194,9 +194,9 @@ const Resources = () => {
       </section>
 
 
-      {/* =====================================================
+      {/* 
           FREE DOWNLOAD CARDS
-      ===================================================== */}
+       */}
 
       <section className="free-resources-section">
 
