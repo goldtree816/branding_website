@@ -1,0 +1,705 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400&display=swap');
+.intro1 {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto;
+    padding: 80px 20px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro1 h1{
+
+  transform: translateX(10px);
+  font-size: 52px;
+    font-weight: 400;
+
+    line-height: 1.1;
+    color: #332c25;
+
+    text-transform: uppercase;
+}
+.intro1 > p {
+    max-width: 700px;
+    transform: translateX(10px);
+
+    margin: 0 auto 25px;
+
+    font-family: Arial, sans-serif !important;
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.6;
+
+    color: #111;
+
+    text-align: center;
+}
+
+.cat-accordion {
+  transform: translateX(10px);
+    width: 250px;
+    margin: 0 auto;
+
+    text-align: left;
+}
+
+
+/* Category heading */
+
+.cat-accordion summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 0;
+
+    cursor: pointer;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #111;
+
+    list-style: none;
+}
+
+
+/* Remove default arrow */
+
+.cat-accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+
+/* Chevron */
+
+.cat-chevron {
+    transition: transform 0.3s ease;
+}
+
+
+/* Rotate chevron when opened */
+
+.cat-accordion[open] .cat-chevron {
+    transform: rotate(180deg);
+}
+
+
+/* =========================
+   CATEGORY LIST
+========================= */
+
+.cat-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+
+    padding: 10px 0 15px;
+}
+
+.cat-list a {
+    color: #111;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+    text-decoration: none;
+}
+
+.cat-list a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   BUSINESS RESOURCES
+========================= */
+
+.business-resources {
+  width: 100%;
+  min-height: 568px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      rgba(70, 65, 55, 0.62),
+      rgba(70, 65, 55, 0.62)
+    ),
+    url("./your-background-image.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Main white box */
+.resource-card {
+  width: 715px;
+  max-width: 90%;
+
+  background: #fdfcfb;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+/* Top content */
+.resource-content {
+  padding: 78px 85px 48px;
+}
+
+.resource-content h1 {
+  margin: 0 0 34px;
+
+  font-family: "Times New Roman", serif;
+  font-size: 38px;
+  font-weight: 400;
+
+  color: #111;
+  line-height: 1.1;
+}
+
+.resource-content p {
+  margin: 0 auto;
+
+  max-width: 530px;
+
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+
+  color: #111;
+}
+
+.resource-content p strong {
+  font-weight: 700;
+}
+
+/* Bottom button area */
+.resource-button {
+  width: 100%;
+
+  background: #e3dfd3;
+
+  padding: 25px 20px;
+
+  box-sizing: border-box;
+}
+
+.resource-button a {
+  color: #111;
+
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+
+  letter-spacing: 3px;
+
+  text-decoration: none;
+}
+
+.resource-button a:hover {
+  text-decoration: underline;
+}
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 320px);
+    justify-content: center;
+    align-items: start;
+    gap: 50px 30px;
+    padding: 0 20px;
+}
+.free-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 15px;
+    padding: 0 20px;
+}
+
+/* =========================================================
+   BLOG RESPONSIVE / MEDIA QUERIES
+========================================================= */
+
+
+/* =========================================================
+   TABLET + MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* =====================================================
+       INTRO SECTION
+    ===================================================== */
+
+    .intro1 {
+        width: 100%;
+        max-width: none;
+
+        margin: 0;
+        padding: 50px 24px;
+
+        box-sizing: border-box;
+
+        text-align: center;
+    }
+
+    .intro1 h1 {
+        width: 100%;
+        max-width: none;
+
+        margin: 0 0 20px 0;
+
+        font-size: 38px;
+        line-height: 1.15;
+
+        text-align: center;
+    }
+
+    .intro1 h1 i {
+        font-size: inherit;
+    }
+
+    .intro1 p {
+        width: 100%;
+        max-width: 700px;
+
+        margin: 0 auto;
+
+        font-size: 14px;
+        line-height: 1.7;
+
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       CATEGORY ACCORDION
+    ===================================================== */
+
+    .cat-accordion {
+        width: 100%;
+        max-width: 500px;
+
+        margin: 35px auto 0;
+    }
+
+    .cat-accordion summary {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 15px 0;
+
+        cursor: pointer;
+    }
+
+    .cat-accordion summary span {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .cat-chevron {
+        flex-shrink: 0;
+    }
+
+    .cat-list {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 12px;
+
+        padding: 15px 0;
+    }
+
+    .cat-list a {
+        font-size: 13px;
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       BLOG GRID
+    ===================================================== */
+
+    .grid {
+        width: 100%;
+        max-width: none;
+
+        margin: 0;
+        padding: 20px 20px 50px;
+
+        box-sizing: border-box;
+
+        display: grid;
+
+        /* One card per row on mobile */
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+
+    /* =====================================================
+       PROJECT CARDS
+       
+       These selectors work with common ProjectCard
+       structures. Keep them if they match your JSX.
+    ===================================================== */
+
+    .grid .project-card {
+        width: 100%;
+        max-width: 500px;
+
+        margin: 0 auto;
+    }
+
+    .grid .project-card img {
+        width: 100%;
+        height: auto;
+
+        display: block;
+
+        object-fit: cover;
+    }
+
+    .grid .project-card h1,
+    .grid .project-card h2,
+    .grid .project-card h3 {
+        width: 100%;
+
+        margin: 15px 0 10px;
+
+        font-size: 20px;
+        line-height: 1.3;
+
+        text-align: center;
+    }
+
+    .grid .project-card p {
+        width: 100%;
+
+        margin: 0;
+
+        font-size: 13px;
+        line-height: 1.6;
+
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       BUSINESS RESOURCES
+    ===================================================== */
+
+    .business-resources {
+        width: 100%;
+
+        margin: 0;
+        padding: 50px 20px;
+
+        box-sizing: border-box;
+    }
+
+    .resource-card {
+        width: 100%;
+        max-width: 700px;
+
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 30px;
+
+        padding: 35px 25px;
+
+        box-sizing: border-box;
+
+        text-align: center;
+    }
+
+    .resource-content {
+        width: 100%;
+    }
+
+    .resource-content h1 {
+        width: 100%;
+
+        margin: 0 0 20px;
+
+        font-size: 28px;
+        line-height: 1.2;
+
+        text-align: center;
+    }
+
+    .resource-content p {
+        width: 100%;
+
+        margin: 0;
+
+        font-size: 13px;
+        line-height: 1.7;
+
+        text-align: center;
+    }
+
+    .resource-button {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .resource-button a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        min-width: 180px;
+        padding: 15px 25px;
+
+        font-size: 12px;
+        letter-spacing: 2px;
+
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       FREE DOWNLOAD CONTAINER
+    ===================================================== */
+
+    .free-container {
+        width: 100%;
+        max-width: none;
+
+        margin: 0;
+        padding: 40px 20px;
+
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 45px;
+    }
+
+
+    /* =====================================================
+       FREE DOWNLOAD CARDS
+    ===================================================== */
+
+    .free-container > * {
+        width: 100%;
+        max-width: 500px;
+
+        margin: 0 auto;
+
+        box-sizing: border-box;
+    }
+
+    .free-container img {
+        width: 100%;
+        height: auto;
+
+        display: block;
+
+        object-fit: cover;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    /* =====================================================
+       INTRO
+    ===================================================== */
+
+    .intro1 {
+        width: 100%;
+
+        margin: 0;
+        padding: 40px 18px;
+
+        text-align: center;
+    }
+
+    .intro1 h1 {
+        width: 100%;
+
+        margin-bottom: 18px;
+
+        font-size: 30px;
+        line-height: 1.15;
+    }
+
+    .intro1 p {
+        width: 100%;
+
+        font-size: 12px;
+        line-height: 1.7;
+
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       CATEGORY
+    ===================================================== */
+
+    .cat-accordion {
+        width: 100%;
+
+        margin-top: 28px;
+    }
+
+    .cat-accordion summary {
+        padding: 13px 0;
+    }
+
+    .cat-accordion summary span {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+    }
+
+    .cat-list {
+        gap: 10px;
+    }
+
+    .cat-list a {
+        font-size: 11px;
+    }
+
+
+    /* =====================================================
+       BLOG GRID
+    ===================================================== */
+
+    .grid {
+        width: 100%;
+
+        margin: 0;
+        padding: 15px 15px 40px;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    /* =====================================================
+       PROJECT CARDS
+    ===================================================== */
+
+    .grid .project-card {
+        width: 100%;
+        max-width: none;
+    }
+
+    .grid .project-card h1,
+    .grid .project-card h2,
+    .grid .project-card h3 {
+        font-size: 18px;
+
+        margin: 12px 0 8px;
+    }
+
+    .grid .project-card p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+
+    /* =====================================================
+       BUSINESS RESOURCES
+    ===================================================== */
+
+    .business-resources {
+        width: 100%;
+
+        padding: 40px 15px;
+    }
+
+    .resource-card {
+        width: 100%;
+
+        padding: 30px 18px;
+
+        gap: 25px;
+    }
+
+    .resource-content h1 {
+        font-size: 23px;
+
+        margin-bottom: 15px;
+    }
+
+    .resource-content p {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .resource-button a {
+        width: 100%;
+        max-width: 220px;
+
+        padding: 14px 20px;
+
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+
+    /* =====================================================
+       FREE DOWNLOAD
+    ===================================================== */
+
+    .free-container {
+        width: 100%;
+
+        padding: 30px 15px;
+
+        gap: 35px;
+    }
+
+    .free-container > * {
+        width: 100%;
+        max-width: none;
+    }
+
+    .free-container img {
+        width: 100%;
+        height: auto;
+    }
+}

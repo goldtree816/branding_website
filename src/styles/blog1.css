@@ -1,0 +1,415 @@
+.blog1-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #faf9f7;
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+/* Main Heading */
+.blog1-page h1 {
+    transform: translateX(5px);    
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+
+  font-family: "Times New Roman", serif;
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -2px;
+
+  color: #050505;
+}
+
+.blog1-page h2 {
+  width: 75%;
+  margin: 0 auto;
+   transform: translateX(-130px);
+
+  text-align: left;
+
+  font-family: "Times New Roman", serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -2px;
+  color: #050505;
+  margin-bottom: 40px;
+}
+/* Text area */
+.blog1-content {
+  width: 66%;
+  max-width: 1250px;
+  margin: 70px auto 0;
+}
+
+/* Paragraphs */
+.blog1-content p {
+  font-family: "Poppins";
+  font-size: 20px;
+  line-height: 1.55;
+  font-weight: 400;
+
+  color: #111;
+  margin: 0 0 25px;
+}
+.img1 {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 40px;
+      margin-bottom: 40px;
+}
+
+/* Italic paragraph */
+.blog1-content .italic {
+  font-style: italic;
+  margin-top: 28px;
+  margin-bottom: 25px;
+}
+
+/* Links / underlined text */
+.blog1-content u {
+  text-underline-offset: 2px;
+}
+
+/* Back button */
+.back {
+  margin-top: 30px;
+  padding: 10px 22px;
+
+  background: #111;
+  color: white;
+
+  border: none;
+  cursor: pointer;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.back:hover {
+  opacity: 0.8;
+}
+/* =========================================================
+   BLOG 1 - RESPONSIVE / MEDIA QUERIES
+========================================================= */
+
+
+/* =========================================================
+   TABLET + MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* =====================================================
+       MAIN PAGE
+    ===================================================== */
+
+    .blog1-page {
+        width: 100%;
+        max-width: none;
+
+        margin: 0;
+        padding: 50px 20px;
+
+        box-sizing: border-box;
+
+        overflow-x: hidden;
+    }
+
+
+    /* =====================================================
+       MAIN HEADING
+    ===================================================== */
+
+    .blog1-page > h1 {
+        width: 100%;
+        max-width: 800px;
+
+        margin: 0 auto 40px;
+
+        font-size: 38px;
+        line-height: 1.2;
+        letter-spacing: 1px;
+
+        text-align: center;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       CONTENT
+    ===================================================== */
+
+    .blog1-content {
+        width: 100%;
+        max-width: 750px;
+
+        margin: 0 auto;
+        padding: 0;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       PARAGRAPHS
+    ===================================================== */
+
+    .blog1-content p {
+        width: 100%;
+        max-width: none;
+
+        margin: 0 0 25px;
+
+        font-size: 15px;
+        line-height: 1.8;
+
+        text-align: left;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       ITALIC TEXT
+    ===================================================== */
+
+    .blog1-content p.italic {
+        margin: 30px 0;
+
+        font-size: 15px;
+
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       IMAGE
+    ===================================================== */
+
+    .blog1-content .img1 {
+        width: 100%;
+        max-width: 100%;
+
+        height: auto;
+
+        display: block;
+
+        margin: 35px auto 45px;
+
+        object-fit: cover;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       SECONDARY HEADING
+    ===================================================== */
+
+    .blog1-content h2 {
+        width: 100%;
+
+        margin: 0 0 25px;
+
+        font-size: 30px;
+        line-height: 1.2;
+
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       BACK BUTTON
+    ===================================================== */
+
+    .blog1-content .back {
+        display: block;
+
+        width: 180px;
+        height: 50px;
+
+        margin: 45px auto 10px;
+
+        padding: 0;
+
+        border: none;
+        border-radius: 0;
+
+        font-size: 12px;
+        letter-spacing: 2px;
+
+        cursor: pointer;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    /* =====================================================
+       MAIN PAGE
+    ===================================================== */
+
+    .blog1-page {
+        width: 100%;
+
+        margin: 0;
+        padding: 35px 15px;
+
+        box-sizing: border-box;
+
+        overflow-x: hidden;
+    }
+
+
+    /* =====================================================
+       MAIN HEADING
+    ===================================================== */
+
+    .blog1-page > h1 {
+        width: 100%;
+
+        margin: 0 auto 30px;
+
+        font-size: 27px;
+        line-height: 1.2;
+        letter-spacing: 0.5px;
+
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       CONTENT
+    ===================================================== */
+
+    .blog1-content {
+        width: 100%;
+
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* =====================================================
+       PARAGRAPHS
+    ===================================================== */
+
+    .blog1-content p {
+        width: 100%;
+
+        margin: 0 0 20px;
+
+        font-size: 13px;
+        line-height: 1.75;
+
+        text-align: left;
+    }
+
+
+    /* =====================================================
+       ITALIC
+    ===================================================== */
+
+    .blog1-content p.italic {
+        margin: 25px 0;
+
+        font-size: 13px;
+
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       IMAGE
+    ===================================================== */
+
+    .blog1-content .img1 {
+        width: 100%;
+        max-width: none;
+
+        height: auto;
+
+        margin: 30px 0 35px;
+
+        display: block;
+
+        object-fit: cover;
+    }
+
+
+    /* =====================================================
+       HEADING 2
+    ===================================================== */
+
+    .blog1-content h2 {
+        width: 100%;
+
+        margin: 0 0 20px;
+
+        font-size: 24px;
+        line-height: 1.25;
+
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       BACK BUTTON
+    ===================================================== */
+
+    .blog1-content .back {
+        width: 160px;
+        height: 46px;
+
+        margin: 35px auto 5px;
+
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL DEVICES
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .blog1-page {
+        padding: 30px 12px;
+    }
+
+    .blog1-page > h1 {
+        font-size: 24px;
+    }
+
+    .blog1-content p {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .blog1-content p.italic {
+        font-size: 12px;
+    }
+
+    .blog1-content h2 {
+        font-size: 21px;
+         padding-left: 25px;
+    }
+
+    .blog1-content .back {
+        width: 145px;
+        height: 44px;
+
+        font-size: 10px;
+    }
+}

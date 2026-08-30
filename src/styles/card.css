@@ -1,0 +1,104 @@
+/* =========================================
+   FEATURE CARD
+========================================= */
+
+.feature-card {
+  width: 100%;
+  max-width: 490px;
+  height: 450px;
+
+  padding: 0;
+  margin: 0 auto;
+
+  overflow: hidden;
+
+  background: #ffffff;
+  border: 1px solid #333;
+  border-radius: 0;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.feature-card .pic {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  padding: 0;
+  margin: 0;
+
+  object-fit: fill;
+  object-position: center;
+
+  border-radius: 0;
+}
+
+
+/* =========================================
+   LAPTOP
+========================================= */
+
+@media (max-width: 1199px) {
+  .feature-card {
+    max-width: 450px;
+    height: 420px;
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1024px) {
+  .feature-card {
+    width: 100%;
+    max-width: 430px;
+    height: 400px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+  .feature-card {
+    width: 90%;
+    max-width: 400px;
+    height: 380px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .feature-card {
+    width: 92%;
+    max-width: 360px;
+    height: 350px;
+  }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 360px) {
+  .feature-card {
+    width: 94%;
+    max-width: 340px;
+    height: 320px;
+  }
+}

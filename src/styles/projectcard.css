@@ -1,0 +1,270 @@
+/* 
+   CARD
+ */
+
+.cardp {
+    width: 310px;
+    background: transparent;
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: none;
+    transition: transform 0.3s ease;
+    background-color: transparent !important;
+}
+
+.cardp:hover {
+    transform: translateY(-5px);
+}
+
+
+/* 
+   IMAGE
+ */
+
+.thumbp {
+    width: 100%;
+    height: 435px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* 
+   CARD BODY
+ */
+
+.cardp-body {
+    padding: 16px 0 0 0;
+}
+
+
+/* 
+   CATEGORY / TITLE
+ */
+
+.cardp-body p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0 0 26px 0;
+    color: #111 !important;
+}
+
+
+/* 
+   DESCRIPTION / MAIN TITLE
+ */
+
+.descp {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.45;
+    text-transform: uppercase;
+    margin: 0;
+    color: #111 !important;
+}
+
+
+/* 
+   READ MORE
+ */
+
+.case-study {
+    display: inline-block;
+    margin-top: 28px;
+
+    padding: 0;
+
+    background: none;
+    color: #111 !important;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400 !important;
+
+    border-radius: 0;
+    text-decoration: underline !important;
+    text-underline-offset: 3px;
+}
+
+/* Hover */
+.case-study:hover {
+    color: #555;
+    background: none;
+}
+
+/* =========================================================
+   PROJECT CARD - RESPONSIVE / MEDIA QUERIES
+========================================================= */
+
+
+/* =========================================================
+   TABLET + MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* ---------- CARD ---------- */
+
+    .cardp {
+        width: 100%;
+        max-width: 500px;
+
+        margin: 0 auto;
+
+        box-sizing: border-box;
+    }
+
+
+    /* ---------- IMAGE ---------- */
+
+    .thumbp {
+        width: 100%;
+        max-width: 100%;
+
+        height: auto;
+
+        display: block;
+
+        object-fit: cover;
+    }
+
+
+    /* ---------- CARD BODY ---------- */
+
+    .cardp-body {
+        width: 100%;
+
+        margin: 0;
+        padding: 18px 10px 0;
+
+        box-sizing: border-box;
+
+        text-align: center;
+    }
+
+
+    /* ---------- CATEGORY / TITLE ---------- */
+
+    .cardp-body > p {
+        width: 100%;
+
+        margin: 0 0 10px;
+
+        font-size: 11px;
+        line-height: 1.5;
+
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+
+        text-align: center;
+    }
+
+
+    /* ---------- DESCRIPTION ---------- */
+
+    .cardp-body .descp {
+        width: 100%;
+
+        margin: 0 0 18px;
+
+        font-size: 20px;
+        line-height: 1.35;
+
+        font-weight: 400;
+
+        text-align: center;
+    }
+
+
+    /* ---------- READ MORE ---------- */
+
+    .cardp-body .case-study {
+        display: inline-block;
+
+        margin: 0;
+
+        font-size: 11px;
+        letter-spacing: 1.5px;
+
+        text-align: center;
+
+        text-decoration: none;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    /* ---------- CARD ---------- */
+
+    .cardp {
+        width: 100%;
+        max-width: none;
+
+        margin: 0 auto;
+    }
+
+
+    /* ---------- IMAGE ---------- */
+
+    .thumbp {
+        width: 100%;
+        height: 400px;
+        display: block;
+        object-fit: cover;
+    }
+
+
+    /* ---------- CARD BODY ---------- */
+
+    .cardp-body {
+        width: 100%;
+
+        padding: 15px 5px 0;
+
+        text-align: center;
+    }
+
+
+    /* ---------- CATEGORY ---------- */
+
+    .cardp-body > p {
+        font-size: 10px;
+
+        letter-spacing: 1.2px;
+
+        margin-bottom: 8px;
+    }
+
+
+    /* ---------- DESCRIPTION ---------- */
+
+    .cardp-body .descp {
+        width: 100%;
+
+        margin: 0 0 15px;
+
+        font-size: 17px;
+        line-height: 1.4;
+
+        text-align: center;
+    }
+
+
+    /* ---------- READ MORE ---------- */
+
+    .cardp-body .case-study {
+        font-size: 10px;
+
+        letter-spacing: 1.2px;
+    }
+}
+
