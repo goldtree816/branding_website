@@ -22,12 +22,9 @@ function Navbar(){
 
                     <li><NavLink className={(e)=>{return e.isActive?"red": ""}} to="/services">SERVICES</NavLink></li>
                     <li><NavLink className={(e)=>{return e.isActive?"red": ""}} to="/about">ABOUT</NavLink></li>
-<<<<<<< Updated upstream
                     <li><NavLink className={(e)=>{return e.isActive?"red": ""}} to="/process">PROCESS</NavLink></li>
                     <li><NavLink className={(e)=>{return e.isActive?"red": ""}} to="/contact">CONTACT</NavLink></li>
-=======
                     <li><NavLink className={(e)=>{return e.isActive?"red": ""}} to="/resources">RESOURCES</NavLink></li>
->>>>>>> Stashed changes
 
                     <button className="inquire">
                         INQUIRE
