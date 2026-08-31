@@ -4,24 +4,24 @@ import "../styles/resources.css";
 import TryCard from "../components/ResourceCard1.jsx";
 import Free_Down from "../components/free.jsx";
 
-import logo1 from "../assets/pp.webp";
+import logo1 from "../assets/resource.jpg";
 
-import free1 from "../assets/free1.png";
-import free2 from "../assets/free2.png";
-import free3 from "../assets/free3.png";
+import free1 from "../assets/free1.jpg";
+import free2 from "../assets/free2.jpg";
+import free3 from "../assets/free3.jpg";
 
 // FARMER WEB RESOURCE IMAGES
-import BPD from "../assets/Brand And Product design.png";
-import BVI from "../assets/Business Visual Identity.png";
-import PB from "../assets/PRODUCT BRANDING.png";
-import BLB from "../assets/Business And Lifestyle Branding.png";
-import CC from "../assets/Content Creation.png";
-import BG from "../assets/Business Growth.png";
-import BS from "../assets/Brand Strategy.png";
-import MR from "../assets/Marketing Resources.png";
-import CR from "../assets/Creative Resources.png";
-import AM from "../assets/Audio And Media.png";
-import DBT from "../assets/Digital Business Tool.png";
+import BPD from "../assets/re1.jpg";
+import BVI from "../assets/re2.jpg";
+import PB from "../assets/re3.jpg";
+import BLB from "../assets/re4.jpg";
+import CC from "../assets/re5.jpg";
+import BG from "../assets/re6.jpg";
+import BS from "../assets/re7.jpg";
+import MR from "../assets/re8.jpg";
+import CR from "../assets/re9.jpg";
+import AM from "../assets/re10.jpg";
+import DBT from "../assets/re11.jpg";
 
 // =========================================================
 // FARMER WEB RESOURCE DATA

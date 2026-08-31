@@ -2,9 +2,9 @@ import "../styles/about.css";
 import Testimonial from "../components/testimonial.jsx";
 import Values from "../components/value.jsx";
 import logo from "../assets/intro.webp";
-import logo1 from "../assets/stop.png";
-import logo2 from "../assets/email.png";
-import logo3 from "../assets/goldtree_4.png";
+import logo1 from "../assets/advisory.jpg";
+import logo2 from "../assets/crop.jpg";
+import logo3 from "../assets/market.jpg";
 
 function About() {
   return (

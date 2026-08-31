@@ -1,8 +1,8 @@
 import Card from "./card.jsx";
 import "../styles/value.css";
-import headphone from '../assets/g_headphone.png'
-import protein from '../assets/g_protein.png'
-import speaker from '../assets/g_speakers.png'
+import headphone from '../assets/f1.jpg'
+import protein from '../assets/f2.jpg'
+import speaker from '../assets/f3.jpg'
 
 
 

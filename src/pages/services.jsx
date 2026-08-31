@@ -5,12 +5,12 @@ import "../styles/services.css";
 import { Link } from "react-router-dom";
 
 // Replace these with your actual farmer-related images
-import farmer from "../assets/b1.png";
-import products from "../assets/b2.png";
-import customers from "../assets/b3.png";
-import mobile from "../assets/b4.png";
-import branding from "../assets/b5.png";
-import ordering from "../assets/b6.png";
+import farmer from "../assets/farm.jpg";
+import products from "../assets/showcase.jpg";
+import customers from "../assets/connection.jpg";
+import mobile from "../assets/farm_web.jpg";
+import branding from "../assets/story.jpg";
+import ordering from "../assets/future.jpg";
 
 function FarmerService() {
     return (
@@ -341,11 +341,10 @@ function FarmerService() {
 
                 <div className="line"></div>
 
-                <Link to="/inquire">
                     <button>
                         START YOUR FARM WEBSITE
                     </button>
-                </Link>
+
 
             </div>
 
