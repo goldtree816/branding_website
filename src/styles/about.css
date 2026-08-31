@@ -376,181 +376,249 @@
     padding-bottom: 4px;
   }
 
-  /* =
-    MEDIA QUERIES
-    Only layout-changing properties live here now — typography
-    is handled by clamp() above, so these blocks are much
-    shorter and each breakpoint only overrides what's new
-    relative to the one above it (no repeated declarations).
-  =*/
-
-  /* ---------- TABLET (≤1024px) ---------- */
-  @media (max-width: 1024px) {
-    section {
-      padding: 60px 40px;
-    }
-
-    .intro {
-      min-height: 560px;
-      padding: 50px 30px;
-    }
-    
-    
-    .serve,
-    .serve1 {
-      gap: 35px;
-      margin: 60px auto;
-      padding: 30px;
-    }
-    
-    .serve-copy5 h1,.serve-copy6 h1{
-      font-size:  1.5rem;
-    }
+ /* ===========================
+   MEDIA QUERIES
+=========================== */
 
 
-    .value-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
+/* ---------- TABLET (≤1024px) ---------- */
 
-    .steps {
-      grid-template-columns: repeat(2, 1fr);
-      row-gap: 40px;
-    }
+@media (max-width: 1024px) {
+
+  section {
+    padding: 60px 40px;
   }
 
-  /* MOBILE (≤768px)  */
-  @media (max-width: 768px) {
-    section {
-      padding: 50px 24px;
-    }
+  .intro {
+    min-height: 560px;
+    padding: 50px 30px;
+  }
 
-    /* Hero */
-    .intro {
-      min-height: 500px;
-      padding: 45px 24px;
-    }
-
-    .intro button {
-      padding: 15px 28px;
-      font-size: 12px;
-      letter-spacing: 0.14em;
-    }
-
-    /* Service sections stack, image on top, text below and centered
-      (this is the piece that was missing — matches the design reference) */
-    .serve,
-    .serve1 {
-      flex-direction: column;
-      max-width: none;
-      gap: 30px;
-      margin: 45px 0;
-      padding: 0;
-    }
+  .serve,
+  .serve1 {
+    gap: 35px;
+    margin: 60px auto;
+    padding: 30px;
+  }
 
   .serve-copy5 h1,
   .serve-copy6 h1 {
+    font-size: 1.5rem;
+  }
+
+  .value-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+}
+
+
+/* ---------- MOBILE (≤768px) ---------- */
+
+@media (max-width: 768px) {
+
+  section {
+    padding: 50px 24px;
+  }
+
+  .intro {
+    min-height: 500px;
+    padding: 45px 24px;
+  }
+
+  .intro button {
+    padding: 15px 28px;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+  }
+
+
+  /* =========================
+     SERVICE SECTIONS
+  ========================= */
+
+ 
+  section.serve,
+  section.serve1 {
+    width: calc(100% - 48px) !important;
+    margin: 50px auto !important;
+    padding: 30px 22px !important;
+    gap: 36px !important;
+    max-width: none !important;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+  }
+
+
+
+
+  /* IMAGE */
+
+
+  section.serve .img1 img,
+  section.serve1 .img2 img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+
+  /* TEXT */
+
+  section.serve .serve-copy5,
+  section.serve1 .serve-copy6 {
+    width: 100%;
+    text-align: center;
+  }
+
+  section.serve .serve-copy5 h1,
+  section.serve1 .serve-copy6 h1 {
     text-align: center;
     margin-left: 0;
   }
-   
-    .serve-copy5,
-    .serve-copy6 {
-      text-align: center;
-    }
 
-    .serve-copy5 p,
-    .serve-copy6 p {
-      font-size: 16px;
-      line-height: 1.55;
-    }
-
-    /* Values */
-    .values {
-      padding: 50px 24px;
-    }
-
-    .value-grid {
-      grid-template-columns: 1fr;
-      gap: 28px;
-    }
-
-    /* Process */
-    .process {
-      padding: 55px 24px;
-    }
-
-    .steps {
-      grid-template-columns: 1fr;
-      gap: 32px;
-    }
-
-    .step h3 {
-      font-size: 18px;
-    }
-
-    .step p {
-      font-size: 15px;
-    }
+  section.serve .serve-copy5 p,
+  section.serve1 .serve-copy6 p {
+    font-size: 16px;
+    line-height: 1.55;
   }
 
-  /* SMALL MOBILE (≤480px)  */
-  @media (max-width: 480px) {
-    section {
-      padding: 40px 18px;
-    }
-    
-  
-    .intro {
-      min-height: 460px;
-      padding: 40px 18px;
-    }
 
-    .intro button {
-      padding: 14px 22px;
-      font-size: 11px;
-    }
-  
+  /* VALUES */
+
+  .values {
+    padding: 50px 24px;
+  }
+
+  .value-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+
+  /* PROCESS */
+
+  .process {
+    padding: 55px 24px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .step h3 {
+    font-size: 18px;
+  }
+
+  .step p {
+    font-size: 15px;
+  }
+}
+
+
+/* ---------- SMALL MOBILE (≤480px) ---------- */
+
+@media (max-width: 480px) {
+
+  section {
+    padding: 40px 18px;
+  }
+
+
+  /* HERO */
+
+  .intro {
+    min-height: 460px;
+    padding: 40px 18px;
+  }
+
+  .intro button {
+    padding: 14px 22px;
+    font-size: 11px;
+  }
+
+
+  /* =========================
+     SERVICE SECTIONS
+     ========================= */
+
+  section.serve,
+  section.serve1 {
+    width: calc(100% - 48px) !important;
+    margin: 50px auto !important;
+    padding: 30px 22px !important;
+    gap: 36px !important;
+    max-width: none !important;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+  }
+
+
+
+
+  /* IMAGE */
+
   .serve .img1,
   .serve1 .img2 {
+    width: 100%;
     display: block;
-    margin: 35px auto;
+    margin: 0;
   }
 
-    
-    .serve1 {
-      margin: 35px 0;
-      gap: 24px;
-    }
-    
-  
+  .serve .img1 img,
+  .serve1 .img2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+  /* HEADING */
+
   .serve-copy5 h1,
   .serve-copy6 h1 {
-    font-size: 1.3rem; /* smaller, fits on one line */
-  }
-
-
-    .serve-copy5 h1,
-   .serve-copy6 h1 {
+    font-size: 1.3rem;
     text-align: center;
     margin-left: 0;
   }
 
-    .serve-copy5 p,
-    .serve-copy6 p {
-      font-size: 16px;
-    }
 
-    .values,
-    .process {
-      padding: 40px 18px;
-    }
+  /* TEXT */
 
-    .step p {
-      font-size: 16px;
-    }
-
-    .process-link {
-      font-size: 13px;
-      margin-top: 30px;
-    }
+  .serve-copy5,
+  .serve-copy6 {
+    width: 100%;
+    text-align: center;
   }
+
+  .serve-copy5 p,
+  .serve-copy6 p {
+    font-size: 16px;
+  }
+
+
+  /* VALUES + PROCESS */
+
+  .values,
+  .process {
+    padding: 40px 18px;
+  }
+
+  .step p {
+    font-size: 16px;
+  }
+
+  .process-link {
+    font-size: 13px;
+    margin-top: 30px;
+  }
+}
