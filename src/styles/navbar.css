@@ -28,7 +28,7 @@ nav {
     align-items: center;
     justify-content: space-between;
 
-    padding: 0 5%;
+    padding: 0 1%;
 }
 
 /* ---------- LOGO ---------- */
@@ -36,19 +36,33 @@ nav {
 .logo {
     display: flex;
     align-items: center;
+    gap: 12px;
+}
+
+.logo > a {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    display: block;
 }
 
 .logo h1 {
     margin: 0;
     padding: 0;
+    text-align: left;
 
     font-family: "Times New Roman", serif;
-    font-size: 48px;
+    font-size: 1.7rem;
     font-weight: 400;
-    letter-spacing: 0.10em;
+    letter-spacing: 0em;
     transition: color 0.3s ease, letter-spacing 0.3s ease;
-    
 }
+
 .logo a:hover {
     color: #444;
     letter-spacing: 0.16em;
@@ -59,7 +73,6 @@ nav {
     text-decoration: none;
 }
 
-
 /* ---------- NAV LINKS ---------- */
 
 .nav-links {
@@ -67,7 +80,7 @@ nav {
     align-items: center;
     justify-content: flex-end;
 
-    gap: 32px;
+    gap: 17px;
 
     margin: 0;
     padding: 0;

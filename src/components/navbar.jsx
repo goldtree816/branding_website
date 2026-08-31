@@ -2,6 +2,8 @@ import "../styles/navbar.css";
 
 import { useState } from "react";
 
+import logo from "../assets/goldtree-logo.png";
+
 import { Link, NavLink } from 'react-router-dom'
 
 function Navbar(){
@@ -15,7 +17,17 @@ function Navbar(){
             <nav>
 
                 <div className="logo">
-                    <h1><Link to="/">JAKS DIGITAL</Link></h1>
+
+                    {/* LOGO */}
+                    <Link to="/">
+                        <img
+                            src={logo}
+                            alt="GOLDTREE Logo"
+                        />
+                    </Link>
+
+                    <h1><Link to="/">GOLDTREE BRAND LAB</Link></h1>
+
                 </div>
 
                 <ul className={`nav-links ${menu ? "active":""}`}>

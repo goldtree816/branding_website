@@ -11,17 +11,17 @@ import free2 from "../assets/free2.png";
 import free3 from "../assets/free3.png";
 
 // GOLDTREE BUSINESS RESOURCE IMAGES
-import BPD from "../assets/Brand And Product design.png";
-import BVI from "../assets/Business Visual Identity.png";
-import PB from "../assets/PRODUCT BRANDING.png";
-import BLB from "../assets/Business And Lifestyle Branding.png";
-import CC from "../assets/Content Creation.png";
-import BG from "../assets/Business Growth.png";
-import BS from "../assets/Brand Strategy.png";
-import MR from "../assets/Marketing Resources.png";
-import CR from "../assets/Creative Resources.png";
-import AM from "../assets/Audio And Media.png";
-import DBT from "../assets/Digital Business Tool.png";
+import BPD from "../assets/brand and product design.png";
+import BVI from "../assets/business visual identity.png";
+import PB from "../assets/product branding.png";
+import BLB from "../assets/business and lifestyle branding.png";
+import CC from "../assets/content creation.png";
+import BG from "../assets/business growth.png";
+import BS from "../assets/brand strategy.png";
+import MR from "../assets/marketing resources.png";
+import CR from "../assets/creative resources.png";
+import AM from "../assets/audio and media.png";
+import DBT from "../assets/digital business tool.png";
 
 
 // 
