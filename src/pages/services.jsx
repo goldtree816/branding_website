@@ -75,6 +75,10 @@ function FarmerService() {
                         practices, and other important information your
                         customers need.
                     </p>
+                    <br></br>
+                    <Link to="/farm">
+                    <button>ABOUT</button>
+                    </Link>
 
                 </div>
 
@@ -124,6 +128,10 @@ function FarmerService() {
                         pricing where appropriate. This gives customers a
                         clearer understanding of what your farm offers.
                     </p>
+                    <br></br>
+                    <Link to="/agriculture">
+                    <button>ABOUT</button>
+                    </Link>
 
                 </div>
 
@@ -173,6 +181,10 @@ function FarmerService() {
                         and your farm location so customers know exactly
                         how to reach you.
                     </p>
+                    <br></br>
+                    <Link to="/online">
+                    <button>ABOUT</button>
+                    </Link>
 
                 </div>
 
@@ -221,6 +233,10 @@ function FarmerService() {
                         easy-to-access contact information so customers can
                         explore your farm wherever they are.
                     </p>
+                    <br></br>
+                    <Link to="/mobile">
+                    <button>ABOUT</button>
+                    </Link>
 
                 </div>
 
@@ -270,6 +286,10 @@ function FarmerService() {
                         clear digital experience that helps build trust and
                         create a stronger connection with your customers.
                     </p>
+                    <br></br>
+                    <Link to="/story">
+                    <button>ABOUT</button>
+                    </Link>
 
                 </div>
 
@@ -318,6 +338,10 @@ function FarmerService() {
                         your business expands, we can design your website with
                         future growth and additional functionality in mind.
                     </p>
+                    <br></br>
+                    <Link to="/future">
+                    <button>ABOUT</button>
+                    </Link>
 
                 </div>
 

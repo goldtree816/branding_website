@@ -4,23 +4,23 @@ function Clients() {
 
     return (
 
-        <section className="clients">
+       <section className="clients">
 
-            <p>SUPPORTING CLIENTS FEATURED</p>
+<p>TRUSTED FARMING RESOURCES & SUPPORT</p>
 
-            <ul className="names">
+<ul className="names">
 
-                <li>Entrepreneur</li>
+    <li>Modern Farming</li>
 
-                <li>VOGUE</li>
+    <li>Agriculture Tips</li>
 
-                <li>STYLE ME PRETTY</li>
+    <li>Farm Management</li>
 
-                <li>The New York Times</li>
+    <li>Farmer Community</li>
 
-            </ul>
+</ul>
+</section>
 
-        </section>
 
     );
 

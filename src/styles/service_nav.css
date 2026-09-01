@@ -1,140 +1,230 @@
-.ser-content {
+/* ================================
+   FARMER WEB ABOUT PAGE
+================================ */
+
+.farm-page {
+    background: #f4f1e8;
+    color: #151515;
     min-height: 100vh;
-    padding: 40px 6%;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.farm-hero {
+    min-height: 650px;
     display: grid;
-
-    grid-template-columns: 30% 1fr;
-    grid-template-rows: auto auto auto auto auto;
-
-    column-gap: 50px;
-    row-gap: 0;
-
-    align-items: start;
+    grid-template-columns: 48% 52%;
+    align-items: center;
+    padding: 70px 7%;
     box-sizing: border-box;
+    gap: 60px;
+}
+
+.farm-hero-text {
+    padding-right: 30px;
+}
+
+.farm-label {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.farm-hero h1 {
+    font-size: clamp(55px, 6vw, 92px);
+    line-height: 0.92;
+    font-weight: 400;
+    margin: 0 0 40px;
+    letter-spacing: -3px;
+}
+
+.farm-intro {
+    max-width: 500px;
+    font-size: 19px;
+    line-height: 1.7;
 }
 
 
-/* Image */
-.img1 {
+/* ================================
+   HERO IMAGE
+================================ */
+
+.farm-hero-image {
+    height: 570px;
+    overflow: hidden;
+}
+
+.farm-hero-image img {
     width: 100%;
-    max-width: 600px;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: saturate(0.9);
+    transition: transform 0.6s ease;
+}
 
-    grid-column: 1;
-    grid-row: 1 / 6;
-
-    justify-self: center;
-    align-self: start;
-
-    margin: 0;
-    object-fit: contain;
+.farm-hero-image:hover img {
+    transform: scale(1.04);
 }
 
 
-/* Heading */
-.ser-content h1 {
-    grid-column: 2;
-    grid-row: 1;
+/* ================================
+   ABOUT
+================================ */
 
-    font-size: 48px;
-    line-height: 1.1;
-
-    margin: 0 0 10px;
+.farm-about {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+    display: grid;
+    grid-template-columns: center;
+    padding: 100px;
+    
+    gap: 60px;
+}
+.about-content {
+    max-width: 850px;
 }
 
+.about-content h2 {
+    font-size: 54px;
+    line-height: 1.05;
+    font-weight: 400;
+    margin: 0 0 40px;
+    max-width: 750px;
+}
 
-/* Paragraphs */
-.ser-content p {
-    grid-column: 2;
-
+.about-content p:not(.farm-label) {
+    max-width: 750px;
     font-size: 18px;
-    line-height: 1.45;
-
-    margin: 0 0 8px;
+    line-height: 1.7;
+    margin-bottom: 25px;
 }
 
 
-/* Back button */
-.back {
-    grid-column: 2;
+/* ================================
+   FEATURES
+================================ */
 
-    width: fit-content;
+.farm-features {
+    padding: 110px 7%;
+}
 
-    padding: 12px 28px;
-    margin-top: 3px;
+.farm-features > h2 {
+    font-size: 52px;
+    font-weight: 400;
+    margin: 0 0 60px;
+}
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
 
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    border: 1px solid #222;
+    border-radius: 20px;
+    padding: 35px;
+    min-height: 350px;
+    height: 150px
+}
+
+.feature-card h3 {
+    display: block;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+
+.feature-card p {
+    display: block;
+    width: 100%;
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 0;
+}
+/* ================================
+   CTA
+================================ */
+
+.farm-cta {
+    background: #1e351f;
+    color: #f4f1e8;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.farm-cta h2 {
+    font-size: 65px;
+    line-height: 1;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 25px auto 45px;
+}
+
+.farm-cta-btn {
+    background: #f4f1e8;
+    color: #111;
     border: none;
-    border-radius: 8px;
-
-    background: #111;
-    color: white;
-
-    font-size: 15px;
-    font-weight: 600;
-
+    padding: 16px 32px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
     cursor: pointer;
-
-    transition: 0.3s ease;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
-.back:hover {
-    background: #333;
-    transform: translateY(-2px);
+.farm-cta-btn:hover {
+    background: #111;
+    color: #fff;
 }
 
 
-/* Tablet */
-@media (max-width: 900px) {
+/* ================================
+   RESPONSIVE
+================================ */
 
-    .ser-content {
-        padding: 35px 5%;
-        grid-template-columns: 42% 1fr;
-        column-gap: 35px;
+@media (max-width: 800px) {
+
+    .farm-hero {
+        grid-template-columns: 1fr;
+        padding: 50px 6%;
     }
 
-    .ser-content h1 {
+    .farm-hero-image {
+        height: 450px;
+    }
+
+    .farm-about {
+        grid-template-columns: 1fr;
+        padding: 70px 6%;
+    }
+
+    .about-content h2 {
         font-size: 40px;
     }
 
-    .ser-content p {
-        font-size: 17px;
-        line-height: 1.45;
-        margin-bottom: 7px;
-    }
-}
-
-
-/* Mobile */
-@media (max-width: 768px) {
-
-    .ser-content {
-        display: flex;
-        flex-direction: column;
-
-        padding: 40px 6%;
-        gap: 30px;
-
-        align-items: center;
+    .farm-features {
+        padding: 70px 6%;
     }
 
-    .img1 {
-        width: 85%;
-        max-width: 450px;
-        margin: 0;
+    .feature-grid {
+        grid-template-columns: 1fr;
     }
 
-    .ser-content h1 {
-        font-size: 36px;
-        margin: 0 0 8px;
-    }
-
-    .ser-content p {
-        font-size: 16px;
-        line-height: 1.5;
-        margin-bottom: 6px;
-    }
-
-    .back {
-        align-self: center;
+    .farm-cta h2 {
+        font-size: 45px;
     }
 }

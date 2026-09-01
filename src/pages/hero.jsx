@@ -9,25 +9,25 @@ function Hero() {
             <div className="hero-content">
 
                 <p className="small-title">
-                    WEBSITE DESIGN SERVICES
-                </p>
+    FARMING & AGRICULTURE SERVICES
+</p>
 
-                <h2>
-                    Strategic Brand & Website Design
-                    for Service-Based Businesses
-                    Ready to Grow With Intention
-                </h2>
+<h2>
+    Smart Farming Solutions
+    for Farmers Ready to
+    Grow With Confidence
+</h2>
 
-                <p>
-                    We design refined brands, high-end websites,
-                    and cohesive digital experiences that reflect
-                    your expertise and create a presence you feel
-                    confident sharing.
-                </p>
+<p>
+    We provide simple and reliable digital solutions that
+    help farmers manage their crops, access useful resources,
+    and improve their farming practices for better growth.
+</p>
 
-                <button>
-                    START YOUR PROJECT
-                </button>
+<button>
+    EXPLORE FARMING SOLUTIONS
+</button>
+
 
             </div>
 
@@ -35,9 +35,9 @@ function Hero() {
 
                 <div className="design-card">
 
-                    <h3>JAKS DIGITAL</h3>
+                    <h3>FARMER WEB</h3>
 
-                    <p>Creative Digital Experiences</p>
+                    <p>Creative farming Experiences</p>
 
                 </div>
 

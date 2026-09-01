@@ -6,15 +6,15 @@ function Footer() {
 
         <footer>
 
-            <h2>JAKS DIGITAL</h2>
+            <h2>FARMER WEB</h2>
 
-            <p>
-                Brand Design • Website Design • Digital Experiences
-            </p>
+<p>
+    Agriculture • Farming Resources • Digital Farm Solutions
+</p>
 
-            <p>
-                © 2026 JAKS DIGITAL
-            </p>
+<p>
+    © 2026 FARMER WEB
+</p>
 
         </footer>
 

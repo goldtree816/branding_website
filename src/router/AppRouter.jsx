@@ -8,10 +8,12 @@ import Blog from "../pages/blog.jsx";
 import Portfolio from "../pages/portfolio.jsx";
 import Home from "../pages/home.jsx";
 import Blog1 from "../components/blog1.jsx";
-import Service_sunglass from "../components/service_sunglass.jsx";
-import Service_ladiesbag from "../components/service_ladiesbag.jsx";
-import Service_earbud from "../components/service_earbug.jsx";
-import Service_honey from "../components/service_honey.jsx";
+import Service_mobile from "../components/service_mobile.jsx";
+import Service_online from "../components/service_online.jsx";
+import Service_farm from "../components/service_farm.jsx";
+import Service_agriculture from "../components/service_agriculture.jsx";
+import Service_farmstory from "../components/service_farmstory.jsx";
+import Service_future from "../components/service_future.jsx";
 
 import {
   createBrowserRouter,
@@ -46,10 +48,12 @@ const router = createBrowserRouter([
       { path: "/resources", element: <Resources /> },
       { path: "/srs_digital", element: <Home /> },
       { path: "/blog1", element: <Blog1 /> },
-      { path: "/service_sunglass", element: <Service_sunglass /> },
-      { path: "/service_ladiesbag", element: <Service_ladiesbag /> },
-      { path: "/service_earbud", element: <Service_earbud /> },
-      { path: "/service_honey", element: <Service_honey /> },
+      { path: "/farm", element: <Service_farm /> },
+      { path: "/agriculture", element: <Service_agriculture /> },
+      { path: "/online", element: <Service_online /> },
+      { path: "/mobile", element: <Service_mobile /> },
+      { path: "/story", element: <Service_farmstory /> },
+      { path: "/future", element: <Service_future /> },
     ],
   },
 ]);
