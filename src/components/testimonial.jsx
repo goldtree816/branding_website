@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/testimonial.css";
-import logo from '../assets/testi.webp'
+import logo from '../assets/free1.jpg'
 const testimonials = [
   {
     title: "AN ABSOLUTE PLEASURE TO WORK WITH",

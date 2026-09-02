@@ -4,10 +4,7 @@ import Footer from "../components/footer.jsx";
 import Services from "../pages/services.jsx";
 import About from "../pages/about.jsx";
 import Resources from "../pages/resources.jsx";
-import Blog from "../pages/blog.jsx";
-import Portfolio from "../pages/portfolio.jsx";
 import Home from "../pages/home.jsx";
-import Blog1 from "../components/blog1.jsx";
 import Service_mobile from "../components/service_mobile.jsx";
 import Service_online from "../components/service_online.jsx";
 import Service_farm from "../components/service_farm.jsx";
@@ -37,17 +34,14 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Home /> },
       { path: "/services", element: <Services /> },
-      { path: "/portfolio", element: <Portfolio /> },
        {
           path: "/portfolio/:projectSlug",
           element: <ProjectDetails />
         },
 
       { path: "/about", element: <About /> },
-      { path: "/blog", element: <Blog /> },
       { path: "/resources", element: <Resources /> },
       { path: "/srs_digital", element: <Home /> },
-      { path: "/blog1", element: <Blog1 /> },
       { path: "/farm", element: <Service_farm /> },
       { path: "/agriculture", element: <Service_agriculture /> },
       { path: "/online", element: <Service_online /> },
