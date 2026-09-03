@@ -1,16 +1,10 @@
-import ProjectDetails from '../pages/project-details.jsx'
 import Navbar from "../components/navbar.jsx";
 import Footer from "../components/footer.jsx";
 import Services from "../pages/services.jsx";
 import About from "../pages/about.jsx";
 import Resources from "../pages/resources.jsx";
 import Home from "../pages/home.jsx";
-import Service_mobile from "../components/service_mobile.jsx";
-import Service_online from "../components/service_online.jsx";
-import Service_farm from "../components/service_farm.jsx";
-import Service_agriculture from "../components/service_agriculture.jsx";
-import Service_farmstory from "../components/service_farmstory.jsx";
-import Service_future from "../components/service_future.jsx";
+import DetailPage from "../components/DetailPage.jsx";
 
 import {
   createBrowserRouter,
@@ -32,22 +26,35 @@ const router = createBrowserRouter([
   {
     element: <Layout />,
     children: [
-      { path: "/", element: <Home /> },
-      { path: "/services", element: <Services /> },
-       {
-          path: "/portfolio/:projectSlug",
-          element: <ProjectDetails />
-        },
+      {
+        path: "/",
+        element: <Home />,
+      },
 
-      { path: "/about", element: <About /> },
-      { path: "/resources", element: <Resources /> },
-      { path: "/srs_digital", element: <Home /> },
-      { path: "/farm", element: <Service_farm /> },
-      { path: "/agriculture", element: <Service_agriculture /> },
-      { path: "/online", element: <Service_online /> },
-      { path: "/mobile", element: <Service_mobile /> },
-      { path: "/story", element: <Service_farmstory /> },
-      { path: "/future", element: <Service_future /> },
+      {
+        path: "/services",
+        element: <Services />,
+      },
+
+      {
+        path: "/services/:service",
+        element: <DetailPage />,
+      },
+
+      {
+        path: "/about",
+        element: <About />,
+      },
+
+      {
+        path: "/resources",
+        element: <Resources />,
+      },
+
+      {
+        path: "/srs_digital",
+        element: <Home />,
+      },
     ],
   },
 ]);
