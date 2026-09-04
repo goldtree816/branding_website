@@ -24,6 +24,12 @@ button:hover {
 
 }
 
+.hero{
+  background-image: url('../assets/front_cover.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 
 /* Small heading */
@@ -34,7 +40,7 @@ button:hover {
 
     letter-spacing:4px;
 
-    color:#888;
+    color:#ee073d;
 
     font-weight:600;
 
@@ -54,7 +60,7 @@ button:hover {
 
     margin:25px 0;
 
-    color:#1c1b19;
+    color:#1d1d1d;
 
 }
 
@@ -68,7 +74,7 @@ button:hover {
 
     font-size:19px;
 
-    color:#6b665e;
+    color:#b5a999;
 
     line-height:1.8;
 
@@ -151,3 +157,5 @@ button:hover {
     transform: translateY(-10px);
   }
 }
+
+/*last free download section css is from resource.css */

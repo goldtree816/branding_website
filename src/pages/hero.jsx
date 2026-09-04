@@ -30,20 +30,9 @@ function Hero() {
 
 
             </div>
+            </section>
 
-            <div className="hero-image">
-
-                <div className="design-card">
-
-                    <h3>FARMER WEB</h3>
-
-                    <p>Creative farming Experiences</p>
-
-                </div>
-
-            </div>
-
-        </section>
+        
 
     );
 

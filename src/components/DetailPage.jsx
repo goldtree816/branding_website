@@ -112,5 +112,4 @@ function DetailPage() {
     </div>
   );
 }
-
 export default DetailPage;
