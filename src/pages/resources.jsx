@@ -33,6 +33,7 @@ const farmerResources = [
     title: "CROP PRODUCTION",
     description:
       "Learn about crop selection, planting methods, cultivation practices, harvesting, and other important steps for producing healthy and productive crops.",
+      button: "TRY IT OUT",
   },
 
   {
@@ -40,6 +41,7 @@ const farmerResources = [
     title: "SOIL HEALTH & MANAGEMENT",
     description:
       "Understand soil types, soil preparation, organic matter, nutrients, and sustainable practices that help maintain healthy and productive farmland.",
+      button: "TRY IT OUT",
   },
 
   {
@@ -47,6 +49,7 @@ const farmerResources = [
     title: "SEEDS & CROP SELECTION",
     description:
       "Explore useful information about selecting suitable seeds and crops based on local conditions, growing seasons, soil requirements, and farming goals.",
+      button: "TRY IT OUT",
   },
 
   {
@@ -54,6 +57,7 @@ const farmerResources = [
     title: "PEST & DISEASE MANAGEMENT",
     description:
       "Identify common crop pests and diseases and learn about practical prevention and management techniques to protect crops and reduce production losses.",
+      button: "TRY IT OUT",
   },
 
   {
@@ -61,6 +65,7 @@ const farmerResources = [
     title: "FARMING TECHNIQUES",
     description:
       "Discover modern and sustainable farming techniques that can help farmers improve productivity, use resources efficiently, and manage their farms more effectively.",
+      button: "TRY IT OUT",
   },
 
   {
@@ -68,6 +73,7 @@ const farmerResources = [
     title: "IRRIGATION & WATER MANAGEMENT",
     description:
       "Learn about efficient irrigation methods, water conservation, and proper water management practices to support healthy crops while reducing unnecessary water use.",
+      button: "TRY IT OUT",
   },
 
   {
@@ -75,6 +81,7 @@ const farmerResources = [
     title: "WEATHER & SEASONAL INFORMATION",
     description:
       "Access useful information about weather conditions, seasons, rainfall, and climate patterns to help farmers plan planting, irrigation, harvesting, and crop protection.",
+      button: "TRY IT OUT",
   },
 
   {
@@ -82,6 +89,7 @@ const farmerResources = [
     title: "MARKET & PRICE INFORMATION",
     description:
       "Explore agricultural market information, product prices, demand, and selling opportunities to help farmers make better decisions about where and when to sell their produce.",
+      button: "TRY IT OUT",
   },
 
   {
@@ -89,13 +97,15 @@ const farmerResources = [
     title: "LIVESTOCK & ANIMAL CARE",
     description:
       "Find practical resources about livestock management, animal nutrition, housing, hygiene, and general care for healthier and more productive farm animals.",
-  },
+    button: "TRY IT OUT",
+    },
 
   {
     image: AM,
     title: "ORGANIC & SUSTAINABLE FARMING",
     description:
       "Learn about environmentally responsible farming practices such as composting, natural soil improvement, crop rotation, and responsible use of agricultural resources.",
+      button: "TRY IT OUT",
   },
 
   {
@@ -103,6 +113,7 @@ const farmerResources = [
     title: "DIGITAL FARMING TOOLS",
     description:
       "Discover digital tools and technologies that can help farmers monitor crops, organize farm activities, access information, track resources, and make better farming decisions.",
+      button: "TRY IT OUT",
   },
 ];
 
@@ -156,6 +167,7 @@ const Resources = () => {
               image={resource.image}
               title={resource.title}
               description={resource.description}
+              button={resource.button}
             />
           ))}
 

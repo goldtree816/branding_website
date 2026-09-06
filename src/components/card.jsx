@@ -1,14 +1,36 @@
 import "../styles/card.css";
 
-function Card({image}) {
+function CampaignCard({ image, title, description }) {
   return (
-    <div className="feature-card">
+    <article className="campaign-card">
 
-      <img className="pic" src={image}/>
-     
-   
-    </div>
+      {/* IMAGE AREA */}
+      <div className="campaign-card-image">
+        <img
+          className="campaign-thumb"
+          src={image}
+          alt={title}
+        />
+      </div>
+
+      {/* CARD CONTENT */}
+      <div className="campaign-card-body">
+
+        <h2>{title}</h2>
+
+        <p className="campaign-desc">
+          {description}
+        </p>
+
+        <button type="button">
+          LEARN MORE
+        </button>
+
+      </div>
+
+    </article>
   );
 }
 
-export default Card;
+export default CampaignCard;
+

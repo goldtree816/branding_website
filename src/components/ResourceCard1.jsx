@@ -1,6 +1,6 @@
 import "../styles/ResourceCard1.css";
 
-function TryCard({ image, title, description }) {
+function TryCard({ image, title, description, button }) {
   return (
     <article className="card1">
 
@@ -24,8 +24,8 @@ function TryCard({ image, title, description }) {
           {description}
         </p>
 
-        <button type="button">
-          TRY IT OUT
+        <button className="button">
+          {button}
         </button>
 
       </div>

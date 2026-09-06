@@ -1,0 +1,44 @@
+.campaign-page {
+    min-height: 100vh;
+    padding: 50px 7%;
+    background: #f7faf5;
+    box-sizing: border-box;
+}
+
+/* PAGE HEADER */
+
+.campaign-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.campaign-header h1 {
+    font-size: 42px;
+    color: #285943;
+    margin-bottom: 15px;
+}
+
+.campaign-header p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #555;
+}
+
+
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .campaign-container {
+        grid-template-columns: 1fr;
+    }
+
+    .campaign-header h1 {
+        font-size: 32px;
+    }
+}
+
