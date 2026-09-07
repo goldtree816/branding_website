@@ -5,6 +5,7 @@ import About from "../pages/about.jsx";
 import Resources from "../pages/resources.jsx";
 import Home from "../pages/home.jsx";
 import DetailPage from "../components/DetailPage.jsx";
+import CampaignDetail from "../components/campaigndetail.jsx";
 import Campaign from "../pages/campaign.jsx";
 import Inquire from "../pages/inquire.jsx";
 
@@ -41,6 +42,11 @@ const router = createBrowserRouter([
       {
         path: "/services/:service",
         element: <DetailPage />,
+      },
+
+      {
+        path: "/campaign/:campaign",
+        element: <CampaignDetail />,
       },
 
       {

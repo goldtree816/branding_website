@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import "../styles/card.css";
 
-function CampaignCard({ image, title, description }) {
+function CampaignCard({ image, title, description,link, button }) {
   return (
     <article className="campaign-card">
 
@@ -22,9 +23,9 @@ function CampaignCard({ image, title, description }) {
           {description}
         </p>
 
-        <button type="button">
-          LEARN MORE
-        </button>
+        <Link to={link} className="button">
+        {button}
+      </Link>
 
       </div>
 
