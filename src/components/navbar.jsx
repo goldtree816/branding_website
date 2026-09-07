@@ -25,9 +25,9 @@ function Navbar(){
                     <li><NavLink className={(e)=>{return e.isActive?"red": ""}} to="/resources">RESOURCES</NavLink></li>
                     <li><NavLink className={(e)=>{return e.isActive?"red": ""}} to="/campaign">CAMPAIGN</NavLink></li>
 
-                    <button className="inquire">
+                    <Link to="/inquire"><button className="inquire">
                         INQUIRE
-                    </button>
+                    </button></Link>
 
                 </ul>
 

@@ -6,6 +6,7 @@ import Resources from "../pages/resources.jsx";
 import Home from "../pages/home.jsx";
 import DetailPage from "../components/DetailPage.jsx";
 import Campaign from "../pages/campaign.jsx";
+import Inquire from "../pages/inquire.jsx";
 
 import {
   createBrowserRouter,
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
       {
         path: "/campaign",
         element: <Campaign />
+      },
+      {
+        path: "/inquire",
+        element: <Inquire />
       }
     ],
   },

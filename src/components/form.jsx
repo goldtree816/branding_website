@@ -1,20 +1,52 @@
-import React from 'react'
-import { useState } from "react";
-import '../styles/form.css'
+import React, { useState } from "react";
+import "../styles/form.css";
 
 const SERVICE_OPTIONS = [
-  { id: "service1", value: "Custom Website Design", label: "Custom Website Design" },
-  { id: "service2", value: "Custom Brand Identity (Icon/Illustrative branding)", label: "Custom Brand Identity (Icon/Illustrative branding)" },
-  { id: "service3", value: "Custom Brand Identity (Wordmark branding)", label: "Custom Brand Identity (Wordmark branding)" },
-  { id: "service4", value: "Flodesk Email Marketing Set Up", label: "Flodesk Email Marketing Set Up" },
-  { id: "service5", value: "Copywriting/SEO", label: "Copywriting/SEO" },
-  { id: "service6", value: "Design Intensives", label: "Design Intensives" },
-  { id: "service7", value: "Ongoing Studio Support", label: "Ongoing Studio Support" },
-  { id: "service8", value: "Squarespace Speed Session (Power Hour)", label: "Squarespace Speed Session (Power Hour)" },
+  {
+    id: "service1",
+    value: "Farm Website Design",
+    label: "Farm Website Design",
+  },
+  {
+    id: "service2",
+    value: "Online Farm Store",
+    label: "Online Farm Store / Product Ordering",
+  },
+  {
+    id: "service3",
+    value: "Farm Branding",
+    label: "Farm Branding & Visual Identity",
+  },
+  {
+    id: "service4",
+    value: "Online Customer Connection",
+    label: "Online Customer Connection",
+  },
+  {
+    id: "service5",
+    value: "Farm Product Promotion",
+    label: "Farm Product Promotion & Marketing",
+  },
+  {
+    id: "service6",
+    value: "Farm Story & Content",
+    label: "Farm Story & Content Creation",
+  },
+  {
+    id: "service7",
+    value: "Social Media Support",
+    label: "Social Media & Digital Marketing",
+  },
+  {
+    id: "service8",
+    value: "Website Support",
+    label: "Website Maintenance & Support",
+  },
   {
     id: "service9",
     value: "Not sure",
-    label: "Not sure, I'd love to chat more about the details and which package is right for me",
+    label:
+      "Not sure, I'd love to discuss my farm and find the right solution",
   },
 ];
 
@@ -22,27 +54,34 @@ const initialFormState = {
   FirstName: "",
   LastName: "",
   Email: "",
-  BusinessName: "",
-  WebsiteLink: "",
-  InstagramLink: "",
-  BussBrief: "",
-  StageofBusiness: "",
+  FarmName: "",
+  Location: "",
+  PhoneNumber: "",
+  FarmBrief: "",
+  FarmStage: "",
 };
 
-export default function ContactForm() {
+export default function FarmerContactForm() {
   const [formData, setFormData] = useState(initialFormState);
   const [selectedServices, setSelectedServices] = useState([]);
   const [serviceError, setServiceError] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   };
 
   const handleServiceToggle = (value) => {
     setSelectedServices((prev) =>
-      prev.includes(value) ? prev.filter((v) => v !== value) : [...prev, value]
+      prev.includes(value)
+        ? prev.filter((v) => v !== value)
+        : [...prev, value]
     );
+
     setServiceError("");
   };
 
@@ -50,20 +89,33 @@ export default function ContactForm() {
     e.preventDefault();
 
     if (selectedServices.length === 0) {
-      setServiceError("Please select one or more");
+      setServiceError("Please select one or more services");
       return;
     }
 
-    const payload = { ...formData, service: selectedServices };
-    console.log("Form submitted:", payload);
-    // Wire this up to your actual submission endpoint.
+    const payload = {
+      ...formData,
+      services: selectedServices,
+    };
+
+    console.log("Farm inquiry submitted:", payload);
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-2xl mx-auto p-6 space-y-6">
+    <form
+      onSubmit={handleSubmit}
+      className="max-w-2xl mx-auto p-6 space-y-6"
+    >
+
+      {/* ================= PERSONAL DETAILS ================= */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <label htmlFor="FirstName" className="flex flex-col gap-1 text-sm font-medium">
+
+        <label
+          htmlFor="FirstName"
+          className="flex flex-col gap-1 text-sm font-medium"
+        >
           First Name:
+
           <input
             type="text"
             id="FirstName"
@@ -75,8 +127,12 @@ export default function ContactForm() {
           />
         </label>
 
-        <label htmlFor="LastName" className="flex flex-col gap-1 text-sm font-medium">
+        <label
+          htmlFor="LastName"
+          className="flex flex-col gap-1 text-sm font-medium"
+        >
           Last Name:
+
           <input
             type="text"
             id="LastName"
@@ -88,8 +144,12 @@ export default function ContactForm() {
           />
         </label>
 
-        <label htmlFor="Email" className="flex flex-col gap-1 text-sm font-medium">
+        <label
+          htmlFor="Email"
+          className="flex flex-col gap-1 text-sm font-medium"
+        >
           Email:
+
           <input
             type="email"
             id="Email"
@@ -101,104 +161,164 @@ export default function ContactForm() {
           />
         </label>
 
-        <label htmlFor="BusinessName" className="flex flex-col gap-1 text-sm font-medium">
-          Business Name:
+        <label
+          htmlFor="PhoneNumber"
+          className="flex flex-col gap-1 text-sm font-medium"
+        >
+          Phone Number:
+
           <input
-            type="text"
-            id="BusinessName"
-            name="BusinessName"
-            value={formData.BusinessName}
+            type="tel"
+            id="PhoneNumber"
+            name="PhoneNumber"
+            value={formData.PhoneNumber}
             onChange={handleChange}
-            placeholder="Please provide your business/brand name"
+            placeholder="Please provide your phone number"
             className="border rounded px-3 py-2 text-sm font-normal"
           />
         </label>
 
-        <label htmlFor="WebsiteLink" className="flex flex-col gap-1 text-sm font-medium">
-          Website Link (if you have one):
+        {/* Farm Name */}
+        <label
+          htmlFor="FarmName"
+          className="flex flex-col gap-1 text-sm font-medium"
+        >
+          Farm Name:
+
           <input
-            type="url"
-            id="WebsiteLink"
-            name="WebsiteLink"
-            value={formData.WebsiteLink}
+            type="text"
+            id="FarmName"
+            name="FarmName"
+            value={formData.FarmName}
             onChange={handleChange}
-            placeholder="https://"
+            placeholder="Please provide your farm name"
             className="border rounded px-3 py-2 text-sm font-normal"
           />
         </label>
 
-        <label htmlFor="InstagramLink" className="flex flex-col gap-1 text-sm font-medium">
-          Instagram Link or handle:
+        {/* Farm Location */}
+        <label
+          htmlFor="Location"
+          className="flex flex-col gap-1 text-sm font-medium"
+        >
+          Farm Location:
+
           <input
             type="text"
-            id="InstagramLink"
-            name="InstagramLink"
-            value={formData.InstagramLink}
+            id="Location"
+            name="Location"
+            value={formData.Location}
             onChange={handleChange}
-            placeholder="@yourhandle"
+            placeholder="Village, District, Province"
             className="border rounded px-3 py-2 text-sm font-normal"
           />
         </label>
       </div>
 
-      <label htmlFor="BussBrief" className="flex flex-col gap-1 text-sm font-medium">
-        Give me a description about your business:
+      {/* ================= FARM DESCRIPTION ================= */}
+      <label
+        htmlFor="FarmBrief"
+        className="flex flex-col gap-1 text-sm font-medium"
+      >
+        Tell us about your farm:
+
         <textarea
-          id="BussBrief"
-          name="BussBrief"
-          value={formData.BussBrief}
+          id="FarmBrief"
+          name="FarmBrief"
+          value={formData.FarmBrief}
           onChange={handleChange}
-          rows={3}
+          rows={4}
+          placeholder="Tell us about your farm, products, crops, livestock, and what you currently offer..."
           className="border rounded px-3 py-2 text-sm font-normal"
         />
       </label>
 
-      <label htmlFor="StageofBusiness" className="flex flex-col gap-1 text-sm font-medium">
-        What stage of business are you in?
-        <input
-          type="text"
-          id="StageofBusiness"
-          name="StageofBusiness"
-          value={formData.StageofBusiness}
+      {/* ================= FARM STAGE ================= */}
+      <label
+        htmlFor="FarmStage"
+        className="flex flex-col gap-1 text-sm font-medium"
+      >
+        What stage is your farm business in?
+
+        <select
+          id="FarmStage"
+          name="FarmStage"
+          value={formData.FarmStage}
           onChange={handleChange}
           className="border rounded px-3 py-2 text-sm font-normal"
-        />
+        >
+          <option value="">Select your farm stage</option>
+          <option value="Starting Out">Starting Out</option>
+          <option value="Growing">Growing</option>
+          <option value="Established">Established</option>
+          <option value="Expanding">Expanding</option>
+        </select>
       </label>
 
+      {/* ================= SERVICES ================= */}
       <fieldset className="space-y-2">
+
         <legend className="text-sm font-semibold uppercase tracking-wide">
-          Which service are you most interested in? *
+          What can we help you with? *
         </legend>
 
         {SERVICE_OPTIONS.map((option) => (
-          <div key={option.id} className="flex items-start gap-2">
+          <div
+            key={option.id}
+            className="flex items-start gap-2"
+          >
             <input
               type="checkbox"
               id={option.id}
               name="service"
               value={option.value}
               checked={selectedServices.includes(option.value)}
-              onChange={() => handleServiceToggle(option.value)}
+              onChange={() =>
+                handleServiceToggle(option.value)
+              }
               className="mt-1"
             />
-            <label htmlFor={option.id} className="text-sm">
+
+            <label
+              htmlFor={option.id}
+              className="text-sm"
+            >
               {option.label}
             </label>
           </div>
         ))}
 
         {serviceError && (
-          <span className="block text-sm text-red-600">{serviceError}</span>
+          <span className="block text-sm text-red-600">
+            {serviceError}
+          </span>
         )}
       </fieldset>
 
+      {/* ================= ADDITIONAL MESSAGE ================= */}
+      <label
+        htmlFor="AdditionalMessage"
+        className="flex flex-col gap-1 text-sm font-medium"
+      >
+        Is there anything else you'd like us to know?
+
+        <textarea
+          id="AdditionalMessage"
+          name="AdditionalMessage"
+          rows={4}
+          placeholder="Tell us about your goals, requirements, products, or any questions you have..."
+          className="border rounded px-3 py-2 text-sm font-normal"
+        />
+      </label>
+
+      {/* ================= SUBMIT ================= */}
       <button
         type="submit"
         className="rounded bg-black text-white px-4 py-2 text-sm font-medium"
       >
-        Submit
+        SEND FARM INQUIRY
       </button>
+
     </form>
   );
 }
-
