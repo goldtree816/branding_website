@@ -57,7 +57,7 @@ function CampaignDetail() {
 
         </div>
         <button
-          className="back"
+          className="button"
           onClick={handleGoBack}>
           GO BACK
         </button>

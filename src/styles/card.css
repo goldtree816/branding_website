@@ -128,7 +128,12 @@
     background: #1d4231;
 }
 
+@media (max-width: 1300px){
+    .campaign-card{
+        height: 580px;
+    }
 
+}
 /* =========================================
    KEEP 3 CARDS IN ONE ROW
 ========================================= */
@@ -163,7 +168,7 @@
     }
 
     .campaign-card {
-        height: 500px;
+        height: 370px;
     }
 
     .campaign-card-image {

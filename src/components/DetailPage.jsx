@@ -85,7 +85,7 @@ function DetailPage() {
         <br></br>
 
         <button
-          className="back"
+          className="button"
           onClick={handleGoBack}
         >
           GO BACK
