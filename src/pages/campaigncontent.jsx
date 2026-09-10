@@ -9,53 +9,72 @@ import climateSmart from "../assets/climate.jpg";
 
 const services = {
 
-  /* ================= SEASONAL CROP ================= */
+  /* ================= SMART FARMING ================= */
+
   "smartfarming": {
-  label: "SMART FARMING CAMPAIGN",
-  title: "Smart Farming Campaign",
-  intro:
-    "Helping farmers use modern farming techniques, technology, and data-driven solutions to improve productivity, save resources, and achieve better farm results.",
+    label: "SMART FARMING CAMPAIGN",
 
-  image: smartFarm,
-  imageAlt: "Smart farming technology",
+    title: "Smart Farming Campaign",
 
-  purposeTitle: "Farm Smarter with Modern Solutions",
-  purposeText1:
-    "The Smart Farming Campaign provides farmers with practical information about modern farming techniques, agricultural technology, and efficient resource management.",
+    intro:
+      "Helping farmers use modern farming techniques, technology, and data-driven solutions to improve productivity, save resources, and achieve better farm results.",
 
-  purposeText2:
-    "By using smart tools, better planning methods, and modern agricultural practices, farmers can improve productivity, reduce costs, and make more informed farming decisions.",
+    images: [
+      smartFarm,
+      climateSmart
+    ],
 
-  detailsTitle: "How the Campaign Helps Farmers",
-  detailsText:
-    "The campaign focuses on introducing farmers to simple and practical smart farming solutions that can be applied to their daily agricultural activities.",
+    imageAlt: "Smart farming technology",
 
-  points: [
-    {
-      title: "Modern Farming Techniques",
-      text: "Introducing improved farming methods that can help farmers increase crop growth and productivity."
-    },
-    {
-      title: "Efficient Resource Management",
-      text: "Helping farmers use water, fertilizers, seeds, and other resources more efficiently."
-    },
-    {
-      title: "Technology in Farming",
-      text: "Encouraging the use of modern agricultural tools and technology to make farming easier and more productive."
-    }
-  ]
-},
+    purposeTitle: "Farm Smarter with Modern Solutions",
+
+    purposeText1:
+      "The Smart Farming Campaign provides farmers with practical information about modern farming techniques, agricultural technology, and efficient resource management.",
+
+    purposeText2:
+      "By using smart tools, better planning methods, and modern agricultural practices, farmers can improve productivity, reduce costs, and make more informed farming decisions.",
+
+    detailsTitle: "How the Campaign Helps Farmers",
+
+    detailsText:
+      "The campaign focuses on introducing farmers to simple and practical smart farming solutions that can be applied to their daily agricultural activities.",
+
+    points: [
+      {
+        title: "Modern Farming Techniques",
+        text: "Introducing improved farming methods that can help farmers increase crop growth and productivity."
+      },
+      {
+        title: "Efficient Resource Management",
+        text: "Helping farmers use water, fertilizers, seeds, and other resources more efficiently."
+      },
+      {
+        title: "Technology in Farming",
+        text: "Encouraging the use of modern agricultural tools and technology to make farming easier and more productive."
+      }
+    ]
+  },
+
+
+  /* ================= SEASONAL CROP ================= */
 
   "seasonalcrop": {
     label: "SMART FARMING CAMPAIGN",
+
     title: "Seasonal Crop Campaign",
+
     intro:
       "Helping farmers choose the right crops for every season to improve productivity, reduce risks, and achieve better farm results.",
 
-    image: seasonalCrop,
+    images: [
+      seasonalCrop,
+      climateSmart
+    ],
+
     imageAlt: "Seasonal crop farming",
 
     purposeTitle: "Grow the Right Crop at the Right Time",
+
     purposeText1:
       "The Seasonal Crop Campaign provides farmers with useful information about crops that are suitable for different seasons and growing conditions.",
 
@@ -63,6 +82,7 @@ const services = {
       "By understanding planting seasons, weather conditions, and crop requirements, farmers can make better decisions and improve their overall productivity.",
 
     detailsTitle: "How the Campaign Helps Farmers",
+
     detailsText:
       "The campaign focuses on providing practical seasonal farming information that farmers can use in their daily agricultural activities.",
 
@@ -87,14 +107,21 @@ const services = {
 
   "watersaving": {
     label: "SMART FARMING CAMPAIGN",
+
     title: "Water Saving Campaign",
+
     intro:
       "Promoting efficient water management practices that help farmers save water while maintaining healthy crop growth.",
 
-    image: waterSaving,
+    images: [
+      waterSaving,
+      climateSmart
+    ],
+
     imageAlt: "Water saving in agriculture",
 
     purposeTitle: "Every Drop Matters",
+
     purposeText1:
       "Water is one of the most important resources in agriculture. Efficient water management can help farmers reduce unnecessary water use.",
 
@@ -102,6 +129,7 @@ const services = {
       "This campaign encourages farmers to adopt simple and effective irrigation and water conservation practices.",
 
     detailsTitle: "Building Water Efficient Farms",
+
     detailsText:
       "Farmers are introduced to practical approaches that help them use available water more efficiently.",
 
@@ -126,14 +154,21 @@ const services = {
 
   "farmersupport": {
     label: "SMART FARMING CAMPAIGN",
+
     title: "Farmer Support Campaign",
+
     intro:
       "Connecting farmers with useful information, resources, and support to help them overcome agricultural challenges.",
 
-    image: farmerSupport,
+    images: [
+      farmerSupport,
+      climateSmart
+    ],
+
     imageAlt: "Farmers receiving support",
 
     purposeTitle: "Supporting Farmers for Better Farming",
+
     purposeText1:
       "Farmers face many challenges throughout the farming process. Access to reliable information and support can help them make better decisions.",
 
@@ -141,6 +176,7 @@ const services = {
       "The Farmer Support Campaign aims to create an environment where farmers can receive practical guidance and assistance.",
 
     detailsTitle: "Support When Farmers Need It",
+
     detailsText:
       "The campaign focuses on providing farmers with useful resources and information for improving their farming activities.",
 
@@ -165,14 +201,21 @@ const services = {
 
   "organicfarming": {
     label: "SMART FARMING CAMPAIGN",
+
     title: "Organic Farming Campaign",
+
     intro:
       "Encouraging sustainable farming practices that support healthy soil, responsible resource use, and environmentally friendly agriculture.",
 
-    image: organicFarming,
+    images: [
+      organicFarming,
+      climateSmart
+    ],
+
     imageAlt: "Organic farming",
 
     purposeTitle: "Growing Naturally and Sustainably",
+
     purposeText1:
       "Organic farming focuses on natural farming practices and responsible management of soil and other agricultural resources.",
 
@@ -180,6 +223,7 @@ const services = {
       "The campaign encourages farmers to explore sustainable approaches that can benefit both farms and the environment.",
 
     detailsTitle: "Promoting Sustainable Agriculture",
+
     detailsText:
       "Farmers are encouraged to adopt practices that maintain soil health and reduce unnecessary dependence on harmful agricultural inputs.",
 
@@ -204,14 +248,21 @@ const services = {
 
   "farmertraining": {
     label: "SMART FARMING CAMPAIGN",
+
     title: "Farmer Training Campaign",
+
     intro:
       "Providing farmers with practical knowledge and skills to improve farming techniques, productivity, and decision-making.",
 
-    image: farmerTraining,
+    images: [
+      farmerTraining,
+      climateSmart
+    ],
+
     imageAlt: "Farmer training",
 
     purposeTitle: "Knowledge Creates Better Farms",
+
     purposeText1:
       "Agriculture continues to change with new technologies, techniques, and farming practices. Farmers need access to practical knowledge to adapt effectively.",
 
@@ -219,6 +270,7 @@ const services = {
       "The Farmer Training Campaign focuses on building farmer knowledge through practical learning and agricultural education.",
 
     detailsTitle: "Learning for Better Farming",
+
     detailsText:
       "Training activities can help farmers understand modern farming methods and apply useful techniques in their own fields.",
 
@@ -243,14 +295,21 @@ const services = {
 
   "marketaccess": {
     label: "SMART FARMING CAMPAIGN",
+
     title: "Market Access Campaign",
+
     intro:
       "Helping farmers connect with better market opportunities and improve their ability to sell agricultural products.",
 
-    image: marketAccess,
+    images: [
+      marketAccess,
+      climateSmart
+    ],
+
     imageAlt: "Farmers accessing agricultural markets",
 
     purposeTitle: "Connecting Farmers With Markets",
+
     purposeText1:
       "Producing quality crops is only one part of successful farming. Farmers also need reliable opportunities to sell their products.",
 
@@ -258,6 +317,7 @@ const services = {
       "The Market Access Campaign focuses on improving connections between farmers, buyers, markets, and agricultural opportunities.",
 
     detailsTitle: "From Farm to Market",
+
     detailsText:
       "The campaign helps farmers understand market opportunities and make better decisions about selling their agricultural products.",
 
@@ -282,14 +342,21 @@ const services = {
 
   "climatesmart": {
     label: "SMART FARMING CAMPAIGN",
+
     title: "Climate Smart Farming Campaign",
+
     intro:
       "Helping farmers adapt to changing climate conditions while improving productivity and using agricultural resources responsibly.",
 
-    image: climateSmart,
+    images: [
+      climateSmart,
+      marketAccess
+    ],
+
     imageAlt: "Climate smart farming",
 
     purposeTitle: "Farming for a Changing Climate",
+
     purposeText1:
       "Changing weather patterns can create challenges for farmers, including changes in rainfall, temperature, and crop growing conditions.",
 
@@ -297,6 +364,7 @@ const services = {
       "The Climate Smart Farming Campaign encourages farmers to use practices that improve resilience and prepare farms for changing environmental conditions.",
 
     detailsTitle: "Building Resilient Farms",
+
     detailsText:
       "The campaign introduces practical approaches that can help farmers manage climate-related challenges while maintaining productive farms.",
 

@@ -163,8 +163,7 @@ export default function FarmerContactForm() {
 
         <label
           htmlFor="PhoneNumber"
-          className="flex flex-col gap-1 text-sm font-medium"
-        >
+          className="flex flex-col gap-1 text-sm font-medium">
           Phone Number:
 
           <input
