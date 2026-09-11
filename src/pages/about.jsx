@@ -1,6 +1,5 @@
 import "../styles/about.css";
 import Testimonial from "../components/testimonial.jsx";
-import Values from "../components/value.jsx";
 import logo from "../assets/intro.webp";
 import logo1 from "../assets/advisory.jpg";
 import logo2 from "../assets/crop.jpg";
@@ -185,7 +184,6 @@ function About() {
         </a>
       </section>
 
-      <Values />
     </>
   );
 }
