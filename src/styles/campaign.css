@@ -35,6 +35,7 @@
 
     .campaign-container {
         grid-template-columns: 1fr;
+        gap: 20px; /* optional, tighten spacing between stacked cards */
     }
 
     .campaign-header h1 {
@@ -42,3 +43,8 @@
     }
 }
 
+@media (max-width: 1000px) and (min-width: 701px) {
+    .campaign-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

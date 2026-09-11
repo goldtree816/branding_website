@@ -1,11 +1,22 @@
 import smartFarm from "../assets/smart_farming.jpg";
+import smartFarm1 from "../assets/farm1.jpg";
+import smartFarm2 from "../assets/farm2.jpg";
 import seasonalCrop from "../assets/seasonal_crops.jpg";
+import seasonalCrop1 from "../assets/seasonal_crop1.jpg";
+import seasonalCrop2 from "../assets/seasonal_crop2.jpg";
 import waterSaving from "../assets/watersaving.jpg";
+import waterSaving1 from "../assets/watersaving1.jpg";
 import farmerSupport from "../assets/farmer_support.jpg";
+import farmerSupport1 from "../assets/farmer_support1.jpg";
 import organicFarming from "../assets/organic_farm.jpg";
+import organicFarming1 from "../assets/organic_farm1.jpg";
+import organicFarming2 from "../assets/organic_farm2.jpg";
 import farmerTraining from "../assets/farmer_training.jpg";
+import farmerTraining1 from "../assets/farmer_training1.jpg";
 import marketAccess from "../assets/market.jpg";
+import marketAccess1 from "../assets/market1.jpg";
 import climateSmart from "../assets/climate.jpg";
+import climateSmart1 from "../assets/climate1.jpg";
 
 const services = {
 
@@ -21,7 +32,8 @@ const services = {
 
     images: [
       smartFarm,
-      climateSmart
+      smartFarm1,
+      smartFarm2
     ],
 
     imageAlt: "Smart farming technology",
@@ -68,7 +80,8 @@ const services = {
 
     images: [
       seasonalCrop,
-      climateSmart
+      seasonalCrop1,
+      seasonalCrop2
     ],
 
     imageAlt: "Seasonal crop farming",
@@ -115,7 +128,7 @@ const services = {
 
     images: [
       waterSaving,
-      climateSmart
+      waterSaving1
     ],
 
     imageAlt: "Water saving in agriculture",
@@ -162,7 +175,7 @@ const services = {
 
     images: [
       farmerSupport,
-      climateSmart
+      farmerSupport1
     ],
 
     imageAlt: "Farmers receiving support",
@@ -209,7 +222,8 @@ const services = {
 
     images: [
       organicFarming,
-      climateSmart
+      organicFarming1,
+      organicFarming2
     ],
 
     imageAlt: "Organic farming",
@@ -256,7 +270,7 @@ const services = {
 
     images: [
       farmerTraining,
-      climateSmart
+      farmerTraining1
     ],
 
     imageAlt: "Farmer training",
@@ -303,7 +317,7 @@ const services = {
 
     images: [
       marketAccess,
-      climateSmart
+      marketAccess1
     ],
 
     imageAlt: "Farmers accessing agricultural markets",
@@ -350,7 +364,7 @@ const services = {
 
     images: [
       climateSmart,
-      marketAccess
+      climateSmart1
     ],
 
     imageAlt: "Climate smart farming",

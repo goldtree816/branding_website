@@ -134,13 +134,10 @@
     }
 
 }
-/* =========================================
-   KEEP 3 CARDS IN ONE ROW
-========================================= */
-
 @media (max-width: 900px) {
 
     .campaign-container {
+        grid-template-columns: repeat(2, 1fr);
         width: calc(100% - 30px);
         gap: 15px;
     }
@@ -155,14 +152,10 @@
 
 }
 
-
-/* =========================================
-   MOBILE
-========================================= */
-
 @media (max-width: 600px) {
 
     .campaign-container {
+        grid-template-columns: 1fr;
         width: calc(100% - 20px);
         gap: 10px;
     }
